@@ -1,11 +1,11 @@
 
 <h1 align= "center">→ Trabalho  SAGA SENAI ←</h1>
 ↢———————————————↣<br>
-Rodrigo: GameDev <br>
-Bruno: Developer <br> 
-Daniel: Designer / Developer <br>
-Chris: Developer <br>
-Gessica: Designer <br>
+&emsp;&emsp;&emsp;Rodrigo: GameDev <br>
+&emsp;&emsp;&emsp;Bruno: Developer <br> 
+&emsp;&emsp;&emsp;Daniel: Designer / Developer <br>
+&emsp;&emsp;&emsp;Chris: Developer <br>
+&emsp;&emsp;&emsp;Gessica: Designer <br>
 ↢———————————————↣<br>
 
   <h6><li>Código nosso que estás em C#</li>
