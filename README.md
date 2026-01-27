@@ -1,7 +1,12 @@
-# Super-Matermarcio
-trabalho do SAGA
 
-
+<h1 align= "center">→ Trabalho  SAGA SENAI ←</h1>
+↢———————————————↣<br>
+Rodrigo: GameDev <br>
+Bruno: Developer <br> 
+Daniel: Designer / Developer <br>
+Chris: Developer <br>
+Gessica: Designer <br>
+↢———————————————↣<br>
 
   <h6><li>Código nosso que estás em C#</li>
   <li> Santificado seja vós, Console</li>
