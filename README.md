@@ -5,7 +5,7 @@
 &emsp;&emsp;&emsp;Bruno: Developer <br> 
 &emsp;&emsp;&emsp;Daniel: Designer / Developer <br>
 &emsp;&emsp;&emsp;Chris: Developer <br>
-&emsp;&emsp;&emsp;Gessica: Designer <br>
+&emsp;&emsp;&emsp;Gessica: Quality Assurance <br>
 ↢———————————————↣<br>
 <h6>Figma: https://www.figma.com/board/HuyqmTtbjSsRNqfJSDjeuH/Untitled?node-id=0-1&t=ftvOePD9fg3ejbCE-1<br></h6>
 
