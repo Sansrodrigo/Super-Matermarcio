@@ -6,99 +6,113 @@ using UnityEngine.UI;
 
 public class teste : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        /* Renderer rend = GetComponent<Renderer>();
-         rend.material.color = Color.red;
-        */
-       Teste();
+// Start is called once before the first execution of Update after the MonoBehaviour is created
+void Start()
+{
+/* Renderer rend = GetComponent<Renderer>();
+    rend.material.color = Color.red;
+*/
+Teste();
         
-    }
-    [SerializeField] Text texto;
-    [SerializeField] InputField resposta;
+}
+[SerializeField] Text texto;
+[SerializeField] InputField resposta;
+[SerializeField] int distanciaMaxima = 3; // diferença considerada "muito distante"
+
+public int pontuação = 0;
     
-    bool ativo = false;
-    int HP = 20;
-    float tempo = 0;
-    // Update is called once per frame
-    //KeyCode[] key = { KeyCode.Space,KeyCode.W };key[0]
+bool ativo = false;
+int HP = 20;
+float tempo = 0;    
+// Update is called once per frame
+//KeyCode[] key = { KeyCode.Space,KeyCode.W };key[0]
 
-    string inprimir,resultado;
-    float a = 0, b = 0, c = 0;
-    public void Update()
-    {
+string inprimir,resultado;
+float a = 0, b = 0, c = 0;
+public void Update()
+{
         
-        tempo += Time.deltaTime;
-        if (tempo >= 2 && ativo == true)
-        {
-            ativo = false;
-            Teste();
+tempo += Time.deltaTime;
+if (tempo >= 2 && ativo == true)
+{
+    ativo = false;
+    Teste();
 
-        }
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Verifica();
-        }
-    }
+}
+if (Input.GetKeyDown(KeyCode.Space))
+{
+    Verifica();
+}
+}
 
-    public void Teste()
-    {
+public void Teste()
+{
        
 
         
-        a = Random.Range(0, 11);
-        b = Random.Range(0, 11);
-        c = a * b;
-         inprimir = a + " X " + b;
-        texto.text = inprimir;
+a = Random.Range(0, 11);
+b = Random.Range(0, 11);
+c = a * b;
+    inprimir = a + " X " + b;
+texto.text = inprimir;
 
-    }
-   
-    public void Verifica()
-    {
-        
-        int Usuario;
-
-        if (int.TryParse(resposta.text, out Usuario))
-        {
-            if (Usuario == c)
-            {
-             
-                resultado = " Correto ";
-                texto.text = resultado;
-                Debug.Log("acerto");
-                Debug.Log("---------------------");
-              ativo = true;
-                
-                
-                    tempo = 0;
-               
-               
-            }
-            else
-            {
-
-                
-                resultado = " Errado!! ";
-                texto.text = resultado;
-
-                HP--;
-                Debug.Log("errro");
-                Debug.Log(HP);
-                Debug.Log("---------------------");
-
-                ativo = true;
-               
-                    tempo = 0;
-              
-                
-
-
-            }
-
-
-        }
-    }
 }
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+   
+public void Verifica()
+{
+        
+int Usuario;
+
+if (int.TryParse(resposta.text, out Usuario))
+{
+    float diferenca = Mathf.Abs(Usuario - c);
+
+    if (diferenca == 0f)
+    {
+        resultado = "Correto";
+        texto.text = resultado;
+        pontuação++;
+        Debug.Log("acerto");
+        Debug.Log("---------------------");
+    }
+    else if (diferenca > distanciaMaxima)
+    {
+        // Muito distante: tarefa do usuário está longe do resultado esperado
+        resultado = "Muito distante! Resposta correta: " + (int)c;
+        texto.text = resultado;
+        pontuação -= 2; // penalidade maior
+        HP -= 2;        // perde mais vida
+        Debug.Log("resposta muito distante (diferença: " + diferenca + ")");
+        Debug.Log("HP: " + HP);
+        Debug.Log("---------------------");
+    }
+    else
+    {
+        // Errado, mas relativamente próximo
+        resultado = "Errado!!";
+        texto.text = resultado;
+        pontuação--;
+        HP--;
+        Debug.Log("erro (próximo) - diferença: " + diferenca);
+        Debug.Log("HP: " + HP);
+        Debug.Log("---------------------");
+    }
+
+    // prepara próxima questão
+    ativo = true;
+    tempo = 0;
+
+    // limpa e foca o campo de resposta
+    resposta.text = "";
+    resposta.ActivateInputField();
+}
+else
+{
+    // entrada inválida (não é inteiro)
+    resultado = "Insira um número válido";
+    texto.text = resultado;
+    resposta.text = "";
+    resposta.ActivateInputField();
+}
+}
+}
