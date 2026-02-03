@@ -16,11 +16,12 @@ public class movimento_Player : MonoBehaviour
     
     private void FixedUpdate()
     {
-        if (Input.GetKeyDown(KeyCode.W))
+       /* if (Input.GetKeyDown(KeyCode.W))
         {
             //GetComponent<Rigidbody2D>().AddForce (new Vector3(0f, 5f, 0f), ForceMode2D.Impulse);
             GetComponent<Rigidbody2D>().linearVelocity = new Vector2(GetComponent<Rigidbody2D>().linearVelocityX,pulo );
         }
+       */ //No momento não havera pulo
         if (Input.GetKey(KeyCode.D))
         {
             GetComponent<Rigidbody2D>().linearVelocity = new Vector2(velocidade, GetComponent<Rigidbody2D>().linearVelocityY);
