@@ -565,7 +565,7 @@ TextureImporter:
       name: Ground_Path_Sprite_21
       rect:
         serializedVersion: 2
-        x: 96
+        x: 32
         y: 96
         width: 32
         height: 32
@@ -587,7 +587,7 @@ TextureImporter:
       name: Ground_Path_Sprite_22
       rect:
         serializedVersion: 2
-        x: 128
+        x: 64
         y: 96
         width: 32
         height: 32
@@ -609,7 +609,7 @@ TextureImporter:
       name: Ground_Path_Sprite_23
       rect:
         serializedVersion: 2
-        x: 160
+        x: 96
         y: 96
         width: 32
         height: 32
@@ -631,8 +631,8 @@ TextureImporter:
       name: Ground_Path_Sprite_24
       rect:
         serializedVersion: 2
-        x: 32
-        y: 64
+        x: 128
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -653,8 +653,8 @@ TextureImporter:
       name: Ground_Path_Sprite_25
       rect:
         serializedVersion: 2
-        x: 64
-        y: 64
+        x: 160
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -675,7 +675,7 @@ TextureImporter:
       name: Ground_Path_Sprite_26
       rect:
         serializedVersion: 2
-        x: 96
+        x: 32
         y: 64
         width: 32
         height: 32
@@ -697,7 +697,7 @@ TextureImporter:
       name: Ground_Path_Sprite_27
       rect:
         serializedVersion: 2
-        x: 128
+        x: 64
         y: 64
         width: 32
         height: 32
@@ -719,7 +719,7 @@ TextureImporter:
       name: Ground_Path_Sprite_28
       rect:
         serializedVersion: 2
-        x: 160
+        x: 96
         y: 64
         width: 32
         height: 32
@@ -741,8 +741,8 @@ TextureImporter:
       name: Ground_Path_Sprite_29
       rect:
         serializedVersion: 2
-        x: 32
-        y: 32
+        x: 128
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -763,8 +763,8 @@ TextureImporter:
       name: Ground_Path_Sprite_30
       rect:
         serializedVersion: 2
-        x: 64
-        y: 32
+        x: 160
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -785,7 +785,7 @@ TextureImporter:
       name: Ground_Path_Sprite_31
       rect:
         serializedVersion: 2
-        x: 96
+        x: 32
         y: 32
         width: 32
         height: 32
@@ -807,7 +807,7 @@ TextureImporter:
       name: Ground_Path_Sprite_32
       rect:
         serializedVersion: 2
-        x: 128
+        x: 64
         y: 32
         width: 32
         height: 32
@@ -829,7 +829,7 @@ TextureImporter:
       name: Ground_Path_Sprite_33
       rect:
         serializedVersion: 2
-        x: 160
+        x: 96
         y: 32
         width: 32
         height: 32
@@ -851,8 +851,8 @@ TextureImporter:
       name: Ground_Path_Sprite_34
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 128
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -873,8 +873,8 @@ TextureImporter:
       name: Ground_Path_Sprite_35
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
+        x: 160
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -895,7 +895,7 @@ TextureImporter:
       name: Ground_Path_Sprite_36
       rect:
         serializedVersion: 2
-        x: 64
+        x: 0
         y: 0
         width: 32
         height: 32
@@ -917,7 +917,7 @@ TextureImporter:
       name: Ground_Path_Sprite_37
       rect:
         serializedVersion: 2
-        x: 96
+        x: 32
         y: 0
         width: 32
         height: 32
@@ -939,7 +939,7 @@ TextureImporter:
       name: Ground_Path_Sprite_38
       rect:
         serializedVersion: 2
-        x: 128
+        x: 64
         y: 0
         width: 32
         height: 32
@@ -961,7 +961,7 @@ TextureImporter:
       name: Ground_Path_Sprite_39
       rect:
         serializedVersion: 2
-        x: 160
+        x: 96
         y: 0
         width: 32
         height: 32
@@ -975,6 +975,50 @@ TextureImporter:
       bones: []
       spriteID: 1558550e6bce9e64bb36e9f4ae19ed9b
       internalID: -1077873682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Path_Sprite_40
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df5c4f0f6cae5e64aaf469057bd6249b
+      internalID: -1428025390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Path_Sprite_41
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7416e44239d939342890e982ab49936d
+      internalID: 1930489304
       vertices: []
       indices: 
       edges: []
@@ -1030,6 +1074,8 @@ TextureImporter:
       Ground_Path_Sprite_38: 1728460676
       Ground_Path_Sprite_39: -1077873682
       Ground_Path_Sprite_4: -422872510
+      Ground_Path_Sprite_40: -1428025390
+      Ground_Path_Sprite_41: 1930489304
       Ground_Path_Sprite_5: -1092308090
       Ground_Path_Sprite_6: 2035714743
       Ground_Path_Sprite_7: 542418283

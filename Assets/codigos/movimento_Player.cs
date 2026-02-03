@@ -28,7 +28,7 @@ public class movimento_Player : MonoBehaviour
         }
 
        */ //No momento não havera pulo
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.D)) { }
 
         else
             if (Input.GetKey(KeyCode.DownArrow))
