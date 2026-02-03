@@ -5,33 +5,54 @@ using UnityEngine;
 
 public class movimento_Player : MonoBehaviour
 {
+    [SerializeField] GameObject foi;
+    [SerializeField] GameObject canvas;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
-        
+
+
     }
-    float pulo = 4f, velocidade = 2f;
+    float pulo = 4f, velocidade = 3f;
     // Update is called once per frame
-    
-    private void FixedUpdate()
+
+    private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKey(KeyCode.UpArrow))
         {
-            //GetComponent<Rigidbody2D>().AddForce (new Vector3(0f, 5f, 0f), ForceMode2D.Impulse);
-            GetComponent<Rigidbody2D>().linearVelocity = new Vector2(GetComponent<Rigidbody2D>().linearVelocityX,pulo );
+            transform.position += new Vector3(0f, velocidade * Time.deltaTime, 0f);
         }
-        if (Input.GetKey(KeyCode.D))
+        else
+            if (Input.GetKey(KeyCode.DownArrow))
         {
-            GetComponent<Rigidbody2D>().linearVelocity = new Vector2(velocidade, GetComponent<Rigidbody2D>().linearVelocityY);
+            transform.position -= new Vector3(0f, velocidade * Time.deltaTime, 0f);
         }
-        if (Input.GetKey(KeyCode.A))
+        else
+            if (Input.GetKey(KeyCode.RightArrow))
         {
-            GetComponent<Rigidbody2D>().linearVelocity = new Vector2(-velocidade, GetComponent<Rigidbody2D>().linearVelocityY);
+            transform.position += new Vector3(velocidade * Time.deltaTime, 0f, 0f);
+        }
+        else
+            if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            transform.position -= new Vector3(velocidade * Time.deltaTime, 0f, 0f);
+        }
+            if (canvas.GetComponent<teste>().correto == true)
+            {
+                Debug.Log("entrou no teste");
+
+                foi.SetActive(false);
+            }
+        }
+        void OnTriggerEnter2D(Collider2D collision)
+
+        {
+            if (collision.gameObject.tag == "npc")
+            {
+                foi.SetActive(true);
+                Debug.Log("entrou");
+            }
+
         }
     }
-    private void OnCollisionEnter(Collision collision)
-    {
-        //if(collision.gameObject.tag == "chao")
-    }
-}
+

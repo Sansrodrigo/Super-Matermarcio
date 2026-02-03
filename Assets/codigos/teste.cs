@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -7,6 +8,7 @@ using UnityEngine.UI;
 
 public class teste : MonoBehaviour
 {
+    public bool correto;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -23,8 +25,9 @@ public class teste : MonoBehaviour
     int HP = 20;
     float tempo = 0;
     // Update is called once per frame
-    KeyCode[] key = { KeyCode.Space,KeyCode.Keypad0,KeyCode.Keypad1, KeyCode.Keypad2, KeyCode.Keypad3, KeyCode.Keypad4, KeyCode.Keypad5, KeyCode.Keypad6, KeyCode.Keypad7, KeyCode.Keypad8, KeyCode.Keypad9, };
-    KeyCode[] User = new KeyCode[3];
+    KeyCode[] key = { KeyCode.Space,KeyCode.Keypad0,KeyCode.Keypad1, KeyCode.Keypad2, KeyCode.Keypad3,
+        KeyCode.Keypad4, KeyCode.Keypad5, KeyCode.Keypad6, KeyCode.Keypad7, KeyCode.Keypad8, KeyCode.Keypad9, };
+    //List<int> User = new List int[3];
     int i;
 
     string inprimir,resultado;
@@ -33,10 +36,11 @@ public class teste : MonoBehaviour
     {
         for(i = 0;i <key.Length;i++)
         {
-            key [i] = (KeyCode)i;
+            //if (Input.GetKeyDown(key[i]))
+                //User.AddRange( i);
 
         }
-       for(i = 0; i < User.Length; i++)
+       //for(i = 0; i < User.Length; i++)
         {
 
 
@@ -63,7 +67,7 @@ public class teste : MonoBehaviour
         a = Random.Range(0, 11);
         b = Random.Range(0, 11);
         c = a * b;
-         inprimir = a + " X " + b;
+         inprimir = a + " * " + b;
         texto.text = inprimir;
 
     }
@@ -84,7 +88,7 @@ public class teste : MonoBehaviour
                 Debug.Log("---------------------");
               ativo = true;
                 
-                
+                correto = true;
                     tempo = 0;
                
                
@@ -92,7 +96,7 @@ public class teste : MonoBehaviour
             else
             {
 
-                
+                correto = false;
                 resultado = " Errado!! ";
                 texto.text = resultado;
 
