@@ -38,14 +38,18 @@ public class teste : MonoBehaviour
         }
        for(i = 0; i < User.Length; i++)
         {
-
-
+            // Verifica quando 3 dígitos foram digitados
+            if(resposta.text.Length == 3)
+            {
+                Verifica();
+            }
         }
 
         tempo += Time.deltaTime;
         if (tempo >= 2 && ativo == true)
         {
             ativo = false;
+            resposta.text = "";
             Teste();
 
         }
