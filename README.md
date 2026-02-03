@@ -3,7 +3,7 @@
 ↢———————————————↣<br>
 &emsp;&emsp;&emsp;Rodrigo: GameDev <br>
 &emsp;&emsp;&emsp;Bruno: Developer <br> 
-&emsp;&emsp;&emsp;Daniel: Designer / Developer <br>
+&emsp;&emsp;&emsp;Daniel: Artist <br>
 &emsp;&emsp;&emsp;Chris: Developer <br>
 &emsp;&emsp;&emsp;Gessica: Quality Assurance <br>
 ↢———————————————↣<br>
