@@ -30,7 +30,11 @@ public class teste : MonoBehaviour
     }
     public void Update()
     {
+<<<<<<< HEAD
 
+=======
+       
+>>>>>>> a3178408ee7a6645b05274552cec0ebf4a643759
         for (int i = 0; i < key.Length; i++)
         {
 
@@ -38,13 +42,21 @@ public class teste : MonoBehaviour
             {
                 User.Add(i);
             }
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> a3178408ee7a6645b05274552cec0ebf4a643759
         }
 
         if (Input.GetKeyDown(KeyCode.Space))
             Verifica();
 
+<<<<<<< HEAD
         tempo += Time.deltaTime;
+=======
+            tempo += Time.deltaTime;
+>>>>>>> a3178408ee7a6645b05274552cec0ebf4a643759
         if (tempo >= 2 && ativo == true)
         {
             ativo = false;
@@ -75,7 +87,11 @@ public class teste : MonoBehaviour
         texto.text = inprimir;
     }
 
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> a3178408ee7a6645b05274552cec0ebf4a643759
     public void Verifica()
     {
         int Usuario;
