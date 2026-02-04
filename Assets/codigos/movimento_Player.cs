@@ -19,15 +19,15 @@ public class movimento_Player : MonoBehaviour
     private void Update()
     {
 
-       /* if (Input.GetKeyDown(KeyCode.W))
+        /* if (Input.GetKeyDown(KeyCode.W))
 
-        if (Input.GetKey(KeyCode.UpArrow))
+         if (Input.GetKey(KeyCode.UpArrow))
 
-        {
-            transform.position += new Vector3(0f, velocidade * Time.deltaTime, 0f);
-        }
+         {
+             transform.position += new Vector3(0f, velocidade * Time.deltaTime, 0f);
+         }
 
-       */ //No momento não havera pulo
+        */ //No momento não havera pulo
         if (Input.GetKey(KeyCode.D)) { }
 
         else
@@ -46,22 +46,22 @@ public class movimento_Player : MonoBehaviour
         {
             transform.position -= new Vector3(velocidade * Time.deltaTime, 0f, 0f);
         }
-            if (canvas.GetComponent<teste>().correto == true)
-            {
-                Debug.Log("entrou no teste");
-
-                foi.SetActive(false);
-            }
-        }
-        void OnTriggerEnter2D(Collider2D collision)
-
+        if (canvas.GetComponent<teste>().correto == true)
         {
-            if (collision.gameObject.tag == "npc")
-            {
-                foi.SetActive(true);
-                Debug.Log("entrou");
-            }
+            Debug.Log("entrou no teste");
 
+            foi.SetActive(false);
         }
     }
+    void OnTriggerEnter2D(Collider2D collision)
+
+    {
+        if (collision.gameObject.tag == "npc")
+        {
+            foi.SetActive(true);
+            Debug.Log("entrou");
+        }
+
+    }
+}
 

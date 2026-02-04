@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - npc
+  - agua
   layers:
   - Default
   - TransparentFX

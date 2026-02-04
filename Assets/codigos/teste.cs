@@ -16,8 +16,8 @@ public class teste : MonoBehaviour
     bool ativo = false;
     int HP = 20;
     float tempo = 0;
-    KeyCode[] key = {KeyCode.Keypad0, KeyCode.Keypad1, KeyCode.Keypad2, KeyCode.Keypad3, KeyCode.Keypad4, KeyCode.Keypad5, KeyCode.Keypad6, KeyCode.Keypad7, KeyCode.Keypad8, KeyCode.Keypad9};
-    List<int> User = new List <int>();
+    KeyCode[] key = { KeyCode.Keypad0, KeyCode.Keypad1, KeyCode.Keypad2, KeyCode.Keypad3, KeyCode.Keypad4, KeyCode.Keypad5, KeyCode.Keypad6, KeyCode.Keypad7, KeyCode.Keypad8, KeyCode.Keypad9 };
+    List<int> User = new List<int>();
     string inprimir, resultado;
     float a = 0, b = 0, c = 0;
 
@@ -28,29 +28,28 @@ public class teste : MonoBehaviour
         TesteMulti();
 
     }
-     public void Update()
+    public void Update()
     {
-        for(i = 0; i < User.Length; i++)
+
+        for (int i = 0; i < key.Length; i++)
         {
-            
-            if (Input.GetKeyDown(key[i]))
+
+            if (Input.GetKeyDown(key[i]) && User.Count < 3)
             {
-            User.Add(i);
+                User.Add(i);
             }
-            for(i = User.Count-1; i > -1 ; i--)
-            {
-                A += User[i] * aux;
-                aux * 10;
-            }
-            Verifica(A);
+
         }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+            Verifica();
 
         tempo += Time.deltaTime;
         if (tempo >= 2 && ativo == true)
         {
             ativo = false;
             resposta.text = "";
-            Teste();
+            TesteMulti();
 
         }
     }
@@ -76,10 +75,17 @@ public class teste : MonoBehaviour
         texto.text = inprimir;
     }
 
-    public void Verifica(int a)
+
+    public void Verifica()
     {
         int Usuario;
-
+        Debug.Log("entrou");
+        for (int i = User.Count - 1; i > -1; i--)
+        {
+            A += User[i] * aux;
+            aux *= 10;
+            Debug.Log(A);
+        }
         if (int.TryParse(resposta.text, out Usuario))
         {
             if (Usuario == c)
@@ -109,6 +115,10 @@ public class teste : MonoBehaviour
 
                 tempo = 0;
             }
+
         }
+        User.Clear();
+        A = 0;
+        aux = 1;
     }
 }
