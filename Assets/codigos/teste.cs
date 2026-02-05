@@ -20,26 +20,29 @@ public class teste : MonoBehaviour
     List<int> User = new List<int>();
     string inprimir, resultado;
     float a = 0, b = 0, c = 0;
-
-
+    bool morte = false;
+    bool troca = false;
+    [SerializeField] GameObject painel;
     void Start()
     {
-        TesteDivisao();
-        TesteMulti();
+      
+      
 
     }
     public void Update()
     {
-       
-        for (int i = 0; i < key.Length; i++)
-        {
+      
 
-            if (Input.GetKeyDown(key[i]) && User.Count < 3)
+
+        for (int i = 0; i < key.Length; i++)
             {
-                User.Add(i);
+
+                if (Input.GetKeyDown(key[i]) && User.Count < 3)
+                {
+                    User.Add(i);
+                }
+
             }
- 
-        }
 
         if (Input.GetKeyDown(KeyCode.Space))
             Verifica();
@@ -49,7 +52,7 @@ public class teste : MonoBehaviour
         {
             ativo = false;
             resposta.text = "";
-            TesteMulti();
+           // TesteMulti();
 
         }
     }
@@ -65,17 +68,27 @@ public class teste : MonoBehaviour
         texto.text = inprimir;
 
     }
-    public void TesteDivisao()
+    public void TesteMenos()
     {
 
         a = Random.Range(0, 11);
         b = Random.Range(0, 11);
-        c = a / b;
-        inprimir = a + " / " + b;
+        c = a - b;
+        inprimir = a + " - " + b;
         texto.text = inprimir;
     }
+    public void TesteMais()
+    {
 
-    
+        a = Random.Range(1, 11);
+        b = Random.Range(1, 11);
+        c = a + b;
+        inprimir = a + " + " + b;
+        texto.text = inprimir;
+        
+    }
+
+
     public void Verifica()
     {
         int Usuario;
@@ -98,6 +111,8 @@ public class teste : MonoBehaviour
 
                 correto = true;
                 tempo = 0;
+                morte = true;
+                
             }
             else
             {
@@ -120,5 +135,32 @@ public class teste : MonoBehaviour
         User.Clear();
         A = 0;
         aux = 1;
+    }
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "npcMulti")
+        {
+            painel.SetActive(true);
+            troca = true;
+            Debug.Log("entrou multi");
+            TesteMulti();
+        }
+
+        else
+        if (collision.gameObject.tag == "npcMais")
+        {
+            painel.SetActive(true);
+            troca = true;
+            Debug.Log("entrou mais");
+            TesteMais();
+        }
+        else
+        if (collision.gameObject.tag == "npcMenos")
+        {
+            painel.SetActive(true);
+            troca = true;
+            Debug.Log("entrou menos");
+            TesteMenos();
+        }
     }
 }
