@@ -301,8 +301,8 @@ TextureImporter:
       name: Objectos_9
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 96
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -323,8 +323,8 @@ TextureImporter:
       name: Objectos_10
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
+        x: 128
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -345,7 +345,7 @@ TextureImporter:
       name: Objectos_11
       rect:
         serializedVersion: 2
-        x: 64
+        x: 0
         y: 0
         width: 32
         height: 32
@@ -359,6 +359,116 @@ TextureImporter:
       bones: []
       spriteID: 7efc9f3999e95f94c847a5451120158d
       internalID: 1072752175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objectos_12
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c2e671de5485924e8253c73e883b062
+      internalID: 1461919415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objectos_13
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4cf17040263da747906b309bbed7704
+      internalID: 1245068430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objectos_14
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2bbd48a81be1a845a639d9960e9b2ee
+      internalID: 559592173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objectos_15
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b97b30ea37387774cb5e8d3b0e5f6596
+      internalID: -2028003744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objectos_16
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39d57112b891be744881779a08705421
+      internalID: -211321688
       vertices: []
       indices: 
       edges: []
@@ -383,6 +493,11 @@ TextureImporter:
       Objectos_1: 1791081725
       Objectos_10: -288033518
       Objectos_11: 1072752175
+      Objectos_12: 1461919415
+      Objectos_13: 1245068430
+      Objectos_14: 559592173
+      Objectos_15: -2028003744
+      Objectos_16: -211321688
       Objectos_2: 132704416
       Objectos_3: -2001183657
       Objectos_4: -267226339
