@@ -6,6 +6,9 @@ TagManager:
   tags:
   - npc
   - agua
+  - npcMais
+  - npcMenos
+  - npcMulti
   layers:
   - Default
   - TransparentFX
