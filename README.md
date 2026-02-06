@@ -7,7 +7,7 @@
 &emsp;&emsp;&emsp;Chris: Developer <br>
 &emsp;&emsp;&emsp;Gessica: Quality Assurance <br>
 ↢———————————————↣<br>
-<h6>QA DOCS:</h6>
+
 <h6>Figma: https://www.figma.com/board/HuyqmTtbjSsRNqfJSDjeuH/Untitled?node-id=0-1&t=ftvOePD9fg3ejbCE-1<br></h6>
 
   <h6><li>Código nosso que estás em C#</li>
