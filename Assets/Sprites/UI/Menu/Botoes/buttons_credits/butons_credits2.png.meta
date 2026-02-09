@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a33daa128b81c0c4f889e4e7a94753c6
+guid: e3833ab7e69ab514d8972526d096bcca
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 334545146650609775
-    second: "bot\xE3o_start3_0"
+      213: -7922507867006549666
+    second: butons_credits2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "bot\xE3o_start3_0"
+      name: butons_credits2_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f68c073d90b84a400800000000000000
-      internalID: 334545146650609775
+      spriteID: e5146d8f1199d0290800000000000000
+      internalID: -7922507867006549666
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "bot\xE3o_start3_0": 334545146650609775
+      butons_credits2_0: -7922507867006549666
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
