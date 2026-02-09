@@ -14,6 +14,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        GetComponent<Rigidbody2D>().linearVelocity = new Vector2(0, 0);
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
             transform.position -= new Vector3(velocidade * Time.deltaTime, 0, 0);
@@ -31,10 +32,10 @@ public class Player : MonoBehaviour
         else
         if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
         {
-            transform.position -= new Vector3(0, velocidade * Time.deltaTime, 0);
-
+            //transform.position -= new Vector3(0, velocidade * Time.deltaTime, 0);
+            GetComponent<Rigidbody2D>().linearVelocity = new Vector2(0, -5);
         }
-      
+        gameObject.GetComponent<SpriteRenderer>().sortingOrder = -1;
         if (canvas.GetComponent<teste>().correto == true)
         {
             Debug.Log("entrou no teste");
