@@ -21,7 +21,7 @@ public class teste : MonoBehaviour
     string inprimir, resultado;
     float a = 0, b = 0, c = 0;
     bool morte = false;
-    bool troca = false;
+   
     [SerializeField] GameObject painel;
     void Start()
     {
@@ -44,7 +44,7 @@ public class teste : MonoBehaviour
 
             }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+       /* if (Input.GetKeyDown(KeyCode.Space))
             Verifica();
 
             tempo += Time.deltaTime;
@@ -55,6 +55,7 @@ public class teste : MonoBehaviour
            // TesteMulti();
 
         }
+       */
     }
     public void TesteMulti()
     {
@@ -141,7 +142,7 @@ public class teste : MonoBehaviour
         if (collision.gameObject.tag == "npcMulti")
         {
             painel.SetActive(true);
-            troca = true;
+           
             Debug.Log("entrou multi");
             TesteMulti();
         }
@@ -150,7 +151,7 @@ public class teste : MonoBehaviour
         if (collision.gameObject.tag == "npcMais")
         {
             painel.SetActive(true);
-            troca = true;
+           
             Debug.Log("entrou mais");
             TesteMais();
         }
@@ -158,7 +159,7 @@ public class teste : MonoBehaviour
         if (collision.gameObject.tag == "npcMenos")
         {
             painel.SetActive(true);
-            troca = true;
+          
             Debug.Log("entrou menos");
             TesteMenos();
         }
