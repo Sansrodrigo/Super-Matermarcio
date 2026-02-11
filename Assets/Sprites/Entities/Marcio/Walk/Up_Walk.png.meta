@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: ecb4303da131e2a4994a6c0e79a9cbc8
+guid: 6fda50c30373b4944abf06bcdf0a4ef1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8349288628456633785
-    second: Right_Idle_0
+      213: -5128102697597884679
+    second: Up_Walk_0
+  - first:
+      213: 7124718916160210517
+    second: Up_Walk_1
+  - first:
+      213: -5087186117872891379
+    second: Up_Walk_2
+  - first:
+      213: -1438848725191108511
+    second: Up_Walk_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,12 +109,34 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Right_Idle_0
+      name: Up_Walk_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 0
-        width: 26
+        x: 4
+        y: 98
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f6a4f134c155d8b0800000000000000
+      internalID: -5128102697597884679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 64
+        width: 22
         height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -115,8 +146,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9b5bd5a65c1aed370800000000000000
-      internalID: 8349288628456633785
+      spriteID: 5564c3a1b1610e260800000000000000
+      internalID: 7124718916160210517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 34
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0a43e9cd2fa669b0800000000000000
+      internalID: -5087186117872891379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 0
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 168d57135be280ce0800000000000000
+      internalID: -1438848725191108511
       vertices: []
       indices: 
       edges: []
@@ -135,7 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Right_Idle_0: 8349288628456633785
+      Up_Walk_0: -5128102697597884679
+      Up_Walk_1: 7124718916160210517
+      Up_Walk_2: -5087186117872891379
+      Up_Walk_3: -1438848725191108511
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

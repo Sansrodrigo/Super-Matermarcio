@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 78926bef9c5d95f479599d8d9d6772da
+guid: d8f2ce0c05f674845bc861517d8713a3
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -126,22 +126,52 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
-  animatedSpriteImportData: []
+  animatedSpriteImportData:
+  - name: Icon
+    originalName: 
+    pivot: {x: 0.503937, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 127
+      height: 126
+    spriteID: 7f9ee803a16c5d94dbc775dfbae028a5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
   spriteSheetImportData: []
   tileSetImportData: []
   asepriteLayers:
   - layerIndex: 0
     uuid:
-      value0: 1955104187
+      value0: 446311563
       value1: 0
       value2: 0
       value3: 0
     guid: 0
-    name: Marcio
+    name: Icon
     layerFlags: 0
     layerType: 0
     blendMode: 0
-    cells: []
+    cells:
+    - name: Icon
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 127
+        height: 126
+      spriteId: 7f9ee803a16c5d94dbc775dfbae028a5
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
@@ -151,5 +181,5 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 32, y: 32}
-  previousTextureSize: {x: 0, y: 0}
+  canvasSize: {x: 128, y: 128}
+  previousTextureSize: {x: 256, y: 256}

@@ -8,10 +8,10 @@ using UnityEngine.UI;
 
 public class teste : MonoBehaviour
 {
-    public bool correto;
+    public bool correto = false;
     [SerializeField] Text texto;
     [SerializeField] InputField resposta;
-    private int A = 0;
+    private int userInput = 0;
     private int aux = 1;
     bool ativo = false;
     int HP = 20;
@@ -31,31 +31,31 @@ public class teste : MonoBehaviour
     }
     public void Update()
     {
-      
+
 
 
         for (int i = 0; i < key.Length; i++)
+        {
+
+            if (Input.GetKeyDown(key[i]) && User.Count < 3)
             {
-
-                if (Input.GetKeyDown(key[i]) && User.Count < 3)
-                {
-                    User.Add(i);
-                }
-
+                User.Add(i);
             }
 
-       /* if (Input.GetKeyDown(KeyCode.Space))
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space))
             Verifica();
 
-            tempo += Time.deltaTime;
+        tempo += Time.deltaTime;
         if (tempo >= 2 && ativo == true)
         {
             ativo = false;
             resposta.text = "";
-           // TesteMulti();
+            // TesteMulti();
+
 
         }
-       */
     }
     public void TesteMulti()
     {
@@ -96,9 +96,9 @@ public class teste : MonoBehaviour
         Debug.Log("entrou");
         for (int i = User.Count - 1; i > -1; i--)
         {
-            A += User[i] * aux;
+            userInput += User[i] * aux;
             aux *= 10;
-            Debug.Log(A);
+            Debug.Log(userInput);
         }
         if (int.TryParse(resposta.text, out Usuario))
         {
@@ -134,13 +134,14 @@ public class teste : MonoBehaviour
 
         }
         User.Clear();
-        A = 0;
+        userInput = 0;
         aux = 1;
     }
     public void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "npcMulti")
         {
+            
             painel.SetActive(true);
            
             Debug.Log("entrou multi");

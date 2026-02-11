@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: ecb4303da131e2a4994a6c0e79a9cbc8
+guid: a3cf8f1a85df44742a05cd2c7aa6e540
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8349288628456633785
-    second: Right_Idle_0
+      213: 8589675451888786324
+    second: Left_Walk_0
+  - first:
+      213: 1745513361863741258
+    second: Left_Walk_1
+  - first:
+      213: -2744815086882315914
+    second: Left_Walk_2
+  - first:
+      213: 4802360501252926447
+    second: Left_Walk_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,11 +109,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Right_Idle_0
+      name: Left_Walk_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 0
+        x: 4
+        y: 96
         width: 26
         height: 29
       alignment: 0
@@ -115,8 +124,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9b5bd5a65c1aed370800000000000000
-      internalID: 8349288628456633785
+      spriteID: 49b59bd3058a43770800000000000000
+      internalID: 8589675451888786324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 64
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4f069c872f493810800000000000000
+      internalID: 1745513361863741258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 32
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6712f3c983578e9d0800000000000000
+      internalID: -2744815086882315914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 0
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feb2c809e6965a240800000000000000
+      internalID: 4802360501252926447
       vertices: []
       indices: 
       edges: []
@@ -135,7 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Right_Idle_0: 8349288628456633785
+      Left_Walk_0: 8589675451888786324
+      Left_Walk_1: 1745513361863741258
+      Left_Walk_2: -2744815086882315914
+      Left_Walk_3: 4802360501252926447
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

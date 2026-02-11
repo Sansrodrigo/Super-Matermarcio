@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: ecb4303da131e2a4994a6c0e79a9cbc8
+guid: 8342b84b97a3b3c4f841f4e811a3037a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8349288628456633785
-    second: Right_Idle_0
+      213: 7915039318450174929
+    second: Down_Walk_0
+  - first:
+      213: -1287833195095181929
+    second: Down_Walk_1
+  - first:
+      213: 2044773645603635024
+    second: Down_Walk_2
+  - first:
+      213: 8452630475730689003
+    second: Down_Walk_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,12 +109,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Right_Idle_0
+      name: Down_Walk_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 0
-        width: 26
+        x: 4
+        y: 97
+        width: 24
         height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -115,8 +124,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9b5bd5a65c1aed370800000000000000
-      internalID: 8349288628456633785
+      spriteID: 1dbf87f035ed7dd60800000000000000
+      internalID: 7915039318450174929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 63
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79535644882b02ee0800000000000000
+      internalID: -1287833195095181929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 33
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05ff8480cce706c10800000000000000
+      internalID: 2044773645603635024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 0
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: beb919b32a6cd4570800000000000000
+      internalID: 8452630475730689003
       vertices: []
       indices: 
       edges: []
@@ -135,7 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Right_Idle_0: 8349288628456633785
+      Down_Walk_0: 7915039318450174929
+      Down_Walk_1: -1287833195095181929
+      Down_Walk_2: 2044773645603635024
+      Down_Walk_3: 8452630475730689003
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

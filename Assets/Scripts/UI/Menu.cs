@@ -27,6 +27,6 @@ public class Menu : MonoBehaviour
     }
     public void Ok()
     {
-        SceneManager.LoadScene("principal");
+        SceneManager.LoadScene("Gameplay");
     }
 }

@@ -8,9 +8,10 @@ public class Player : MonoBehaviour
     {
         velocidade = 3.5f;
     }
-    [SerializeField] GameObject painel;
+    
     [SerializeField] GameObject canvas;
-    [SerializeField] GameObject player;
+    
+    
     // Update is called once per frame
     void Update()
     {
@@ -35,13 +36,14 @@ public class Player : MonoBehaviour
             //transform.position -= new Vector3(0, velocidade * Time.deltaTime, 0);
             GetComponent<Rigidbody2D>().linearVelocity = new Vector2(0, -5);
         }
-       
+       /*
         if (canvas.GetComponent<teste>().correto == true)
         {
             Debug.Log("entrou no teste");
 
-            painel.SetActive(false);
+           
         }
+       */
     }
 
 }
