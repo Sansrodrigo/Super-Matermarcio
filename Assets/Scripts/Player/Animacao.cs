@@ -15,12 +15,10 @@ public class Animacao : MonoBehaviour
             {
             animator.SetBool("esquerda", true);
         }
-        
-        if (Input.GetKey(KeyCode.W))
-        {
-            animator.SetBool("esquerda", false);
-        }
-       
-        
+        animator.SetBool("ParadoEsquerda", true);
+
+
+
     }
+
 }
