@@ -10,11 +10,12 @@ public class Player : MonoBehaviour
     }
     
     [SerializeField] GameObject canvas;
-    
-    
+   
+
     // Update is called once per frame
     void Update()
     {
+     
         GetComponent<Rigidbody2D>().linearVelocity = new Vector2(0, 0);
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
@@ -36,14 +37,7 @@ public class Player : MonoBehaviour
             //transform.position -= new Vector3(0, velocidade * Time.deltaTime, 0);
             GetComponent<Rigidbody2D>().linearVelocity = new Vector2(0, -5);
         }
-       /*
-        if (canvas.GetComponent<teste>().correto == true)
-        {
-            Debug.Log("entrou no teste");
-
-           
-        }
-       */
+      
     }
 
 }
