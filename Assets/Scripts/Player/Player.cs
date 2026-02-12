@@ -3,40 +3,39 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public float velocidade;
+    public float speed;
     void Start()
     {
-        velocidade = 3.5f;
+        speed = 3.5f;
     }
     
-    [SerializeField] GameObject canvas;
-   
-
     // Update is called once per frame
     void Update()
     {
-     
-        GetComponent<Rigidbody2D>().linearVelocity = new Vector2(0, 0);
+        Vector2 movement = Vector2.zero;
+        
+        // Horizontal movement
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
-            GetComponent<Rigidbody2D>().linearVelocity = new Vector2(-5, 0);
+            movement.x = -1;
         }
-        else
-        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+        else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
-            GetComponent<Rigidbody2D>().linearVelocity = new Vector2(5, 0);
+            movement.x = 1;
         }
-        else
+        
+        // Vertical movement
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
         {
-            GetComponent<Rigidbody2D>().linearVelocity = new Vector2(0, 5);
+            movement.y = 1;
         }
-        else
-        if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
+        else if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
         {
-            GetComponent<Rigidbody2D>().linearVelocity = new Vector2(0, -5);
+            movement.y = -1;
         }
-      
+        
+        // Apply velocity
+        GetComponent<Rigidbody2D>().linearVelocity = movement * 5;
     }
 
 }
