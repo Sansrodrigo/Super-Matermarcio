@@ -206,12 +206,12 @@ GameObject:
   - component: {fileID: 60458767249190669}
   - component: {fileID: 1248077340871348008}
   - component: {fileID: 3237805815503304683}
+  - component: {fileID: 8360183676091342534}
+  - component: {fileID: 7876547441438824296}
   - component: {fileID: 966662133978658844}
   - component: {fileID: 203342635346227026}
-  - component: {fileID: 8360183676091342534}
   - component: {fileID: 5758437132024453343}
   - component: {fileID: 4418437145082220526}
-  - component: {fileID: 8093360426675106008}
   m_Layer: 0
   m_Name: Marcio
   m_TagString: Player
@@ -308,6 +308,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Player
   velocidade: 0
   canvas: {fileID: 978033418869884292}
+--- !u!114 &8360183676091342534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3382711496719143546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcb4a920bbc740a41b9458cad00277df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::teste
+  correto: 0
+  texto: {fileID: 5525181432731089795}
+  resposta: {fileID: 0}
+  painel: {fileID: 1326347461928884381}
+--- !u!114 &7876547441438824296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3382711496719143546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4de83fe7e1e7764583091e80f675479, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Marcio_Animation
 --- !u!61 &966662133978658844
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -381,22 +409,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &8360183676091342534
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3382711496719143546}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fcb4a920bbc740a41b9458cad00277df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::teste
-  correto: 0
-  texto: {fileID: 5525181432731089795}
-  resposta: {fileID: 0}
-  painel: {fileID: 1326347461928884381}
 --- !u!111 &5758437132024453343
 Animation:
   m_ObjectHideFlags: 0
@@ -435,19 +447,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &8093360426675106008
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3382711496719143546}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4af490fa1cbe9b44ca4519e705be5b3e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Animacao
-  animator: {fileID: 4418437145082220526}
 --- !u!1 &4738550968792447977
 GameObject:
   m_ObjectHideFlags: 0

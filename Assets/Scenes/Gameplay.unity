@@ -26886,6 +26886,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8132fda274607a648bdac6c9afc3af54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Multicos
+--- !u!95 &1863716047 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4418437145082220526, guid: 50b439b3858245949b3ad77148179ad7, type: 3}
+  m_PrefabInstance: {fileID: 4428661764310540298}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4428661764310540298
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26938,6 +26943,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Marcio
       objectReference: {fileID: 0}
+    - target: {fileID: 4418437145082220526, guid: 50b439b3858245949b3ad77148179ad7, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: bc6f62ce5ffa01e4bb3d0cf4aaccd7fb, type: 2}
+    - target: {fileID: 5758437132024453343, guid: 50b439b3858245949b3ad77148179ad7, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7876547441438824296, guid: 50b439b3858245949b3ad77148179ad7, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1863716047}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
