@@ -1,8 +1,10 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
+    public int Vida = 3;
     public float speed;
     void Start()
     {
@@ -36,6 +38,19 @@ public class Player : MonoBehaviour
         
         // Apply velocity
         GetComponent<Rigidbody2D>().linearVelocity = movement * 5;
+
+        // comparacao de vida do marcio
+        if(Vida == 0)
+        {
+            Destroy(gameObject);
+        }
+    }
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("npcMulti"))
+        {
+            SceneManager.LoadScene("Arena");
+        }
     }
 
 }

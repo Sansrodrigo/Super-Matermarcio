@@ -9,6 +9,8 @@ TagManager:
   - npcMais
   - npcMenos
   - npcMulti
+  - parede
+  - bullet
   layers:
   - Default
   - TransparentFX
