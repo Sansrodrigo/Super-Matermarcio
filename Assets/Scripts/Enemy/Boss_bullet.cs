@@ -18,10 +18,11 @@ public class Boss_bullet : MonoBehaviour
     }
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.CompareTag ("player"))
+        if(collision.gameObject.CompareTag ("Player"))
         {
-            collision.gameObject.GetComponent<Player>().Vida--;
             Destroy(gameObject);
+            collision.gameObject.GetComponent<Player>().Vida--;
+            
         }
         if (collision.gameObject.CompareTag("parede"))
         {

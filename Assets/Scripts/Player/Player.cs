@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
+    [SerializeField] GameObject painel;
     public int Vida = 3;
     public float speed;
     void Start()
@@ -40,15 +41,17 @@ public class Player : MonoBehaviour
         GetComponent<Rigidbody2D>().linearVelocity = movement * 5;
 
         // comparacao de vida do marcio
-        if(Vida == 0)
+        if(Vida <= 0)
         {
             Destroy(gameObject);
+            painel.SetActive(true);
         }
     }
     public void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("npcMulti"))
         {
+
             SceneManager.LoadScene("Arena");
         }
     }
