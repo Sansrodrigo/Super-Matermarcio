@@ -51,7 +51,14 @@ public class Player : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("npcMulti"))
         {
-
+            SceneManager.LoadScene("Arena");
+        }
+        if (collision.gameObject.CompareTag("npcMais"))
+        {
+            SceneManager.LoadScene("Arena");
+        }
+        if (collision.gameObject.CompareTag("npcMenos"))
+        {
             SceneManager.LoadScene("Arena");
         }
     }
