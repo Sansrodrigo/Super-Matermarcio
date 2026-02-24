@@ -15,6 +15,8 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        GetComponent<Save_do_mundo>().posicao = transform.position;
+        GetComponent<Save_do_mundo>().HP = Vida;
         Vector2 movement = Vector2.zero;
         
         // Horizontal movement
