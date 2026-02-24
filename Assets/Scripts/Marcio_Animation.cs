@@ -6,7 +6,7 @@ public class Marcio_Animation : MonoBehaviour
 
     private void Update()
     {
-        
+        animator.SetBool("H_Walk", false);
         if (Input.GetKey(KeyCode.UpArrow))
         {
             animator.SetBool("Up_Walk", true);
@@ -24,14 +24,22 @@ public class Marcio_Animation : MonoBehaviour
             animator.SetBool("Down_Walk", false);
         }
 
-        if (Input.GetKey(KeyCode.LeftArrow) || (Input.GetKey(KeyCode.RightArrow)))
+        if (Input.GetKey(KeyCode.LeftArrow))
         {
             animator.SetBool("H_Walk", true);
+            GetComponent<SpriteRenderer>().flipX = false;
         }
         else
+
+        if (Input.GetKey(KeyCode.RightArrow))
         {
-            animator.SetBool("H_Walk", false);
+            animator.SetBool("H_Walk", true);
+            GetComponent<SpriteRenderer>().flipX = true;
         }
+      
+
+
+
 
     }
 }

@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Boss_bullet : MonoBehaviour
 {
-    float next_x, veloci = 2f;
+    float next_x, veloci = 4f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -13,7 +13,7 @@ public class Boss_bullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position -= new Vector3(0f, veloci, 0f);
+        transform.position -= new Vector3(0f, veloci * Time.deltaTime, 0f);
         
     }
     public void OnCollisionEnter2D(Collision2D collision)

@@ -23606,6 +23606,7 @@ GameObject:
   - component: {fileID: 643733406}
   - component: {fileID: 643733405}
   - component: {fileID: 643733409}
+  - component: {fileID: 643733410}
   m_Layer: 0
   m_Name: mais
   m_TagString: npcMais
@@ -23771,6 +23772,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8132fda274607a648bdac6c9afc3af54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Multicos
+--- !u!95 &643733410
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643733404}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0145eafedd0935b41a48a3f91f8ab0e3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &713444599
 GameObject:
   m_ObjectHideFlags: 0

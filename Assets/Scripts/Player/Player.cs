@@ -51,14 +51,20 @@ public class Player : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("npcMulti"))
         {
+            Destroy(collision.gameObject);
+          //  GetComponent<Save_do_mundo>().Save();
             SceneManager.LoadScene("Arena");
         }
         if (collision.gameObject.CompareTag("npcMais"))
         {
+            Destroy(collision.gameObject);
+           // GetComponent<Save_do_mundo>().Save();
             SceneManager.LoadScene("Arena");
         }
         if (collision.gameObject.CompareTag("npcMenos"))
         {
+            Destroy(collision.gameObject);
+            //GetComponent<Save_do_mundo>().Save();
             SceneManager.LoadScene("Arena");
         }
     }

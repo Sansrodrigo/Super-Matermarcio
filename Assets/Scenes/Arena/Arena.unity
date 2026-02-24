@@ -918,6 +918,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1102602590}
+  - component: {fileID: 1102602591}
   m_Layer: 0
   m_Name: Numbers
   m_TagString: Untagged
@@ -951,6 +952,19 @@ Transform:
   - {fileID: 584681864}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1102602591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1102602589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef8f8d87306f94e4a9ef22fd71032918, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Numbers
+  numbers: 00000000010000000200000003000000040000000500000006000000070000000800000009000000
 --- !u!4 &1128202007 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4093106025564859453, guid: ebf98e8f5f0d963489629c4a49eeaee4, type: 3}
