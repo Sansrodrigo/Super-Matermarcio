@@ -5,36 +5,38 @@ using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
     [SerializeField] GameObject painel;
+    Save_do_mundo save = new Save_do_mundo();
     public int Vida = 3;
     public float speed;
     void Start()
     {
         speed = 3.5f;
+        save.posicao = transform.position;
+       // save.Save();
     }
     
     // Update is called once per frame
     void Update()
     {
-        GetComponent<Save_do_mundo>().posicao = transform.position;
-        GetComponent<Save_do_mundo>().HP = Vida;
+       
         Vector2 movement = Vector2.zero;
         
         // Horizontal movement
-        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.LeftArrow))
         {
             movement.x = -1;
         }
-        else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+        else if (Input.GetKey(KeyCode.RightArrow))
         {
             movement.x = 1;
         }
         
         // Vertical movement
-        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
+        if (Input.GetKey(KeyCode.UpArrow))
         {
             movement.y = 1;
         }
-        else if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
+        else if (Input.GetKey(KeyCode.DownArrow))
         {
             movement.y = -1;
         }

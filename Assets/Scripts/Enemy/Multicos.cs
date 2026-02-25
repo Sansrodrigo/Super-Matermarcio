@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class Multicos : MonoBehaviour
 {
+    public int id;
     float velocidade = 3f;
     int gerador;
     float timer;
@@ -12,50 +13,45 @@ public class Multicos : MonoBehaviour
     float timer5;
     Vector2 dic;
     Rigidbody2D rb;
+    Save_do_mundo save = new Save_do_mundo();
+    
     void Start()
     {
+        
         rb = GetComponent<Rigidbody2D>();
         EscolherDirecao();
 
+        save.inimigo[id].position = transform.position;
+       
+        save.Save();
     }
-
     // Update is called once per frame
     void Update()
     {
-
-
-
         timer += Time.deltaTime;
         if (gerador == 0)
         {
             velocidade = 3f;
-            
             timer += Time.deltaTime;
             if (timer >= 5)
             {
                 timer = 0;
                 EscolherDirecao();
             }
-
         }
-
         if (gerador == 1)
         {
             velocidade = 3f;
-            
             timer2 += Time.deltaTime;
             if (timer2 >= 5)
             {
                 timer2 = 0;
                 EscolherDirecao();
             }
-
         }
-
         if (gerador == 2)
         {
             velocidade = 3f;
-            
             timer3 += Time.deltaTime;
             if (timer3 >= 5)
             {
@@ -63,7 +59,6 @@ public class Multicos : MonoBehaviour
                 EscolherDirecao();
             }
         }
-
         if(gerador == 3)
         {
             velocidade = 3f;
@@ -86,19 +81,14 @@ public class Multicos : MonoBehaviour
                 EscolherDirecao();
             }
         }
-
-
     }
-
     void FixedUpdate()
     {
         rb.linearVelocity = dic * velocidade;
     }
-
     void EscolherDirecao()
     {
         int gerador = Random.Range(0, 4);
-
         switch (gerador)
         {
             case 0: dic = Vector2.left; break;
@@ -107,7 +97,6 @@ public class Multicos : MonoBehaviour
             case 3: dic = Vector2.down; break;
         }
     }
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("agua") || collision.gameObject.CompareTag("Player"))

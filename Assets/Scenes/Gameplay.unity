@@ -23772,6 +23772,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8132fda274607a648bdac6c9afc3af54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Multicos
+  id: 1
 --- !u!95 &643733410
 Animator:
   serializedVersion: 7
@@ -26105,6 +26106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8132fda274607a648bdac6c9afc3af54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Multicos
+  id: 0
 --- !u!50 &1042708718
 Rigidbody2D:
   serializedVersion: 5
@@ -26474,6 +26476,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8132fda274607a648bdac6c9afc3af54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Multicos
+  id: 2
 --- !u!1 &1272091487
 GameObject:
   m_ObjectHideFlags: 0
