@@ -5,14 +5,6 @@ public class Menu : MonoBehaviour
 {
     
     [SerializeField] GameObject users;
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
     // ativa o painel creditos
     public void Creditos()
     {
@@ -29,6 +21,9 @@ public class Menu : MonoBehaviour
     {
         users.SetActive(false);
     }
-    
-    
+    public void teste()
+    {
+        Player.save.Load();
+    }
+
 }

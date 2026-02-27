@@ -5,14 +5,17 @@ using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
     [SerializeField] GameObject painel;
-    Save_do_mundo save = new Save_do_mundo();
+    
+   public  static Save_do_mundo save = new Save_do_mundo();
     public int Vida = 3;
     public float speed;
+
     void Start()
     {
         speed = 3.5f;
-        save.posicao = transform.position;
-       // save.Save();
+        Player.save.Load();
+        transform.position =  Player.save.posicao;
+   
     }
     
     // Update is called once per frame
@@ -56,19 +59,19 @@ public class Player : MonoBehaviour
         if (collision.gameObject.CompareTag("npcMulti"))
         {
             Destroy(collision.gameObject);
-          //  GetComponent<Save_do_mundo>().Save();
+            Player.save.Save();
             SceneManager.LoadScene("Arena");
         }
         if (collision.gameObject.CompareTag("npcMais"))
         {
             Destroy(collision.gameObject);
-           // GetComponent<Save_do_mundo>().Save();
+            Player.save.Save();
             SceneManager.LoadScene("Arena");
         }
         if (collision.gameObject.CompareTag("npcMenos"))
         {
             Destroy(collision.gameObject);
-            //GetComponent<Save_do_mundo>().Save();
+           Player.save.Save();
             SceneManager.LoadScene("Arena");
         }
     }

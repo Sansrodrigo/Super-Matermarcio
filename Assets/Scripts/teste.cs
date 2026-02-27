@@ -20,7 +20,7 @@ public class teste : MonoBehaviour
     List<int> User = new List<int>();
     string inprimir, resultado;
     float a = 0, b = 0, c = 0;
-    bool morte = false;
+  
    
     [SerializeField] GameObject painel;
     void Start()
@@ -112,7 +112,7 @@ public class teste : MonoBehaviour
 
                 correto = true;
                 tempo = 0;
-                morte = true;
+               
                 
             }
             else

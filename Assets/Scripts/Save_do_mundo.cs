@@ -4,13 +4,18 @@ using UnityEngine;
 [Serializable]
 public class Save_do_mundo
 {
-
     private string caminho = Application.dataPath + "/Save/Arquivo.TXT";
-    public Vector3 posicao = Vector3.zero;
+    public Vector3 posicao = new Vector3(-11.2f,2.5f,0f);
     public int HP = 3;
-    
-    public Inimigo[] inimigo = new Inimigo[0];
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+   
+    public Inimigo[] inimigo = new Inimigo[3];
+    public  Save_do_mundo()
+    { 
+        for (int i = 0; i < inimigo.Length; i++)
+        {
+            inimigo[i] = new Inimigo();
+        }
+    }
     public void Save()
     {
         try
@@ -25,9 +30,19 @@ public class Save_do_mundo
     }
     public void Load()
     {
-        string content = File.ReadAllText(caminho);
-        // Json p = JsonUtility.FromJson<Json>(content);
-
+        if (File.Exists(caminho))
+        {
+            string content = File.ReadAllText(caminho);
+            Save_do_mundo dados = JsonUtility.FromJson<Save_do_mundo>(content);
+            // copiando dados
+            this.posicao = dados.posicao;
+            this.HP = dados.HP;
+            this.inimigo = dados.inimigo;
+        }
+        else
+        {
+            Debug.Log("erro ao carregar");
+        }
     }
     [Serializable]
     public class Inimigo

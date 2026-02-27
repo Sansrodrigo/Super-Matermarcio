@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class Multicos : MonoBehaviour
 {
+    float timerSave = 0f;
     public int id;
     float velocidade = 3f;
     int gerador;
@@ -13,17 +14,17 @@ public class Multicos : MonoBehaviour
     float timer5;
     Vector2 dic;
     Rigidbody2D rb;
-    Save_do_mundo save = new Save_do_mundo();
+   
     
     void Start()
     {
         
         rb = GetComponent<Rigidbody2D>();
         EscolherDirecao();
+        Player.save.Load();
+        transform.position = Player.save.inimigo[id].position;
 
-        save.inimigo[id].position = transform.position;
-       
-        save.Save();
+
     }
     // Update is called once per frame
     void Update()
@@ -85,7 +86,14 @@ public class Multicos : MonoBehaviour
     void FixedUpdate()
     {
         rb.linearVelocity = dic * velocidade;
+        if (timerSave >= 15)
+        {
+            timerSave = 0;
+            Player.save.inimigo[id].position = transform.position;
+            Player.save.Save();
+        }
     }
+       
     void EscolherDirecao()
     {
         int gerador = Random.Range(0, 4);
