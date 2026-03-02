@@ -5,7 +5,7 @@ using UnityEngine;
 public class Save_do_mundo
 {
     private string caminho = Application.dataPath + "/Save/Arquivo.TXT";
-    public Vector3 posicao = new Vector3(-11.2f,2.5f,0f);
+    public Vector3 posicao = new Vector3(-4.47f, 0.25f, 0f);
     public int HP = 3;
    
     public Inimigo[] inimigo = new Inimigo[3];
@@ -48,5 +48,9 @@ public class Save_do_mundo
     public class Inimigo
     {
         public Vector3 position;
+
+        public Inimigo()
+        { 
+        }
     }
 }
