@@ -21,7 +21,12 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+        if (Input.GetKey(KeyCode.E))
+        {
+            Player.save.Save();
+           
+            Player.save.posicao = transform.position;
+        }
         Vector2 movement = Vector2.zero;
         
         // Horizontal movement
