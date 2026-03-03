@@ -1,9 +1,12 @@
 
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Boss_arena : MonoBehaviour
 {
     [SerializeField] GameObject bullet;
+    [SerializeField] Text Vida;
     float tempo_disparo = 0f;
     public int Hp_boss = 3;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -17,7 +20,22 @@ public class Boss_arena : MonoBehaviour
     void Update()
     {
 
-      
+        if (Hp_boss == 3)
+        {
+            Vida.text = "Hp Boss: 3";
+        }
+        if (Hp_boss == 2)
+        {
+            Vida.text = "Hp Boss: 32";
+        }
+        if (Hp_boss == 2)
+        {
+            Vida.text = "Hp Boss: 1";
+        }
+        if (Hp_boss <= 0)
+        {
+            SceneManager.LoadScene("Gameplay");
+        }
         tempo_disparo += Time.deltaTime;
         if(tempo_disparo >= 1f)
         {

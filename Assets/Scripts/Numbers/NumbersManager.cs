@@ -5,13 +5,24 @@ public class NumbersManager : MonoBehaviour
 {
   public static NumbersManager instance;
 
+    [SerializeField] public GameObject Correto;
+    [SerializeField] public GameObject Errado;
     public Text equationText;
     public Text playerAnswerText;
 
     public int correctAnswer;
-
     private string playerAnswer = "";
-
+    private void Update()
+    {
+        float tempo = Time.deltaTime;
+        if(tempo >= 3f)
+        {
+            tempo = 0f;
+            Correto.SetActive(false);
+            Errado.SetActive(false);
+        }
+        
+    }
     private void Awake()
     {
         
@@ -19,12 +30,14 @@ public class NumbersManager : MonoBehaviour
     }
     private void Start()
     {
+       
         Debug.Log("entrou no start");
         GeneratEquation();
     }
     //gerador de equacoes
     void GeneratEquation()
     {
+       
         int a = Random.Range(1, 11);
         int b = Random.Range(1, 11);
 
@@ -49,13 +62,15 @@ public class NumbersManager : MonoBehaviour
             if(playerResult == correctAnswer)
             {
                 Debug.Log("correto");
+                Correto.SetActive(true);
                 //dano que inflige o boss aqui
-               // GetComponent<Boss_arena>().Hp_boss--;
+                GetComponent<Boss_arena>().Hp_boss--;
                 GeneratEquation();
             }
             else
             {
-               // GetComponent<Player>().Vida--;
+                // GetComponent<Player>().Vida--;
+                Errado.SetActive(true);
                 Debug.Log("errado");
             }
         }
