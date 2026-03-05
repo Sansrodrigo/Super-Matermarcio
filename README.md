@@ -1,7 +1,7 @@
 
 <h1 align= "center">→ Trabalho  SAGA SENAI ←</h1>
 ↢———————————————↣<br>
-&emsp;&emsp;&emsp;Rodrigo: Game Design <br>
+&emsp;&emsp;&emsp;Rodrigo: Game Designer <br>
 &emsp;&emsp;&emsp;Bruno: Developer <br> 
 &emsp;&emsp;&emsp;Daniel: Artist <br>
 &emsp;&emsp;&emsp;Chris: Developer <br>
