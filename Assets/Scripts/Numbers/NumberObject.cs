@@ -6,20 +6,20 @@ public class NumberObject : MonoBehaviour
     private bool playerNearby = false;
     private void Start()
     {
-        if(NumbersManager.instance == null)
+        if(ArenaManager.instance == null)
         {
             Debug.Log("manager esta null no start");
         }
     }
     private void Update()
     {
-        if(NumbersManager.instance == null)
+        if(ArenaManager.instance == null)
         {
             Debug.Log("NumbersManage esta null no update");
         }
         if(playerNearby && Input.GetKeyDown(KeyCode.Z))
         {
-            NumbersManager.instance.AddNumber(NumberValue);
+            ArenaManager.instance.AddNumber(NumberValue);
             Debug.Log("chamou o add");
         }
     }

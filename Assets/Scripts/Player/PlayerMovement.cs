@@ -8,10 +8,14 @@ public class PlayerMovement : MonoBehaviour
     public int Vida = 3;
     public float Speed = 3.5f;
 
+
     void Start()
     {
         //>>Player.save.Load();
         //>>transform.position =  Player.save.posicao;
+
+        PlayerMovement.save.Load();
+        transform.position =  PlayerMovement.save.posicao;
     }
     void Update()
     {
@@ -52,18 +56,21 @@ public class PlayerMovement : MonoBehaviour
         {
             Destroy(collision.gameObject);
             //>>Player.save.Save();
+            PlayerMovement.save.Save();
             SceneManager.LoadScene("Arena");
         }
         if (collision.gameObject.CompareTag("npcMais"))
         {
             Destroy(collision.gameObject);
             //>>Player.save.Save();
+            PlayerMovement.save.Save();
             SceneManager.LoadScene("Arena");
         }
         if (collision.gameObject.CompareTag("npcMenos"))
         {
             Destroy(collision.gameObject);
             //>>Player.save.Save();
+            PlayerMovement.save.Save();
             SceneManager.LoadScene("Arena");
         }
     }

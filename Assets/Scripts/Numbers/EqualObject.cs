@@ -7,10 +7,10 @@ public class EqualObject : MonoBehaviour
     {
         if(playerNearby && Input.GetKeyDown(KeyCode.Z))
         {
-            if(NumbersManager.instance != null)
+            if(ArenaManager.instance != null)
             {
                 Debug.Log("Entrou no get key");
-                NumbersManager.instance.ConfirmAnswer();
+                ArenaManager.instance.ConfirmAnswer();
             }
         }
     }
