@@ -1729,9 +1729,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '
-
-'
+  m_Text: 
 --- !u!222 &1506177978
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1756,7 +1754,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 189, y: 239}
+  m_AnchoredPosition: {x: -753, y: -509}
   m_SizeDelta: {x: 160, y: 49.16}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1538390845
@@ -1926,8 +1924,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf68018625c987048a0cced697cffc02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NumbersManager
-  Vida: {fileID: 0}
-  Hp_boss: 3
   Correto: {fileID: 1868806044}
   Errado: {fileID: 2128914324}
   equationText: {fileID: 2120512832}
@@ -2160,12 +2156,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
-  m_UiScaleMode: 1
+  m_UiScaleMode: 0
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 1
+  m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -2180,7 +2176,7 @@ Canvas:
   m_GameObject: {fileID: 1689360486}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 1642678857}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -2328,7 +2324,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 286, y: -236}
+  m_AnchoredPosition: {x: -773, y: 165}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1836624103
@@ -2728,7 +2724,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -127, y: 244}
+  m_AnchoredPosition: {x: -391, y: 450}
   m_SizeDelta: {x: 160, y: 38.71}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2120512831

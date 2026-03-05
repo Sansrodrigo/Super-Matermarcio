@@ -1,10 +1,13 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class NumbersManager : MonoBehaviour
 {
   public static NumbersManager instance;
-
+    [SerializeField] Text Vida;
+    float tempo_disparo = 0f;
+    public int Hp_boss = 3;
     [SerializeField] public GameObject Correto;
     [SerializeField] public GameObject Errado;
     public Text equationText;
@@ -64,8 +67,11 @@ public class NumbersManager : MonoBehaviour
                 Debug.Log("correto");
                 Correto.SetActive(true);
                 //dano que inflige o boss aqui
-                GetComponent<Boss_arena>().Hp_boss--;
-                GeneratEquation();
+               //GetComponent<Boss_arena>().Hp_boss--;
+                Hp_boss--;
+                //Debug.Log(GetComponent<Boss_arena>().Hp_boss);                                                  
+               GeneratEquation();
+               Boss();
             }
             else
             {
@@ -77,4 +83,32 @@ public class NumbersManager : MonoBehaviour
         playerAnswer = "";
         playerAnswerText.text = "";
     }
+   public void Boss()
+    {
+        if (Hp_boss == 3)
+        {
+            Vida.text = "Hp Boss: 3";
+        }
+        if (Hp_boss == 2)
+        {
+            Vida.text = "Hp Boss: 2";
+        }
+        if (Hp_boss == 2)
+        {
+            Vida.text = "Hp Boss: 1";
+        }
+        if (Hp_boss <= 0)
+        {
+            SceneManager.LoadScene("Gameplay");
+        }                                   
+   
+        tempo_disparo += Time.deltaTime;
+        if (tempo_disparo >= 1f)
+        {
+            tempo_disparo = 0f;
+             //Instantiate(bullet, transform.position, Quaternion.identity);
+            // Instantiate(bullet, transform.position, Quaternion.identity);
+        }
+
+    }   
 }

@@ -26,7 +26,7 @@ public class Boss_arena : MonoBehaviour
         }
         if (Hp_boss == 2)
         {
-            Vida.text = "Hp Boss: 32";
+            Vida.text = "Hp Boss: 2";
         }
         if (Hp_boss == 2)
         {
