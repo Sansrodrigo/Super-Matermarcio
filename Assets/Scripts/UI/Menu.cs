@@ -28,4 +28,9 @@ public class Menu : MonoBehaviour
         Player.save.Load();
     }
 
+    public void Sair() // Sai do jogo
+    {
+        Application.Quit();
+    }
+
 }
