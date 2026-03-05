@@ -35,17 +35,17 @@ public class NumbersManager : MonoBehaviour
     {
        
         Debug.Log("entrou no start");
-        GeneratEquation();
+        GenerateEquation();
     }
     //gerador de equacoes
-    void GeneratEquation()
+    void GenerateEquation()
     {
        
         int a = Random.Range(1, 11);
         int b = Random.Range(1, 11);
 
         correctAnswer = a * b;
-        equationText.text = a + " x " + b;
+        equationText.text = a + " x " + b + " = ";
 
         playerAnswer = "";
         playerAnswerText.text ="";
@@ -66,11 +66,12 @@ public class NumbersManager : MonoBehaviour
             {
                 Debug.Log("correto");
                 Correto.SetActive(true);
+
                 //dano que inflige o boss aqui
-               //GetComponent<Boss_arena>().Hp_boss--;
+                //GetComponent<Boss_arena>().Hp_boss--;
                 Hp_boss--;
                 //Debug.Log(GetComponent<Boss_arena>().Hp_boss);                                                  
-               GeneratEquation();
+               GenerateEquation();
                Boss();
             }
             else

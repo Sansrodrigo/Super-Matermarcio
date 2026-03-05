@@ -3,7 +3,7 @@ using UnityEngine;
 public class NumberObject : MonoBehaviour
 {
     public int NumberValue;
-    private bool playerNeaby = false;
+    private bool playerNearby = false;
     private void Start()
     {
         if(NumbersManager.instance == null)
@@ -17,7 +17,7 @@ public class NumberObject : MonoBehaviour
         {
             Debug.Log("NumbersManage esta null no update");
         }
-        if(playerNeaby && Input.GetKeyDown(KeyCode.Z))
+        if(playerNearby && Input.GetKeyDown(KeyCode.Z))
         {
             NumbersManager.instance.AddNumber(NumberValue);
             Debug.Log("chamou o add");
@@ -28,14 +28,14 @@ public class NumberObject : MonoBehaviour
         if(other.CompareTag("Player"))
         {
             
-            playerNeaby = true;
+            playerNearby = true;
         }
     }
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            playerNeaby = false;
+            playerNearby = false;
         }
     }
 }
