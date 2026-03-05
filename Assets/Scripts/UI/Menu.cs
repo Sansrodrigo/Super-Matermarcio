@@ -25,7 +25,7 @@ public class Menu : MonoBehaviour
 
     public void teste()
     {
-        Player.save.Load();
+        PlayerMovement.save.Load();
     }
 
     public void Sair() // Sai do jogo

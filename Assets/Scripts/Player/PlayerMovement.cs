@@ -2,81 +2,68 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Player : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] GameObject painel;
-    
-   public  static Save_do_mundo save = new Save_do_mundo();
+    public static Save_do_mundo save = new Save_do_mundo();
     public int Vida = 3;
-    public float speed;
+    public float Speed = 3.5f;
 
     void Start()
     {
-        speed = 3.5f;
-        Player.save.Load();
-        transform.position =  Player.save.posicao;
-   
+        //>>Player.save.Load();
+        //>>transform.position =  Player.save.posicao;
     }
-    
-    // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.E))
+        /*>>if (Input.GetKey(KeyCode.E))
         {
             Player.save.Save();
            
             Player.save.posicao = transform.position;
         }
-        Vector2 movement = Vector2.zero;
+        */
+
+        Vector2 movementVector = Vector2.zero; //Zera o vetor de movimento para evitar acumulação de velocidade
         
-        // Horizontal movement
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            movement.x = -1;
+            movementVector.x = -1;
         }
         else if (Input.GetKey(KeyCode.RightArrow))
         {
-            movement.x = 1;
+            movementVector.x = 1;
         }
-        
-        // Vertical movement
         if (Input.GetKey(KeyCode.UpArrow))
         {
-            movement.y = 1;
+            movementVector.y = 1;
         }
         else if (Input.GetKey(KeyCode.DownArrow))
         {
-            movement.y = -1;
+            movementVector.y = -1;
         }
         
-        // Apply velocity
-        GetComponent<Rigidbody2D>().linearVelocity = movement * 5;
+        // Apply velocity based on speed variable
+        GetComponent<Rigidbody2D>().linearVelocity = movementVector * Speed;
 
-        // comparacao de vida do marcio
-        if(Vida <= 0)
-        {
-            Destroy(gameObject);
-            painel.SetActive(true);
-        }
     }
     public void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("npcMulti"))
         {
             Destroy(collision.gameObject);
-            Player.save.Save();
+            //>>Player.save.Save();
             SceneManager.LoadScene("Arena");
         }
         if (collision.gameObject.CompareTag("npcMais"))
         {
             Destroy(collision.gameObject);
-            Player.save.Save();
+            //>>Player.save.Save();
             SceneManager.LoadScene("Arena");
         }
         if (collision.gameObject.CompareTag("npcMenos"))
         {
             Destroy(collision.gameObject);
-           Player.save.Save();
+            //>>Player.save.Save();
             SceneManager.LoadScene("Arena");
         }
     }

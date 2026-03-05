@@ -374,8 +374,8 @@ Transform:
   m_GameObject: {fileID: 340941832}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.44, y: 3.47, z: 0}
-  m_LocalScale: {x: 2.4839861, y: 2.4839861, z: 2.4839861}
+  m_LocalPosition: {x: 7.42, y: 0.04, z: 0}
+  m_LocalScale: {x: 2.0790963, y: 2.0790963, z: 2.0790963}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -797,10 +797,6 @@ PrefabInstance:
       propertyPath: m_Mass
       value: 2.0320313
       objectReference: {fileID: 0}
-    - target: {fileID: 966662133978658844, guid: 50b439b3858245949b3ad77148179ad7, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3237805815503304683, guid: 50b439b3858245949b3ad77148179ad7, type: 3}
       propertyPath: painel
       value: 
@@ -842,7 +838,7 @@ Transform:
   m_GameObject: {fileID: 584681863}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.02, y: -1.54, z: 0}
+  m_LocalPosition: {x: -8.02, y: 0.02, z: 0}
   m_LocalScale: {x: 1.175, y: 3.8085938, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2130,7 +2126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1709faf43e15cc544a0d4bc620477a32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Menu
-  users: {fileID: 0}
+  creditsBanner: {fileID: 0}
 --- !u!114 &1689360488
 MonoBehaviour:
   m_ObjectHideFlags: 0

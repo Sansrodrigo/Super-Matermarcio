@@ -21,9 +21,8 @@ public class Multicos : MonoBehaviour
         
         rb = GetComponent<Rigidbody2D>();
         EscolherDirecao();
-        Player.save.Load();
-        transform.position = Player.save.inimigo[id].position;
-
+        PlayerMovement.save.Load();
+        transform.position = PlayerMovement.save.inimigo[id].position;
 
     }
     // Update is called once per frame
@@ -89,8 +88,8 @@ public class Multicos : MonoBehaviour
         if (timerSave >= 15)
         {
             timerSave = 0;
-            Player.save.inimigo[id].position = transform.position;
-            Player.save.Save();
+            PlayerMovement.save.inimigo[id].position = transform.position;
+            PlayerMovement.save.Save();
         }
     }
        
