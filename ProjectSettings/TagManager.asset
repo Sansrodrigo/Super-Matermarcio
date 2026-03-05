@@ -5,12 +5,12 @@ TagManager:
   serializedVersion: 3
   tags:
   - npc
-  - agua
   - npcMais
   - npcMenos
   - npcMulti
   - parede
   - bullet
+  - bounds
   layers:
   - Default
   - TransparentFX

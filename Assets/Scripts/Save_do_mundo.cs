@@ -1,6 +1,7 @@
 using System;
 using System.IO;
 using UnityEngine;
+
 [Serializable]
 public class Save_do_mundo
 {
@@ -41,7 +42,7 @@ public class Save_do_mundo
         }
         else
         {
-            Debug.Log("erro ao carregar");
+            Debug.Log("Erro ao carregar");
         }
     }
     [Serializable]

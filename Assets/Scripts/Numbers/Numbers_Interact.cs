@@ -34,8 +34,4 @@ public class Numbers : MonoBehaviour
     {
         Debug.Log(string.Join(", ", GetAllIndices()));
     }
-
-    void Start() { }
-
-    void Update() { }
 }

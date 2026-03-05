@@ -4,10 +4,10 @@ using System.Collections.Generic;
 public class Number_Spawn : MonoBehaviour
 {
     // Spawn area boundaries
-    private const float minX = -6.46f;
-    private const float maxX = 5.4f;
-    private const float minY = -4.5f;
-    private const float maxY = 4.5f;
+    private const float minX = -6.5f;
+    private const float maxX = 7.4f;
+    private const float minY = -3.72f;
+    private const float maxY = 3.72f;
     private const bool randomizeOnStart = true;
     private const bool useLocalPosition = false;
     

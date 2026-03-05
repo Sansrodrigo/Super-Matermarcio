@@ -10,11 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 60458767249190669}
   - component: {fileID: 1248077340871348008}
-  - component: {fileID: 3237805815503304683}
+  - component: {fileID: 5042685784767044670}
   - component: {fileID: 7876547441438824296}
   - component: {fileID: 966662133978658844}
   - component: {fileID: 203342635346227026}
-  - component: {fileID: 5758437132024453343}
   - component: {fileID: 4418437145082220526}
   m_Layer: 0
   m_Name: Marcio
@@ -35,7 +34,8 @@ Transform:
   m_LocalPosition: {x: -10.985, y: 2.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
-  m_Children: []
+  m_Children:
+  - {fileID: 5443903975371689926}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1248077340871348008
@@ -96,7 +96,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3237805815503304683
+--- !u!114 &5042685784767044670
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -105,10 +105,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 3382711496719143546}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57cf8e4b5c2a9014f8fdfe3ad758c087, type: 3}
+  m_Script: {fileID: 11500000, guid: 25541568a7683994e8d4ef28632f87e7, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Player
-  speed: 0
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
+  Vida: 3
+  Speed: 3.5
 --- !u!114 &7876547441438824296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -195,22 +196,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!111 &5758437132024453343
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3382711496719143546}
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Animation: {fileID: 0}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_UpdateMode: 0
-  m_CullingType: 0
 --- !u!95 &4418437145082220526
 Animator:
   serializedVersion: 7
@@ -233,3 +218,47 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &7536661800831595096
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5443903975371689926}
+  - component: {fileID: 2485429660866172501}
+  m_Layer: 0
+  m_Name: CamTarget
+  m_TagString: Untagged
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5443903975371689926
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7536661800831595096}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 60458767249190669}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2485429660866172501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7536661800831595096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fecc8e50912b0f4588e06509493b332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'

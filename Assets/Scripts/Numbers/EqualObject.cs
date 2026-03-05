@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class EqualObject : MonoBehaviour
 {
-    private bool playerNeaby = false;
+    private bool playerNearby = false;
     private void Update()
     {
-        if(playerNeaby && Input.GetKeyDown(KeyCode.Space))
+        if(playerNearby && Input.GetKeyDown(KeyCode.Z))
         {
             if(NumbersManager.instance != null)
             {
@@ -18,15 +18,14 @@ public class EqualObject : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            Debug.Log("Entrou na colisao");
-            playerNeaby = true;
+            playerNearby = true;
         }
     }
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            playerNeaby = false;
+            playerNearby = false;
         }
     }
 }
