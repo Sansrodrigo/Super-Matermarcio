@@ -3,24 +3,26 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
-    
-    [SerializeField] GameObject users;
-    // ativa o painel creditos
-    public void Creditos()
+    [SerializeField] GameObject creditsBanner;
+
+    public void Creditos() // Ativa e Desativa o painel creditos
     {
-        users.SetActive(true);
+        if (creditsBanner.activeSelf)
+        {
+            creditsBanner.SetActive(false);
+        }
+        else
+        {
+            creditsBanner.SetActive(true);
+        }
     }
-    // começa o jogo
-    public void NovoJogo()
+
+    public void NovoJogo() // Começa o jogo
     {
         SceneManager.LoadScene("Gameplay");
 
     }
-    // desativa o painel creditos
-    public void Volta()
-    {
-        users.SetActive(false);
-    }
+
     public void teste()
     {
         Player.save.Load();
