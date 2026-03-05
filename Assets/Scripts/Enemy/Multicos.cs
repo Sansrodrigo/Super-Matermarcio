@@ -106,7 +106,7 @@ public class Multicos : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("agua") || collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("bounds") || collision.gameObject.CompareTag("Player"))
         {
             dic = -dic;
             timer = 0;
