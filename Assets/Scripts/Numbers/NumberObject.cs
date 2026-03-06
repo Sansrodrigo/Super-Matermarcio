@@ -17,10 +17,18 @@ public class NumberObject : MonoBehaviour
         {
             Debug.Log("NumbersManage esta null no update");
         }
-        if(playerNearby && Input.GetKeyDown(KeyCode.Z))
+        if(playerNearby && Input.GetKeyDown(KeyCode.Z) && CompareTag("buttons"))
         {
             ArenaManager.instance.AddNumber(NumberValue);
             Debug.Log("chamou o add");
+        }
+        if (playerNearby && Input.GetKeyDown(KeyCode.Z) && gameObject.name == "Delete")
+        {
+            ArenaManager.instance.RemoveNumber();
+        }
+        if (playerNearby && Input.GetKeyDown(KeyCode.Z) && gameObject.name == "Confirm")
+        {
+            ArenaManager.instance.ConfirmAnswer();
         }
     }
     private void OnTriggerEnter2D(Collider2D other)
