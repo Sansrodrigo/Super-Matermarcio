@@ -66,9 +66,11 @@ public class ArenaManager : MonoBehaviour
     
     public void AddNumber(int number) //adiciona e converte os numeros de string 
     {
+        if(playerAnswer.Length < 3)
         playerAnswer += number.ToString();
         //atualiza a tela
         playerAnswerText.text = playerAnswer;
+
     }
     public void RemoveNumber()
     {

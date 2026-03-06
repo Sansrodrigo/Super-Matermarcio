@@ -11,6 +11,7 @@ TagManager:
   - parede
   - bullet
   - bounds
+  - buttons
   layers:
   - Default
   - TransparentFX

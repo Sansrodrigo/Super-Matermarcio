@@ -13,7 +13,7 @@ public class NumberObject : MonoBehaviour
     }
     private void Update()
     {
-        if(ArenaManager.instance == null)
+        if (ArenaManager.instance == null)
         {
             Debug.Log("NumbersManage esta null no update");
         }
@@ -34,8 +34,7 @@ public class NumberObject : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.CompareTag("Player"))
-        {
-            
+        {      
             playerNearby = true;
         }
     }
