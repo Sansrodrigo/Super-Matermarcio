@@ -40,8 +40,8 @@ public class Boss_arena : MonoBehaviour
         if(tempo_disparo >= 1f)
         {
             tempo_disparo = 0f;
-           // Instantiate(bullet, transform.position, Quaternion.identity);
-           // Instantiate(bullet, transform.position, Quaternion.identity);
+           Instantiate(bullet, transform.position, Quaternion.identity);
+           Instantiate(bullet, transform.position, Quaternion.identity);
         }
         
     }
