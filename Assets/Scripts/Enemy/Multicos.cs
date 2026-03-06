@@ -14,14 +14,15 @@ public class Multicos : MonoBehaviour
     float timer5;
     Vector2 dic;
     Rigidbody2D rb;
-   
-    
+    public static Save_do_mundo save = new Save_do_mundo();
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         EscolherDirecao();
-        PlayerMovement.save.Load();
-        transform.position = PlayerMovement.save.inimigo[id].position;
+
+        save.inimigo[id].position = transform.position;
+        save.Load();
     }
     // Update is called once per frame
     void Update()
@@ -83,11 +84,12 @@ public class Multicos : MonoBehaviour
     void FixedUpdate()
     {
         rb.linearVelocity = dic * velocidade;
+        timerSave += Time.deltaTime;
         if (timerSave >= 15)
         {
             timerSave = 0;
-            PlayerMovement.save.inimigo[id].position = transform.position;
-            PlayerMovement.save.Save();
+            save.inimigo[id].position = transform.position;
+            save.Save();
         }
     }
        
@@ -108,6 +110,11 @@ public class Multicos : MonoBehaviour
         {
             dic = -dic;
             timer = 0;
+        }
+        if (collision.gameObject.CompareTag("Player"))
+        {
+
+            save.inimigo[id].position = transform.position;
         }
     }
 }

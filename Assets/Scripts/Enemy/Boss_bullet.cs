@@ -24,7 +24,7 @@ public class Boss_bullet : MonoBehaviour
             collision.gameObject.GetComponent<PlayerMovement>().Vida--;
             
         }
-        if (collision.gameObject.CompareTag("parede"))
+        if (collision.gameObject.CompareTag("bounds"))
         {
             Destroy(gameObject);
         }
