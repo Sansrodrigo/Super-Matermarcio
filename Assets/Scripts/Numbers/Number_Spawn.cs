@@ -12,8 +12,8 @@ public class Number_Spawn : MonoBehaviour
     private const bool useLocalPosition = false;
     
     // Collision avoidance
-    private const float minDistance = 2.5f;
-    private const int maxAttempts = 200;
+    private const float minDistance = 4.5f;
+    private const int maxAttempts = 300;
 
     // Global registry to prevent overlapping positions
     private static List<Vector2> occupiedPositions = new List<Vector2>();

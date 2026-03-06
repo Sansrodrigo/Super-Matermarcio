@@ -11,6 +11,7 @@ public class EqualObject : MonoBehaviour
             {
                 Debug.Log("Entrou no get key");
                 ArenaManager.instance.ConfirmAnswer();
+               
             }
         }
     }

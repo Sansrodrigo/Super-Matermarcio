@@ -70,6 +70,12 @@ public class ArenaManager : MonoBehaviour
         //atualiza a tela
         playerAnswerText.text = playerAnswer;
     }
+    public void RemoveNumber()
+    {
+        playerAnswer = playerAnswer.Substring(0, playerAnswer.Length - 1);
+        playerAnswerText.text = playerAnswer;
+
+    }
     public void ConfirmAnswer() //confirma a resposta do jogador, compara com a resposta correta e aplica o dano no boss
     {
         int playerResult;
