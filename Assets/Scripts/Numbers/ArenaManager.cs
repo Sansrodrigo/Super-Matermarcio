@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -22,25 +23,11 @@ public class ArenaManager : MonoBehaviour
     [SerializeField] public GameObject Errado;
     [SerializeField] Number_Spawn numberSpawn;
 
-    float tempo_disparo = 0f;
-
     private void Update()
     {
-        bossLife.text = "HP: " + Hp_Enemy + "/3";
-        if (Hp_Enemy <= 0)
-        {
-            SceneManager.LoadScene("Gameplay");
-        }
-
-        float tempo = Time.deltaTime;
-        if(tempo >= 3f)
-        {
-            tempo = 0f;
-            Correto.SetActive(false);
-            Errado.SetActive(false);
-        }
-        
+        BossLife();
     }
+
     private void Awake()
     {
         instance = this;
@@ -49,7 +36,6 @@ public class ArenaManager : MonoBehaviour
     {
         GenerateEquation(); //Gera a equaçao inicial quando a cena começa
     }
-
     void GenerateEquation() //gerador de equacoes
     {
        
@@ -62,8 +48,6 @@ public class ArenaManager : MonoBehaviour
         playerAnswer = "";
         playerAnswerText.text ="";
     }
-
-    
     public void AddNumber(int number) //adiciona e converte os numeros de string 
     {
         playerAnswer += number.ToString();
@@ -81,13 +65,14 @@ public class ArenaManager : MonoBehaviour
                 Correto.SetActive(true);
 
                 Hp_Enemy--;
-                                         
+                             
+                StartCoroutine(checkTimer());
                 GenerateEquation();
-                numberSpawn.RandomizePosition();
+
             }
             else
             {
-                // GetComponent<Player>().Vida--;
+                StartCoroutine(checkTimer());
                 Errado.SetActive(true);
                 Debug.Log("errado");
             }
@@ -95,29 +80,21 @@ public class ArenaManager : MonoBehaviour
         playerAnswer = "";
         playerAnswerText.text = "";
     }
-   public void Boss()
+    
+    public void BossLife() //atualiza a vida do boss no Text e verifica se ele foi derrotado
     {
+        bossLife.text = "HP: " + Hp_Enemy + "/3";
+        if (Hp_Enemy <= 0)
+        {
+            SceneManager.LoadScene("Gameplay");
+        }
+    }
 
-        if (Hp_Enemy == 3)
-        {
-            bossLife.text = "Hp Boss: 3";
-        }
-        if (Hp_Enemy == 2)
-        {
-            bossLife.text = "Hp Boss: 2";
-        }
-        if (Hp_Enemy == 2)
-        {
-            bossLife.text = "Hp Boss: 1";
-        }
-
-        tempo_disparo += Time.deltaTime;
-        if (tempo_disparo >= 1f)
-        {
-            tempo_disparo = 0f;
-            // Instantiate(bullet, transform.position, Quaternion.identity);
-            // Instantiate(bullet, transform.position, Quaternion.identity);
-        }
-
-    }   
+    IEnumerator checkTimer() //corrotina para mostrar o feedback de resposta correta ou errada por um tempo determinado
+    {
+        yield return new WaitForSeconds(3f);
+        Correto.SetActive(false);
+        Errado.SetActive(false);
+        StopCoroutine(checkTimer());
+    } 
 }

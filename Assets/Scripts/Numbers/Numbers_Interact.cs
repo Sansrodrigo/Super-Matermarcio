@@ -6,6 +6,8 @@ public class Numbers : MonoBehaviour
 {
     [SerializeField] private List<int> numbers = new List<int>();
 
+    //Pega o Index do número mais próximo de `value`, ou -1 se a lista estiver vazia
+
     // Retorna o índice da primeira ocorrência de `value`, ou -1 se não existir
     public int GetIndexOf(int value)
     {
