@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Boss_arena : MonoBehaviour
 {
+    public static Save_do_mundo save = new Save_do_mundo();
     [SerializeField] GameObject bullet;
     [SerializeField] Text Vida;
     float tempo_disparo = 0f;
@@ -12,7 +13,8 @@ public class Boss_arena : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-       // Instantiate(bullet, transform.position, Quaternion.identity);
+        
+        Instantiate(bullet, transform.position, Quaternion.identity);
       
     }
 

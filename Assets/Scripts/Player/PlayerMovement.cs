@@ -7,18 +7,33 @@ public class PlayerMovement : MonoBehaviour
     public static Save_do_mundo save = new Save_do_mundo();
     public int Vida = 3;
     public float Speed = 3.5f;
-
+    public bool SaveActive = false;
 
     void Start()
     {
-        //>>Player.save.Load();
-        //>>transform.position =  Player.save.posicao;
-
-        PlayerMovement.save.Load();
-        transform.position =  PlayerMovement.save.posicao;
+        Debug.Log(SceneManager.GetActiveScene().name == "Arena" );
+       
+        //Player.save.Load();
+        // transform.position =  save.posicao;
+        transform.position = save.posicao;
+        save.Load();
+       
     }
     void Update()
     {
+        if(SaveActive == false)
+        {
+            
+        }
+        if (SceneManager.GetActiveScene().name == "Arena" && SaveActive == false)
+        {
+            SaveActive = true;
+            save.posicao = transform.position = new Vector3(-4.47f, 0.25f,0f);
+        }
+        if (SceneManager.GetActiveScene().name == "Gameplay")
+        {
+            SaveActive = false;
+        }
         /*>>if (Input.GetKey(KeyCode.E))
         {
             Player.save.Save();
@@ -48,31 +63,38 @@ public class PlayerMovement : MonoBehaviour
         
         // Apply velocity based on speed variable
         GetComponent<Rigidbody2D>().linearVelocity = movementVector * Speed;
-
+        
     }
     public void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("npcMulti"))
         {
+            
             Destroy(collision.gameObject);
-            //>>Player.save.Save();
-            PlayerMovement.save.Save();
+            save.posicao = transform.position;
+            //collision.gameObject.GetComponent<Multicos>().id;
+            save.inimigo[0].inimigoActive = false;
+            save.Save();
             SceneManager.LoadScene("Arena");
         }
         if (collision.gameObject.CompareTag("npcMais"))
         {
+            
             Destroy(collision.gameObject);
-            //>>Player.save.Save();
-            PlayerMovement.save.Save();
+            save.posicao = transform.position;
+            
+            save.Save();
             SceneManager.LoadScene("Arena");
         }
         if (collision.gameObject.CompareTag("npcMenos"))
-        {
+        { 
             Destroy(collision.gameObject);
-            //>>Player.save.Save();
-            PlayerMovement.save.Save();
+            save.posicao = transform.position;
+            
+            save.Save();
             SceneManager.LoadScene("Arena");
         }
     }
+  
 
 }
