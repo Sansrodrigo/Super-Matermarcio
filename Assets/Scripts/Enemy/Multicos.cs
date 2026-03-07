@@ -19,10 +19,18 @@ public class Multicos : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        EscolherDirecao();
 
-        save.inimigo[id].position = transform.position;
-        save.Load();
+        Save_do_mundo.save.Load();
+
+        if (Save_do_mundo.save.inimigo[id].inimigoActive == false)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        transform.position = Save_do_mundo.save.inimigo[id].position;
+
+        EscolherDirecao();
     }
     // Update is called once per frame
     void Update()

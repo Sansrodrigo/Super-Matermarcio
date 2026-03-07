@@ -11,20 +11,12 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
-        Debug.Log(SceneManager.GetActiveScene().name == "Arena" );
-       
-        //Player.save.Load();
-        // transform.position =  save.posicao;
-        transform.position = save.posicao;
         save.Load();
-       
+
+        transform.position = save.posicao;
     }
     void Update()
     {
-        if(SaveActive == false)
-        {
-            
-        }
         if (SceneManager.GetActiveScene().name == "Arena" && SaveActive == false)
         {
             SaveActive = true;
@@ -67,34 +59,22 @@ public class PlayerMovement : MonoBehaviour
     }
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("npcMulti"))
+        if (collision.gameObject.CompareTag("npcMulti") ||
+            collision.gameObject.CompareTag("npcMais") ||
+            collision.gameObject.CompareTag("npcMenos"))
         {
-            
-            Destroy(collision.gameObject);
-            save.posicao = transform.position;
-            //collision.gameObject.GetComponent<Multicos>().id;
-            save.inimigo[0].inimigoActive = false;
+            Multicos enemy = collision.gameObject.GetComponent<Multicos>();
+
+            if (enemy != null)
+                save.inimigo[enemy.id].inimigoActive = false; // salva se o inimigo esta ativo na cena
+
+            save.posicao = transform.position; // salva posição do player
+
             save.Save();
-            SceneManager.LoadScene("Arena");
-        }
-        if (collision.gameObject.CompareTag("npcMais"))
-        {
-            
-            Destroy(collision.gameObject);
-            save.posicao = transform.position;
-            
-            save.Save();
-            SceneManager.LoadScene("Arena");
-        }
-        if (collision.gameObject.CompareTag("npcMenos"))
-        { 
-            Destroy(collision.gameObject);
-            save.posicao = transform.position;
-            
-            save.Save();
+
             SceneManager.LoadScene("Arena");
         }
     }
-  
+
 
 }
