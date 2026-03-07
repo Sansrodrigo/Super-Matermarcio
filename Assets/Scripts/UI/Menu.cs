@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
+    public static Save_do_mundo save = new Save_do_mundo();
     [SerializeField] GameObject creditsBanner;
 
     public void Creditos() // Ativa e Desativa o painel creditos
@@ -16,18 +17,14 @@ public class Menu : MonoBehaviour
             creditsBanner.SetActive(true);
         }
     }
-
     public void NovoJogo() // Começa o jogo
     {
         SceneManager.LoadScene("Gameplay");
-
     }
-
     public void teste()
     {
-        PlayerMovement.save.Load();
+        save.Load();
     }
-
     public void Sair() // Sai do jogo
     {
         Application.Quit();

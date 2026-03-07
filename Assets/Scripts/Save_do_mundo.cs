@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.IO;
 using UnityEngine;
 using static UnityEngine.RuleTile.TilingRuleOutput;
@@ -11,8 +11,9 @@ public class Save_do_mundo
     public Vector3 posicao = new Vector3(-0.63f, -7.99f, 0f);
     public int HP = 3;
     public Inimigo[] inimigo = new Inimigo[3];
+    public int inimigoArenaID = -1;
 
-    
+
     public  Save_do_mundo()
     { 
         for (int i = 0; i < inimigo.Length; i++)
@@ -38,10 +39,11 @@ public class Save_do_mundo
         {
             string content = File.ReadAllText(caminho);
             Save_do_mundo dados = JsonUtility.FromJson<Save_do_mundo>(content);
-            // copiando dados
+
             this.posicao = dados.posicao;
             this.HP = dados.HP;
             this.inimigo = dados.inimigo;
+            this.inimigoArenaID = dados.inimigoArenaID;
         }
         else
         {
