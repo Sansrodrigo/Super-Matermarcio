@@ -7,9 +7,10 @@ public class WorldManager : MonoBehaviour
     public GameObject Portal;
     private bool vitoria = false;
     public bool SaveActive = false;
-
     public PlayerMovement _playerMovement;
     public PlayerStateManager _playerState;
+   // private float timer = 0f;
+    public GameObject PortalActive;
 
     void Start()
     {
@@ -78,8 +79,16 @@ public class WorldManager : MonoBehaviour
 
         if (inimigosMortos == 3 && vitoria == false)
         {
+
             vitoria = true;
             Portal.SetActive(true);
+            //timer += Time.deltaTime;
+            //if (timer == 2f)
+           // {
+                PortalActive.SetActive(true);
+               // timer = 0f;
+           // }
+            //PortalActive.SetActive(false);
         }
     }
 }

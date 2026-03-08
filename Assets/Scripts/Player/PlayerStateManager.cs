@@ -5,12 +5,19 @@ public class PlayerStateManager : MonoBehaviour
 {
     [Tooltip("Vida atual do jogador")]
     public int Vida = 3;
-
-
+    public GameObject TelaGameOver;
     void Awake()
     {
         // Apenas inicializações relacionadas ao status do jogador.
     }
+    public void Update()
+    {
+        if (Vida <= 0)
+        {
+            SceneManager.LoadScene("GameOver");
+        }
+    }
+ 
 
 
     public void InitializeFromSave()
@@ -28,11 +35,6 @@ public class PlayerStateManager : MonoBehaviour
         Vida = Mathf.Max(0, Vida - dano);
     }
 
-    public void Heal(int cura)
-    {
-        Vida += cura;
-    }
-
     /// <summary>
     /// Atualiza o objeto de save em memória com o status atual do jogador.
     /// Não grava em disco — a persistência é responsabilidade do WorldManager.
@@ -41,7 +43,6 @@ public class PlayerStateManager : MonoBehaviour
     {
         Save_do_mundo.save.HP = Vida;
     }
-
     void OnCollisionEnter2D(Collision2D collision)
     {
         // Lógica de colisão relacionada ao estado do jogador / mundo transferida aqui.
@@ -71,4 +72,6 @@ public class PlayerStateManager : MonoBehaviour
             SceneManager.LoadScene("Arena");
         }
     }
+
+
 }
