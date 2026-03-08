@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 966662133978658844}
   - component: {fileID: 203342635346227026}
   - component: {fileID: 4418437145082220526}
+  - component: {fileID: 5135641942996633732}
   m_Layer: 0
   m_Name: Marcio
   m_TagString: Player
@@ -108,7 +109,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25541568a7683994e8d4ef28632f87e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  Vida: 3
   Speed: 3.5
 --- !u!114 &7876547441438824296
 MonoBehaviour:
@@ -181,7 +181,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 0.24548872
+  m_Mass: 0.084944196
   m_LinearDamping: 0
   m_AngularDamping: 0
   m_GravityScale: 0
@@ -218,6 +218,21 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5135641942996633732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3382711496719143546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d340f678875dcb843a7b453b39f0387f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerStateManager
+  TelaVitoria: {fileID: 0}
+  Vida: 3
+  SaveActive: 0
 --- !u!1 &7536661800831595096
 GameObject:
   m_ObjectHideFlags: 0
