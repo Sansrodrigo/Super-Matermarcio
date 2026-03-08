@@ -12,6 +12,7 @@ TagManager:
   - bullet
   - bounds
   - buttons
+  - Portal
   layers:
   - Default
   - TransparentFX

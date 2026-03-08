@@ -61,4 +61,13 @@ public class Save_do_mundo
               
              }
     }
+    public void DeleteSave()
+    {
+        if (File.Exists(caminho))
+        {
+            File.Delete(caminho);
+            Debug.Log("Save deletado com sucesso.");
+        }
+        save = new Save_do_mundo(); 
+    }
 }

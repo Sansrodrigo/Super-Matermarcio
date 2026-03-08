@@ -12,7 +12,7 @@
                 "y": 0.0,
                 "z": 0.0
             },
-            "inimigoActive": false
+            "inimigoActive": true
         },
         {
             "position": {
@@ -20,7 +20,7 @@
                 "y": 0.0,
                 "z": 0.0
             },
-            "inimigoActive": false
+            "inimigoActive": true
         },
         {
             "position": {
@@ -28,8 +28,8 @@
                 "y": 0.0,
                 "z": 0.0
             },
-            "inimigoActive": false
+            "inimigoActive": true
         }
     ],
-    "inimigoArenaID": 1
+    "inimigoArenaID": -1
 }

@@ -19,6 +19,7 @@ public class Menu : MonoBehaviour
     }
     public void NovoJogo() // Começa o jogo
     {
+        Save_do_mundo.save.DeleteSave();
         SceneManager.LoadScene("Gameplay");
     }
     public void teste()
