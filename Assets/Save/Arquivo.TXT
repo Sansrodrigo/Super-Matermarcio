@@ -1,35 +1,35 @@
 {
     "posicao": {
-        "x": 7.462005138397217,
-        "y": 0.1565302461385727,
+        "x": -0.6299999952316284,
+        "y": -7.989999771118164,
         "z": 0.0
     },
     "HP": 3,
     "inimigo": [
         {
             "position": {
-                "x": 0.0,
-                "y": 0.0,
+                "x": 6.00986385345459,
+                "y": -0.30240336060523989,
                 "z": 0.0
             },
-            "inimigoActive": false
+            "inimigoActive": true
         },
         {
             "position": {
-                "x": 0.0,
-                "y": 0.0,
+                "x": -15.96623706817627,
+                "y": -0.31999993324279787,
                 "z": 0.0
             },
-            "inimigoActive": false
+            "inimigoActive": true
         },
         {
             "position": {
-                "x": 0.0,
-                "y": 0.0,
+                "x": 5.517319679260254,
+                "y": -1.0220576524734498,
                 "z": 0.0
             },
-            "inimigoActive": false
+            "inimigoActive": true
         }
     ],
-    "inimigoArenaID": 0
+    "inimigoArenaID": -1
 }
