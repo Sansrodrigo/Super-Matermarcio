@@ -1,7 +1,7 @@
 {
     "posicao": {
-        "x": -0.6299999952316284,
-        "y": -7.989999771118164,
+        "x": -4.45796012878418,
+        "y": 1.2969086170196534,
         "z": 0.0
     },
     "HP": 3,
@@ -12,7 +12,7 @@
                 "y": -0.5490210652351379,
                 "z": 0.0
             },
-            "inimigoActive": true
+            "inimigoActive": false
         },
         {
             "position": {
@@ -28,8 +28,8 @@
                 "y": -2.0220577716827394,
                 "z": 0.0
             },
-            "inimigoActive": true
+            "inimigoActive": false
         }
     ],
-    "inimigoArenaID": -1
+    "inimigoArenaID": 0
 }

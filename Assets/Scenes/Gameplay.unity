@@ -23168,7 +23168,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 643733404}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8132fda274607a648bdac6c9afc3af54, type: 3}
+  m_Script: {fileID: 11500000, guid: 85d18ad4e6ba32143a72c99bcf7b1c4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Multicos
   id: 1
@@ -28661,7 +28661,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1042708716}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8132fda274607a648bdac6c9afc3af54, type: 3}
+  m_Script: {fileID: 11500000, guid: 85d18ad4e6ba32143a72c99bcf7b1c4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Multicos
   id: 0
@@ -29031,7 +29031,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1175450885}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8132fda274607a648bdac6c9afc3af54, type: 3}
+  m_Script: {fileID: 11500000, guid: 85d18ad4e6ba32143a72c99bcf7b1c4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Multicos
   id: 2

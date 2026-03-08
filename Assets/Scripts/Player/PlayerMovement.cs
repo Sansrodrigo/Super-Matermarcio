@@ -70,7 +70,7 @@ public class PlayerMovement : MonoBehaviour
             collision.gameObject.CompareTag("npcMais") ||
             collision.gameObject.CompareTag("npcMenos"))
         {
-            Multicos enemy = collision.gameObject.GetComponent<Multicos>();
+            Movement_Enemy enemy = collision.gameObject.GetComponent<Movement_Enemy>();
 
             if (enemy != null)
             {

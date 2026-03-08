@@ -1,7 +1,7 @@
 
 using UnityEngine;
 
-public class Multicos : MonoBehaviour
+public class Movement_Enemy : MonoBehaviour
 {
     float timerSave = 0f;
     public int id;

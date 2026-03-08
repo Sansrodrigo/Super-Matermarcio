@@ -75,8 +75,16 @@ public class ArenaManager : MonoBehaviour
         {
             a = Random.Range(1, 21);
             b = Random.Range(1, 21);
-            correctAnswer = a - b;
-            equationText.text = a + " - " + b + " = ";
+            if (a >= b)
+            {
+                correctAnswer = a - b;
+                equationText.text = a + " - " + b + " = ";
+            }
+            else
+            {
+                correctAnswer = b - a;
+                equationText.text = b + " - " + a + " = ";
+            }
         }
 
         playerAnswer = "";
