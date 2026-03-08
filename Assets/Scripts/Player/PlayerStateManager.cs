@@ -6,6 +6,7 @@ public class PlayerStateManager : MonoBehaviour
     [Tooltip("Vida atual do jogador")]
     public int Vida = 3;
 
+
     void Awake()
     {
         // Apenas inicializações relacionadas ao status do jogador.

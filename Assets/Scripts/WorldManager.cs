@@ -4,8 +4,7 @@ using UnityEngine.SceneManagement;
 public class WorldManager : MonoBehaviour
 {
     [Header("UI / Mundo")]
-    public GameObject TelaVitoria;
-
+    public GameObject Portal;
     private bool vitoria = false;
     public bool SaveActive = false;
 
@@ -80,7 +79,7 @@ public class WorldManager : MonoBehaviour
         if (inimigosMortos == 3 && vitoria == false)
         {
             vitoria = true;
-            if (TelaVitoria != null) TelaVitoria.SetActive(true);
+            Portal.SetActive(true);
         }
     }
 }
