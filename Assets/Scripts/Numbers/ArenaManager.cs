@@ -23,6 +23,7 @@ public class ArenaManager : MonoBehaviour
     [SerializeField] Number_Spawn numberSpawn;
 
     float tempo_disparo = 0f;
+    float tempo = 0f;
 
     private void Update()
     {
@@ -32,7 +33,8 @@ public class ArenaManager : MonoBehaviour
             SceneManager.LoadScene("Gameplay");
         }
 
-        float tempo = Time.deltaTime;
+        tempo += Time.deltaTime;
+
         if(tempo >= 3f)
         {
             tempo = 0f;
@@ -115,9 +117,7 @@ public class ArenaManager : MonoBehaviour
             {
                 Debug.Log("correto");
                 Correto.SetActive(true);
-
-                Hp_Enemy--;
-                                         
+                Hp_Enemy--;                        
                 GenerateEquation();
                 numberSpawn.RandomizePosition();
             }
@@ -130,6 +130,7 @@ public class ArenaManager : MonoBehaviour
         }
         playerAnswer = "";
         playerAnswerText.text = "";
+        
     }
    public void Boss()
     {
