@@ -44,6 +44,9 @@ public class PlayerMovement : MonoBehaviour
 
         GetComponent<Rigidbody2D>().linearVelocity = movementVector * Speed;
         VerificarVitoria();
+
+        if(Input.GetKeyDown(KeyCode.F7))SceneManager.LoadScene("Gameplay");
+
     }
     void VerificarVitoria()
     {
