@@ -59,6 +59,7 @@ public class PlayerStateManager : MonoBehaviour
 
             // salva posição do player no save em memória
             Save_do_mundo.save.posicao = transform.position;
+            Save_do_mundo.save.Save();
 
             // sincroniza status do jogador (HP) em memória antes de persistir
             SyncToSaveMemory();
