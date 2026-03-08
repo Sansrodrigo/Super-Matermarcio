@@ -4,6 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public GameObject TelaVitoria;
+    bool vitoria = false;
     public int Vida = 3;
     public float Speed = 3.5f;
     public bool SaveActive = false;
@@ -41,6 +43,25 @@ public class PlayerMovement : MonoBehaviour
         else if (Input.GetKey(KeyCode.DownArrow)) movementVector.y = -1;
 
         GetComponent<Rigidbody2D>().linearVelocity = movementVector * Speed;
+        VerificarVitoria();
+    }
+    void VerificarVitoria()
+    {
+        int inimigosMortos = 0;
+
+        for (int i = 0; i < Save_do_mundo.save.inimigo.Length; i++)
+        {
+            if (Save_do_mundo.save.inimigo[i].inimigoActive == false)
+            {
+                inimigosMortos++;
+            }
+        }
+
+        if (inimigosMortos == 3 && vitoria == false)
+        {
+            vitoria = true;
+            TelaVitoria.SetActive(true);
+        }
     }
 
     void OnCollisionEnter2D(Collision2D collision)

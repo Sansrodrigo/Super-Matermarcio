@@ -29,5 +29,8 @@ public class Menu : MonoBehaviour
     {
         Application.Quit();
     }
-
+    public void Volta_Menu()
+    {
+        SceneManager.LoadScene("Menu");
+    }
 }

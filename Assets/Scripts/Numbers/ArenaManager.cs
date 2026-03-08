@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class ArenaManager : MonoBehaviour
 {
     public static ArenaManager instance;
-
+    int tipoEquacao;
     [Header("Health Parameters")]
     [SerializeField] Text bossLife;
     public int Hp_Enemy = 3;
@@ -45,25 +45,45 @@ public class ArenaManager : MonoBehaviour
     {
         instance = this;
     }
-    private void Start()
+    void Start()
     {
-        GenerateEquation(); //Gera a equaçao inicial quando a cena começa
+        int id = Save_do_mundo.save.inimigoArenaID;
+        tipoEquacao = id;
+        GenerateEquation();
     }
 
-    void GenerateEquation() //gerador de equacoes
+    void GenerateEquation()    //gerador de equacao
     {
-       
         int a = Random.Range(1, 11);
         int b = Random.Range(1, 11);
 
-        correctAnswer = a * b;
-        equationText.text = a + " x " + b + " = ";
+        if (tipoEquacao == 0) // MULTIPLICACAO
+        {
+            correctAnswer = a * b;
+            equationText.text = a + " x " + b + " = ";
+        }
+
+        else if (tipoEquacao == 1) // SOMA
+        {
+             a = Random.Range(1, 21);
+             b = Random.Range(1, 21);
+            correctAnswer = a + b;
+            equationText.text = a + " + " + b + " = ";
+        }
+
+        else if (tipoEquacao == 2) // SUBTRAÇAO
+        {
+            a = Random.Range(1, 21);
+            b = Random.Range(1, 21);
+            correctAnswer = a - b;
+            equationText.text = a + " - " + b + " = ";
+        }
 
         playerAnswer = "";
-        playerAnswerText.text ="";
+        playerAnswerText.text = "";
     }
 
-    
+
     public void AddNumber(int number) //adiciona e converte os numeros de string 
     {
         if(playerAnswer.Length < 3)
