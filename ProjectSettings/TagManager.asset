@@ -13,6 +13,11 @@ TagManager:
   - bounds
   - buttons
   - Portal
+  - terreo
+  - primeiroAndar
+  - mundo
+  - boss
+  - casa
   layers:
   - Default
   - TransparentFX

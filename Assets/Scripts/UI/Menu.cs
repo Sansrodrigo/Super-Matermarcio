@@ -20,7 +20,7 @@ public class Menu : MonoBehaviour
     public void NovoJogo() // Começa o jogo
     {
         Save_do_mundo.save.DeleteSave();
-        SceneManager.LoadScene("Gameplay");
+        SceneManager.LoadScene("House0_F1");
     }
     public void teste()
     {

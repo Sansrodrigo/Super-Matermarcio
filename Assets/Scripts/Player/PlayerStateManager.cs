@@ -45,6 +45,22 @@ public class PlayerStateManager : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
+        if (collision.gameObject.CompareTag("casa"))
+        {
+            SceneManager.LoadScene("House0_F0");
+        }
+        if (collision.gameObject.CompareTag("terreo"))
+        {
+            SceneManager.LoadScene("House0_F0");
+        }
+        if (collision.gameObject.CompareTag("primeiroAndar"))
+        {
+            SceneManager.LoadScene("House0_F1");
+        }
+        if (collision.gameObject.CompareTag("mundo"))
+        {
+            SceneManager.LoadScene("Gameplay");
+        }
         // Lógica de colisão relacionada ao estado do jogador / mundo transferida aqui.
         if (collision.gameObject.CompareTag("npcMulti") ||
             collision.gameObject.CompareTag("npcMais") ||
@@ -70,6 +86,14 @@ public class PlayerStateManager : MonoBehaviour
             Save_do_mundo.save.Save();
 
             SceneManager.LoadScene("Arena");
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("boss"))
+        {
+            Vida--;
+
         }
     }
 
