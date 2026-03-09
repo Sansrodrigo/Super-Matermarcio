@@ -20,7 +20,7 @@ public class ArenaManager : MonoBehaviour
 
     [SerializeField] public GameObject Correto;
     [SerializeField] public GameObject Errado;
-    [SerializeField] Number_Spawn numberSpawn;
+    [SerializeField] public Number_Spawn numberSpawn;
 
     float tempo_disparo = 0f;
     float tempo = 0f;
@@ -97,16 +97,18 @@ public class ArenaManager : MonoBehaviour
     public void AddNumber(int number) //adiciona e converte os numeros de string 
     {
         if(playerAnswer.Length < 3)
-        playerAnswer += number.ToString();
+            playerAnswer += number.ToString();
         //atualiza a tela
         playerAnswerText.text = playerAnswer;
 
     }
     public void RemoveNumber()
     {
-        playerAnswer = playerAnswer.Substring(0, playerAnswer.Length - 1);
-        playerAnswerText.text = playerAnswer;
-
+        if (playerAnswer.Length > 0)
+        {
+            playerAnswer = playerAnswer.Substring(0, playerAnswer.Length - 1);
+            playerAnswerText.text = playerAnswer;
+        }
     }
     public void ConfirmAnswer() //confirma a resposta do jogador, compara com a resposta correta e aplica o dano no boss
     {
@@ -119,13 +121,18 @@ public class ArenaManager : MonoBehaviour
                 Correto.SetActive(true);
                 Hp_Enemy--;                        
                 GenerateEquation();
-                numberSpawn.RandomizePosition();
             }
             else
             {
-                // GetComponent<Player>().Vida--;
                 Errado.SetActive(true);
                 Debug.Log("errado");
+            }
+
+            // Atualiza a posição de todos os botões (instâncias de Number_Spawn) — ex.: 10 botões
+            Number_Spawn[] spawns = FindObjectsOfType<Number_Spawn>();
+            foreach (var s in spawns)
+            {
+                s.RandomizePosition();
             }
         }
         playerAnswer = "";
@@ -143,7 +150,7 @@ public class ArenaManager : MonoBehaviour
         {
             bossLife.text = "Hp Boss: 2";
         }
-        if (Hp_Enemy == 2)
+        if (Hp_Enemy == 1)
         {
             bossLife.text = "Hp Boss: 1";
         }

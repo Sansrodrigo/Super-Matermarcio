@@ -29,6 +29,7 @@ public class NumberObject : MonoBehaviour
         if (playerNearby && Input.GetKeyDown(KeyCode.Z) && gameObject.name == "Confirm")
         {
             ArenaManager.instance.ConfirmAnswer();
+            Number_Spawn.instance.RandomizePosition();
         }
     }
     private void OnTriggerEnter2D(Collider2D other)

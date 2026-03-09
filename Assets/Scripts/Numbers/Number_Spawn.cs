@@ -1,8 +1,11 @@
-using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine;
 
 public class Number_Spawn : MonoBehaviour
 {
+    // Singleton instance for global access (used by NumberObject)
+    public static Number_Spawn instance;
+
     // Spawn area boundaries
     private const float minX = -6.5f;
     private const float maxX = 7.4f;
@@ -19,6 +22,12 @@ public class Number_Spawn : MonoBehaviour
     private static List<Vector2> occupiedPositions = new List<Vector2>();
     private static Dictionary<int, Vector2> positionByInstance = new Dictionary<int, Vector2>();
 
+    private void Awake()
+    {
+        // set singleton instance
+        instance = this;
+    }
+
     void Start()
     {
         // Auto-spawn at random position if enabled
@@ -29,6 +38,16 @@ public class Number_Spawn : MonoBehaviour
     [ContextMenu("Randomize Position")]
     public void RandomizePosition()
     {
+        int id = GetInstanceID();
+
+        // Remove previous registered position for this instance so it doesn't block the search
+        if (positionByInstance.TryGetValue(id, out Vector2 previousPos))
+        {
+            // remove previous entry from both structures
+            positionByInstance.Remove(id);
+            occupiedPositions.Remove(previousPos);
+        }
+
         float z = useLocalPosition ? transform.localPosition.z : transform.position.z;
         Vector2 chosenPos = Vector2.zero;
         bool found = false;
@@ -62,8 +81,12 @@ public class Number_Spawn : MonoBehaviour
             {
                 chosenPos = worldPos2;
                 SetPositionFromWorldXY(chosenPos, z);
-                occupiedPositions.Add(chosenPos);
-                positionByInstance[GetInstanceID()] = chosenPos;
+
+                // Guardar posição nova (evita duplicatas)
+                if (!occupiedPositions.Contains(chosenPos))
+                    occupiedPositions.Add(chosenPos);
+
+                positionByInstance[id] = chosenPos;
                 found = true;
                 break;
             }
@@ -76,8 +99,11 @@ public class Number_Spawn : MonoBehaviour
             float y = Random.Range(minY, maxY);
             chosenPos = new Vector2(x, y);
             SetPositionFromWorldXY(chosenPos, z);
-            occupiedPositions.Add(chosenPos);
-            positionByInstance[GetInstanceID()] = chosenPos;
+
+            if (!occupiedPositions.Contains(chosenPos))
+                occupiedPositions.Add(chosenPos);
+
+            positionByInstance[id] = chosenPos;
             Debug.LogWarning($"Number_Spawn: no unique position found after {maxAttempts} attempts for {name}");
         }
     }
@@ -109,5 +135,8 @@ public class Number_Spawn : MonoBehaviour
             positionByInstance.Remove(id);
             occupiedPositions.Remove(pos);
         }
+
+        // clear singleton if this instance is being destroyed
+        if (instance == this) instance = null;
     }
 }
