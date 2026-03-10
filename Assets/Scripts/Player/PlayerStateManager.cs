@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerStateManager : MonoBehaviour
 {
+    public static Scene localizacao;
     [Tooltip("Vida atual do jogador")]
     public int Vida = 3;
     public GameObject TelaGameOver;
@@ -17,7 +18,10 @@ public class PlayerStateManager : MonoBehaviour
             SceneManager.LoadScene("GameOver");
         }
     }
- 
+    public void Start()
+    {
+        
+    }
 
 
     public void InitializeFromSave()
@@ -47,18 +51,25 @@ public class PlayerStateManager : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("casa"))
         {
+            //localizacao = 2;// voltando do mundo pra casa
             SceneManager.LoadScene("House0_F0");
         }
         if (collision.gameObject.CompareTag("terreo"))
         {
+           // localizacao = 1;// deceu pro terreo
             SceneManager.LoadScene("House0_F0");
         }
         if (collision.gameObject.CompareTag("primeiroAndar"))
         {
+            localizacao = SceneManager.GetActiveScene();
+            Save_do_mundo.save.posicao = transform.position = new Vector3(-4.11f, -0.33f,0f);
+            Save_do_mundo.save.Save();
+            //localizacao = 0; subindo pro primeiro andar
             SceneManager.LoadScene("House0_F1");
         }
         if (collision.gameObject.CompareTag("mundo"))
         {
+            //localizacao = 3; sai pra gameplay
             SceneManager.LoadScene("Gameplay");
         }
         // Lógica de colisão relacionada ao estado do jogador / mundo transferida aqui.

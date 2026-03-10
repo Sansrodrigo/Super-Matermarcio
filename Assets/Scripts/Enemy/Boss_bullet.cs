@@ -10,8 +10,8 @@ public class Boss_bullet : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        next_x = Random.Range(-8.26f, 8.18f);
-        transform.position = new Vector3(next_x, 3.92f, 0f);
+        next_x = Random.Range(-9.46f, 8.49f);
+        transform.position = new Vector3(next_x, 3.86f, 0f);
     }
 
     // Update is called once per frame
@@ -46,7 +46,7 @@ public class Boss_bullet : MonoBehaviour
         switch (State)
         {
             case 0:
-                next_x = Random.Range(-8.26f, 8.18f);
+                next_x = Random.Range(-9.46f, 8.49f);
                 transform.position -= new Vector3(0f,veloci * Time.deltaTime, 0f);
                 break;
             case 1:

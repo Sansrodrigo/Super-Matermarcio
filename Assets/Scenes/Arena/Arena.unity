@@ -156,7 +156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee02e8d2c359c5b4e8009f1d2736bb14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Boss_arena
-  bullet: {fileID: 8416478132814598489, guid: bba98ac502e754a43adc90aa826a223d, type: 3}
+  bullet: {fileID: 2608453381211273397, guid: 40e1ae05d46933542bafb516197e570a, type: 3}
   Vida: {fileID: 1836624103}
   Hp_boss: 3
 --- !u!212 &340941834
@@ -1620,11 +1620,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 60458767249190669, guid: 50b439b3858245949b3ad77148179ad7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.37
+      value: -3.84
       objectReference: {fileID: 0}
     - target: {fileID: 60458767249190669, guid: 50b439b3858245949b3ad77148179ad7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.36
+      value: 0.99
       objectReference: {fileID: 0}
     - target: {fileID: 60458767249190669, guid: 50b439b3858245949b3ad77148179ad7, type: 3}
       propertyPath: m_LocalPosition.z
