@@ -45,6 +45,9 @@ public class ArenaManager : MonoBehaviour
     }
     private void Awake()
     {
+
+        Save_do_mundo.save.posicao = new Vector3(-3.84f, 0.56f, 0f);
+        Save_do_mundo.save.Save();
         instance = this;
     }
     void Start()
