@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a212e3166f20dc446ba640f9263cfa24
+guid: 186ce23424f1ef64dae2037148d065bb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 334545146650609775
-    second: "bot\xE3o_start3_0"
+      213: -921086426717527885
+    second: DeleteButton_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,12 +100,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "bot\xE3o_start3_0"
+      name: DeleteButton_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f68c073d90b84a400800000000000000
-      internalID: 334545146650609775
+      spriteID: 3b0611866c4a733f0800000000000000
+      internalID: -921086426717527885
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "bot\xE3o_start3_0": 334545146650609775
+      DeleteButton_0: -921086426717527885
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
