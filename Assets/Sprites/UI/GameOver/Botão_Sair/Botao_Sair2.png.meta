@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a212e3166f20dc446ba640f9263cfa24
+guid: c7efb86664593ab40af60cc34d7a6e92
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 334545146650609775
-    second: "bot\xE3o_start3_0"
+      213: 377810692486670736
+    second: Botao_Sair2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "bot\xE3o_start3_0"
+      name: Botao_Sair2_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f68c073d90b84a400800000000000000
-      internalID: 334545146650609775
+      spriteID: 0992306b2d04e3500800000000000000
+      internalID: 377810692486670736
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "bot\xE3o_start3_0": 334545146650609775
+      Botao_Sair2_0: 377810692486670736
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
