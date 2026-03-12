@@ -31,5 +31,10 @@
             "inimigoActive": false
         }
     ],
-    "inimigoArenaID": 0
+    "inimigoArenaID": 0,
+    "localizacao": {
+        "x": -1.9500019550323487,
+        "y": 0.9831618070602417,
+        "z": 0.0
+    }
 }

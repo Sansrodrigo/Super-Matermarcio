@@ -9,9 +9,9 @@ public class WorldManager : MonoBehaviour
     public bool SaveActive = false;
     public PlayerMovement _playerMovement;
     public PlayerStateManager _playerState;
-   // private float timer = 0f;
+    public float timer = 0f;
     public GameObject PortalActive;
-
+   
     void Start()
     {
         // Carrega dados do mundo (save) e inicializa o jogador a partir deles.
@@ -79,16 +79,17 @@ public class WorldManager : MonoBehaviour
 
         if (inimigosMortos == 3 && vitoria == false)
         {
+            timer += Time.deltaTime;
 
-            vitoria = true;
-            Portal.SetActive(true);
-            //timer += Time.deltaTime;
-            //if (timer == 2f)
-           // {
+            if (timer >= 2f )
+             {
                 PortalActive.SetActive(true);
-               // timer = 0f;
-           // }
-            //PortalActive.SetActive(false);
+                vitoria = true;
+
+                Portal.SetActive(true);
+            }
+           
+
         }
     }
 }

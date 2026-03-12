@@ -12,7 +12,7 @@ public class Save_do_mundo
     public int HP = 3;
     public Inimigo[] inimigo = new Inimigo[3];
     public int inimigoArenaID = -1;
-
+    public Vector3 localizacao;
 
     public  Save_do_mundo()
     { 

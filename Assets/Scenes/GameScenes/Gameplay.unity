@@ -24853,6 +24853,7 @@ MonoBehaviour:
   SaveActive: 0
   _playerMovement: {fileID: 1844039513}
   _playerState: {fileID: 1844039508}
+  timer: 0
   PortalActive: {fileID: 118045423}
 --- !u!4 &643477692
 Transform:

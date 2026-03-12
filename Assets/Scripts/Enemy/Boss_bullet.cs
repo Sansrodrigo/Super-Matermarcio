@@ -12,6 +12,7 @@ public class Boss_bullet : MonoBehaviour
     {
         next_x = Random.Range(-9.46f, 8.49f);
         transform.position = new Vector3(next_x, 7.84f, 0f);
+        //instatie te a atencao e pega o next.x
     }
 
     // Update is called once per frame

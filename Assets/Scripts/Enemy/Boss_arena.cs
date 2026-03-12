@@ -36,6 +36,8 @@ public class Boss_arena : MonoBehaviour
         }
         if (Hp_boss <= 0)
         {
+            Save_do_mundo.save.posicao = Save_do_mundo.save.localizacao;
+            Save_do_mundo.save.Save();
             SceneManager.LoadScene("Gameplay");
         }
         tempo_disparo += Time.deltaTime;
@@ -44,6 +46,7 @@ public class Boss_arena : MonoBehaviour
             tempo_disparo = 0f;
             Instantiate(bullet, transform.position, Quaternion.identity);
             Instantiate(bullet, transform.position, Quaternion.identity);
+
         }
         
     }

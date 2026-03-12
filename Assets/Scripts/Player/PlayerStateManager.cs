@@ -3,14 +3,13 @@ using UnityEngine.SceneManagement;
 
 public class PlayerStateManager : MonoBehaviour
 {
-    public static Scene localizacao;
     [Tooltip("Vida atual do jogador")]
     public int Vida = 3;
     public GameObject TelaGameOver;
     void Awake()
     {
         // Apenas inicializações relacionadas ao status do jogador.
-        transform.position = Save_do_mundo.save.posicao;
+        transform.position = Save_do_mundo.save.posicao;//atualiza a posicao do player a cada cena nao apagar !!!!!!!!!
     }
     public void Update()
     {
@@ -91,15 +90,13 @@ public class PlayerStateManager : MonoBehaviour
             }
 
             // salva posição do player no save em memória
-            Save_do_mundo.save.posicao = transform.position;
-            Save_do_mundo.save.Save();
-
+            Save_do_mundo.save.localizacao = transform.position;
+            // localizacao 
+            Save_do_mundo.save.posicao = new Vector3(-3.84f, 0.56f, 0f);
             // sincroniza status do jogador (HP) em memória antes de persistir
             SyncToSaveMemory();
-
             // persiste o save em disco (gestão do mundo)
             Save_do_mundo.save.Save();
-
             SceneManager.LoadScene("Arena");
         }
     }
