@@ -10,6 +10,7 @@ public class PlayerStateManager : MonoBehaviour
     void Awake()
     {
         // Apenas inicializações relacionadas ao status do jogador.
+        transform.position = Save_do_mundo.save.posicao;
     }
     public void Update()
     {
@@ -51,26 +52,29 @@ public class PlayerStateManager : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("casa"))
         {
-            //localizacao = 2;// voltando do mundo pra casa
-            SceneManager.LoadScene("House0_F0");
+            SceneManager.LoadScene("House0_F0"); // voltando do mundo pra casa
+            Save_do_mundo.save.posicao = new Vector3(-1.47f, -2.49f, 0f);
+            Save_do_mundo.save.Save();
         }
         if (collision.gameObject.CompareTag("terreo"))
         {
-           // localizacao = 1;// deceu pro terreo
-            SceneManager.LoadScene("House0_F0");
+           
+            Save_do_mundo.save.posicao = new Vector3(-4.4f, 2.52f, 0f);
+            Save_do_mundo.save.Save();
+            SceneManager.LoadScene("House0_F0");// deceu pro terreo
         }
         if (collision.gameObject.CompareTag("primeiroAndar"))
         {
-            localizacao = SceneManager.GetActiveScene();
-            Save_do_mundo.save.posicao = transform.position = new Vector3(-4.11f, -0.33f,0f);
+           
+            Save_do_mundo.save.posicao = new Vector3(-4.17f, -0.48f, 0f);
             Save_do_mundo.save.Save();
-            //localizacao = 0; subindo pro primeiro andar
-            SceneManager.LoadScene("House0_F1");
+            SceneManager.LoadScene("House0_F1"); //subindo pro primeiro andar
         }
         if (collision.gameObject.CompareTag("mundo"))
         {
-            //localizacao = 3; sai pra gameplay
             SceneManager.LoadScene("Gameplay");
+            Save_do_mundo.save.posicao = new Vector3(-0.53f, -7.82f, 0f); // sai pra gameplay
+            Save_do_mundo.save.Save();
         }
         // Lógica de colisão relacionada ao estado do jogador / mundo transferida aqui.
         if (collision.gameObject.CompareTag("npcMulti") ||

@@ -11,7 +11,7 @@ public class Boss_bullet : MonoBehaviour
     void Start()
     {
         next_x = Random.Range(-9.46f, 8.49f);
-        transform.position = new Vector3(next_x, 3.86f, 0f);
+        transform.position = new Vector3(next_x, 7.84f, 0f);
     }
 
     // Update is called once per frame
@@ -27,18 +27,17 @@ public class Boss_bullet : MonoBehaviour
             timer = 0f;
         }
         StateBullet();
+        if (transform.position.y <= -6.28)
+        {
+            Destroy(gameObject);
+        }
     }
-    public void OnCollisionEnter2D(Collision2D collision)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.CompareTag ("Player"))
+        if (collision.gameObject.CompareTag("Player"))
         {
             Destroy(gameObject);
             collision.gameObject.GetComponent<PlayerStateManager>().Vida--;
-            
-        }
-        if (collision.gameObject.CompareTag("bounds"))
-        {
-            Destroy(gameObject);
         }
     }
     public void StateBullet()
