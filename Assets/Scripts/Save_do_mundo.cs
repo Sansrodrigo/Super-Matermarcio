@@ -8,12 +8,12 @@ public class Save_do_mundo
 {
     public static Save_do_mundo save = new Save_do_mundo();
     private string caminho = Application.dataPath + "/Save/Arquivo.TXT";
-    public Vector3 posicao = new Vector3(-0.63f, -7.99f, 0f);
+    public Vector3 posicao_Mundo = new Vector3(-0.63f, -7.99f, 0f);
     public int HP = 3;
     public Inimigo[] inimigo = new Inimigo[3];
     public int inimigoArenaID = -1;
-    public Vector3 localizacao;
-
+    public Vector3 posicao_Arena = new Vector3(-0.63f, -7.99f, 0f);
+    public Vector3 posicao_Atual;
     public  Save_do_mundo()
     { 
         for (int i = 0; i < inimigo.Length; i++)
@@ -39,8 +39,8 @@ public class Save_do_mundo
         {
             string content = File.ReadAllText(caminho);
             Save_do_mundo dados = JsonUtility.FromJson<Save_do_mundo>(content);
-
-            this.posicao = dados.posicao;
+            this.posicao_Arena = dados.posicao_Arena;
+            this.posicao_Mundo = dados.posicao_Mundo;
             this.HP = dados.HP;
             this.inimigo = dados.inimigo;
             this.inimigoArenaID = dados.inimigoArenaID;

@@ -13,7 +13,7 @@ public class Boss_arena : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        GetComponent<PlayerStateManager>().transform.position = new Vector3(-3.84f, 0.56f, 0f);
         Instantiate(bullet, transform.position, Quaternion.identity);
       
     }
@@ -36,8 +36,7 @@ public class Boss_arena : MonoBehaviour
         }
         if (Hp_boss <= 0)
         {
-            Save_do_mundo.save.posicao = Save_do_mundo.save.localizacao;
-            Save_do_mundo.save.Save();
+           
             SceneManager.LoadScene("Gameplay");
         }
         tempo_disparo += Time.deltaTime;

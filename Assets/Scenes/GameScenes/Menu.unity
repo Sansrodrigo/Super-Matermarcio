@@ -261,8 +261,8 @@ RectTransform:
   m_LocalScale: {x: 0.016666668, y: 0.016666668, z: 0.016666668}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1016086880}
   - {fileID: 1872467020}
+  - {fileID: 1016086880}
   m_Father: {fileID: 351409502}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -786,7 +786,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 2
   m_Sprite: {fileID: -7840752374669767091, guid: a66a810941c76f1408311c0d5d8aa16e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -807,7 +807,7 @@ Transform:
   m_GameObject: {fileID: 1016086878}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 26.4, y: 129.3, z: -5400.0005}
+  m_LocalPosition: {x: 26.400002, y: 129.3, z: -5400.0005}
   m_LocalScale: {x: 10.920824, y: 10.920824, z: 10.920824}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1639,8 +1639,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Equipe:\nBruno Miranda\nChristopher Allysson\nDaniel Freitas\nGessica
-    Ferreira\nRodrigo de Oliveira\n\nMen\xE7ao Honrosa:\nLorrans Guardhian"
+  m_Text: "Equipe:\nBruno Miranda\nChristopher Alysson\nDaniel Freitas\nGessica Ferreira\nRodrigo
+    de Oliveira\n\nMen\xE7ao Honrosa:\nLorrans Guardhian"
 --- !u!222 &1872467022
 CanvasRenderer:
   m_ObjectHideFlags: 0

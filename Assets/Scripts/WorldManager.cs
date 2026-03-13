@@ -1,3 +1,4 @@
+using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -22,11 +23,11 @@ public class WorldManager : MonoBehaviour
 
         if (_playerMovement != null)
         {
-            _playerMovement.SetPosition(Save_do_mundo.save.posicao);
+            _playerMovement.SetPosition(Save_do_mundo.save.posicao_Mundo);
         }
         else
         {
-            transform.position = Save_do_mundo.save.posicao;
+            transform.position = Save_do_mundo.save.posicao_Mundo;
         }
 
         if (_playerState != null)
@@ -49,7 +50,7 @@ public class WorldManager : MonoBehaviour
             else
                 transform.position = arenaPos;
 
-            Save_do_mundo.save.posicao = transform.position;
+            Save_do_mundo.save.posicao_Mundo = transform.position;
         }
 
         if (SceneManager.GetActiveScene().name == "Gameplay")
@@ -61,6 +62,8 @@ public class WorldManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.F7))
         {
+            GetComponent<PlayerStateManager>().transform.position = Save_do_mundo.save.posicao_Mundo;
+            Save_do_mundo.save.Save();
             SceneManager.LoadScene("Gameplay");
         }
     }
@@ -68,6 +71,9 @@ public class WorldManager : MonoBehaviour
     void VerificarVitoria()
     {
         int inimigosMortos = 0;
+       //inimigosVivos = list.count;
+
+
 
         for (int i = 0; i < Save_do_mundo.save.inimigo.Length; i++)
         {
@@ -76,7 +82,7 @@ public class WorldManager : MonoBehaviour
                 inimigosMortos++;
             }
         }
-
+        // if inimigosVivos == 0 
         if (inimigosMortos == 3 && vitoria == false)
         {
             timer += Time.deltaTime;

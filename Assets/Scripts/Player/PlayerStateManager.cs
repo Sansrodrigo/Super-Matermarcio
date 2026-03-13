@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -6,10 +7,19 @@ public class PlayerStateManager : MonoBehaviour
     [Tooltip("Vida atual do jogador")]
     public int Vida = 3;
     public GameObject TelaGameOver;
+
     void Awake()
     {
         // Apenas inicializações relacionadas ao status do jogador.
-        transform.position = Save_do_mundo.save.posicao;//atualiza a posicao do player a cada cena nao apagar !!!!!!!!!
+        if (SceneManager.GetActiveScene().name == "Arena")// nao mexer serio da bug !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        {
+            transform.position = new Vector3(-8.49f, -0.3f, 0f);
+        }
+        else
+        {
+            transform.position = Save_do_mundo.save.posicao_Mundo;//atualiza a posicao do player a cada cena nao apagar !!!!!!!!!
+
+        }
     }
     public void Update()
     {
@@ -51,36 +61,37 @@ public class PlayerStateManager : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("casa"))
         {
-            SceneManager.LoadScene("House0_F0"); // voltando do mundo pra casa
-            Save_do_mundo.save.posicao = new Vector3(-1.47f, -2.49f, 0f);
+            Save_do_mundo.save.posicao_Mundo = new Vector3(-1.47f, -2.49f, 0f);
             Save_do_mundo.save.Save();
+            SceneManager.LoadScene("House0_F0"); // voltando do mundo pra casa
         }
         if (collision.gameObject.CompareTag("terreo"))
         {
            
-            Save_do_mundo.save.posicao = new Vector3(-4.4f, 2.52f, 0f);
+            Save_do_mundo.save.posicao_Mundo = new Vector3(-4.4f, 2.52f, 0f);
             Save_do_mundo.save.Save();
             SceneManager.LoadScene("House0_F0");// deceu pro terreo
         }
         if (collision.gameObject.CompareTag("primeiroAndar"))
         {
            
-            Save_do_mundo.save.posicao = new Vector3(-4.17f, -0.48f, 0f);
+            Save_do_mundo.save.posicao_Mundo = new Vector3(-4.17f, -0.48f, 0f);
             Save_do_mundo.save.Save();
             SceneManager.LoadScene("House0_F1"); //subindo pro primeiro andar
         }
         if (collision.gameObject.CompareTag("mundo"))
         {
-            SceneManager.LoadScene("Gameplay");
-            Save_do_mundo.save.posicao = new Vector3(-0.53f, -7.82f, 0f); // sai pra gameplay
+            Save_do_mundo.save.posicao_Mundo = new Vector3(-0.53f, -7.82f, 0f); // sai pra gameplay
             Save_do_mundo.save.Save();
+            SceneManager.LoadScene("Gameplay");
         }
-        // Lógica de colisão relacionada ao estado do jogador / mundo transferida aqui.
-        if (collision.gameObject.CompareTag("npcMulti") ||
+      
+        if (collision.gameObject.CompareTag("npcMulti") ||  // Lógica de colisão relacionada ao estado do jogador / mundo transferida aqui.
             collision.gameObject.CompareTag("npcMais") ||
             collision.gameObject.CompareTag("npcMenos"))
         {
-            Movement_Enemy enemy = collision.gameObject.GetComponent<Movement_Enemy>();
+         
+    Movement_Enemy enemy = collision.gameObject.GetComponent<Movement_Enemy>();
 
             if (enemy != null)
             {
@@ -88,15 +99,10 @@ public class PlayerStateManager : MonoBehaviour
                 Save_do_mundo.save.inimigo[enemy.id].inimigoActive = false; // marca inimigo como destruído
                 Debug.Log("ID SALVO: " + enemy.id);
             }
-
-            // salva posição do player no save em memória
-            Save_do_mundo.save.localizacao = transform.position;
-            // localizacao 
-            Save_do_mundo.save.posicao = new Vector3(-3.84f, 0.56f, 0f);
-            // sincroniza status do jogador (HP) em memória antes de persistir
-            SyncToSaveMemory();
-            // persiste o save em disco (gestão do mundo)
-            Save_do_mundo.save.Save();
+            Save_do_mundo.save.posicao_Mundo = transform.position;
+            
+            SyncToSaveMemory();// sincroniza status do jogador (HP) em memória antes de persistir
+            Save_do_mundo.save.Save(); // persiste o save em disco (gestão do mundo)
             SceneManager.LoadScene("Arena");
         }
     }
@@ -108,6 +114,4 @@ public class PlayerStateManager : MonoBehaviour
 
         }
     }
-
-
 }

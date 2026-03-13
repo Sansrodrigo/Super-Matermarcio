@@ -21,7 +21,7 @@ public class Menu : MonoBehaviour
     {
         Save_do_mundo.save.DeleteSave();
         SceneManager.LoadScene("House0_F1");
-        Save_do_mundo.save.posicao = new Vector3(1.516f, 2.05f, 0f);
+        Save_do_mundo.save.posicao_Mundo = new Vector3(1.516f, 2.05f, 0f);
         Save_do_mundo.save.Save();
     }
     public void teste()
