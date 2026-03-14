@@ -7,7 +7,6 @@ public class Boss_arena : MonoBehaviour
 {
     public static Save_do_mundo save = new Save_do_mundo();
     [SerializeField] GameObject bullet;
-    [SerializeField] Text Vida;
     float tempo_disparo = 0f;
     public int Hp_boss = 3;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -21,19 +20,6 @@ public class Boss_arena : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        if (Hp_boss == 3)
-        {
-            Vida.text = "Hp Boss: 3";
-        }
-        if (Hp_boss == 2)
-        {
-            Vida.text = "Hp Boss: 2";
-        }
-        if (Hp_boss == 2)
-        {
-            Vida.text = "Hp Boss: 1";
-        }
         if (Hp_boss <= 0)
         {
            
