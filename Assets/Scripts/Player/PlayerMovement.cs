@@ -26,7 +26,8 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.UpArrow)) movementVector.y = 1;
         else if (Input.GetKey(KeyCode.DownArrow)) movementVector.y = -1;
         _rb.linearVelocity = movementVector * Speed;
-        if(Input.GetKeyUp(KeyCode.F7)) SceneManager.LoadScene("Gameplay");
+
+        if (Input.GetKeyUp(KeyCode.F7)) SceneManager.LoadScene("Gameplay");
     }
 
     public void SetPosition(Vector3 position)
