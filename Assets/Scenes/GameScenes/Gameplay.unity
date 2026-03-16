@@ -30554,6 +30554,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CountEnemies
   enemies:
   - {fileID: 2294430508818829087, guid: 052d2dfacd5506d4a95e895116c7afcf, type: 3}
+  - {fileID: 8329419075750789960, guid: 95e11c188f3448a4d969f1b09576a9f4, type: 3}
+  - {fileID: 5806568850597548280, guid: 2d15942af2b69ec4ea733d557bdb2701, type: 3}
   countEnemies: []
 --- !u!1 &861087085
 GameObject:
