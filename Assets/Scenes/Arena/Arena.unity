@@ -157,7 +157,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Boss_arena
   bullet: {fileID: 2608453381211273397, guid: 40e1ae05d46933542bafb516197e570a, type: 3}
-  Vida: {fileID: 1836624103}
   Hp_boss: 3
 --- !u!212 &340941834
 SpriteRenderer:

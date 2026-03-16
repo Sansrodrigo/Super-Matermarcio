@@ -1,13 +1,14 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerStateManager : MonoBehaviour
 {
     [Tooltip("Vida atual do jogador")]
     public int Vida = 3;
     public GameObject TelaGameOver;
-
+  
     void Awake()
     {
         // Apenas inicializações relacionadas ao status do jogador.
@@ -23,6 +24,7 @@ public class PlayerStateManager : MonoBehaviour
     }
     public void Update()
     {
+       
         if (Vida <= 0)
         {
             SceneManager.LoadScene("GameOver");
