@@ -8,16 +8,8 @@
     "inimigo": [
         {
             "position": {
-                "x": -12.985001564025879,
-                "y": 4.680001258850098,
-                "z": 0.0
-            },
-            "inimigoActive": true
-        },
-        {
-            "position": {
-                "x": 1.1637792587280274,
-                "y": 2.6656692028045656,
+                "x": 0.0,
+                "y": 0.0,
                 "z": 0.0
             },
             "inimigoActive": true
@@ -28,10 +20,18 @@
                 "y": 0.0,
                 "z": 0.0
             },
+            "inimigoActive": false
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
             "inimigoActive": true
         }
     ],
-    "inimigoArenaID": -1,
+    "inimigoArenaID": 1,
     "posicao_Arena": {
         "x": -0.6299999952316284,
         "y": -7.989999771118164,
