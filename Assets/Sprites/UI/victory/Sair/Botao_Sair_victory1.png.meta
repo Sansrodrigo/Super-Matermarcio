@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0ac255eeda0e64c47aefd192d14754d4
+guid: 79c757956a3c2464888ee9c7f61fa2af
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1427320067400864919
-    second: vitoria_0
+      213: -6833190753696886273
+    second: Botao_Sair_victory1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: vitoria_0
+      name: Botao_Sair_victory1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 300
-        height: 168
+        width: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 794173ef90cdec310800000000000000
-      internalID: 1427320067400864919
+      spriteID: ff1d96b9631ab21a0800000000000000
+      internalID: -6833190753696886273
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      vitoria_0: 1427320067400864919
+      Botao_Sair_victory1_0: -6833190753696886273
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
