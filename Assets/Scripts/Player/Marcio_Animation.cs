@@ -3,7 +3,7 @@ using UnityEngine;
 public class Marcio_Animation : MonoBehaviour
 {
     [SerializeField] Animator animator;
-
+    [SerializeField] Animator animator_Vida;
     private void Update()
     {
         animator.SetBool("H_Walk", false);
@@ -38,9 +38,14 @@ public class Marcio_Animation : MonoBehaviour
         }
       
 
-
-
-
+            Perda_de_Vida();
     }
+    public void Perda_de_Vida()
+    {
+        //GetComponent<PlayerStateManager>().Vida;
+        animator_Vida.SetInteger("Troca_deVida",
+        GetComponent<PlayerStateManager>().Vida );
+    }    
+    
 }
 
