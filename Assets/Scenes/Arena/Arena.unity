@@ -2819,7 +2819,6 @@ GameObject:
   - component: {fileID: 1565062308}
   - component: {fileID: 1565062310}
   - component: {fileID: 1565062311}
-  - component: {fileID: 1565062312}
   m_Layer: 0
   m_Name: Arena_Manager
   m_TagString: Untagged
@@ -2888,20 +2887,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b092190de62345043acbb365c2f71442, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Number_Spawn
---- !u!114 &1565062312
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1565062307}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1709faf43e15cc544a0d4bc620477a32, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Menu
-  creditsBanner: {fileID: 0}
-  PausePanel: {fileID: 0}
 --- !u!1 &1642678855
 GameObject:
   m_ObjectHideFlags: 0
@@ -9850,3 +9835,4 @@ SceneRoots:
   - {fileID: 351372117}
   - {fileID: 1689360491}
   - {fileID: 365351718}
+  - {fileID: 2080939753}
