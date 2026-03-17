@@ -21,13 +21,17 @@ public class ArenaManager : MonoBehaviour
     [SerializeField] public GameObject Correto;
     [SerializeField] public GameObject Errado;
     [SerializeField] public Number_Spawn numberSpawn;
-
+    [SerializeField] Animator animator;
     float tempo_disparo = 0f;
     float tempo = 0f;
 
     private void Update()
     {
         bossLife.text = "HP: " + Hp_Enemy + "/3";
+        if(Hp_Enemy == 2)
+        {
+            animator.SetBool("Vida_ativo", true);
+        }
         if (Hp_Enemy <= 0)
         {
             SceneManager.LoadScene("Gameplay");
