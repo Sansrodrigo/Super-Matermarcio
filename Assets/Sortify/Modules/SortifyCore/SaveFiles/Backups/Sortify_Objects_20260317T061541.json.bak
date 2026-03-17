@@ -1,0 +1,111 @@
+{
+    "objectsData": [
+        {
+            "colors": [],
+            "styles": [],
+            "showComponents": [],
+            "sceneName": "House0"
+        },
+        {
+            "colors": [
+                {
+                    "objID": "Arena_Numbers_4",
+                    "colorValue": "BF4040FF"
+                },
+                {
+                    "objID": "Arena_ArtGrid_3",
+                    "colorValue": "40BF40FF"
+                },
+                {
+                    "objID": "Arena_Arena_Manager_0",
+                    "colorValue": "4CB5FFFF"
+                }
+            ],
+            "styles": [
+                {
+                    "objID": "Arena_Arena_Manager_0",
+                    "styleType": 1
+                }
+            ],
+            "showComponents": [],
+            "sceneName": "Arena"
+        },
+        {
+            "colors": [
+                {
+                    "objID": "Menu_Buttons_1_Canvas_2",
+                    "colorValue": "BF4040FF"
+                },
+                {
+                    "objID": "Menu_Non-Interactable_0_Canvas_2",
+                    "colorValue": "BF4040FF"
+                },
+                {
+                    "objID": "Menu_Canvas_2",
+                    "colorValue": "4CB5FFFF"
+                }
+            ],
+            "styles": [
+                {
+                    "objID": "Menu_Non-Interactable_0_Canvas_2",
+                    "styleType": 0
+                },
+                {
+                    "objID": "Menu_Buttons_1_Canvas_2",
+                    "styleType": 0
+                }
+            ],
+            "showComponents": [
+                {
+                    "objID": "Menu_Buttons_1_Canvas_2",
+                    "show": false
+                },
+                {
+                    "objID": "Menu_Non-Interactable_0_Canvas_2",
+                    "show": false
+                },
+                {
+                    "objID": "Menu_EventSystem_0",
+                    "show": true
+                }
+            ],
+            "sceneName": "Menu"
+        },
+        {
+            "colors": [
+                {
+                    "objID": "Gameplay_WorldManager_0",
+                    "colorValue": "BF4040FF"
+                },
+                {
+                    "objID": "Gameplay_HUD_2",
+                    "colorValue": "BFBF40FF"
+                },
+                {
+                    "objID": "Gameplay_ArtGrid_4",
+                    "colorValue": "4CB5FFFF"
+                },
+                {
+                    "objID": "Gameplay_OBJ_Grid_6",
+                    "colorValue": "BF4040FF"
+                }
+            ],
+            "styles": [
+                {
+                    "objID": "Gameplay_WorldManager_0",
+                    "styleType": 1
+                },
+                {
+                    "objID": "Gameplay_HUD_2",
+                    "styleType": 1
+                },
+                {
+                    "objID": "Gameplay_OBJ_Grid_6",
+                    "styleType": 1
+                }
+            ],
+            "showComponents": [],
+            "sceneName": "Gameplay"
+        }
+    ]
+}
