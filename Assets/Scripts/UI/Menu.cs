@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -5,6 +6,15 @@ public class Menu : MonoBehaviour
 {
     public static Save_do_mundo save = new Save_do_mundo();
     [SerializeField] GameObject creditsBanner;
+    [SerializeField] GameObject PausePanel;
+
+    public void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Pause();
+        }
+    }
 
     public void Creditos() // Ativa e Desativa o painel creditos
     {
@@ -35,5 +45,18 @@ public class Menu : MonoBehaviour
     public void Volta_Menu()
     {
         SceneManager.LoadScene("Menu");
+    }
+    public void Pause()
+    {
+        if (PausePanel.activeSelf == true)
+        {
+            Time.timeScale = 1;
+            PausePanel.SetActive(false);
+        }
+        else
+        {
+            Time.timeScale = 0;
+            PausePanel.SetActive(true);
+        }
     }
 }

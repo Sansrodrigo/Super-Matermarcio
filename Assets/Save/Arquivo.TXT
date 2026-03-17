@@ -1,7 +1,7 @@
 {
     "posicao_Mundo": {
-        "x": 1.5160000324249268,
-        "y": 2.049999952316284,
+        "x": 6.814164638519287,
+        "y": -0.8431167602539063,
         "z": 0.0
     },
     "HP": 3,
@@ -20,7 +20,7 @@
                 "y": 0.0,
                 "z": 0.0
             },
-            "inimigoActive": true
+            "inimigoActive": false
         },
         {
             "position": {
@@ -31,7 +31,7 @@
             "inimigoActive": true
         }
     ],
-    "inimigoArenaID": -1,
+    "inimigoArenaID": 1,
     "posicao_Arena": {
         "x": -0.6299999952316284,
         "y": -7.989999771118164,
