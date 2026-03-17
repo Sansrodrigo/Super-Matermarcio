@@ -78,16 +78,20 @@
                     "colorValue": "BF4040FF"
                 },
                 {
-                    "objID": "Gameplay_HUD_2",
+                    "objID": "Gameplay_HUD_3",
                     "colorValue": "BFBF40FF"
                 },
                 {
-                    "objID": "Gameplay_ArtGrid_4",
-                    "colorValue": "4CB5FFFF"
+                    "objID": "Gameplay_SpriteGrids_5",
+                    "colorValue": "40BF40FF"
                 },
                 {
-                    "objID": "Gameplay_OBJ_Grid_6",
-                    "colorValue": "8000FFFF"
+                    "objID": "Gameplay_OBJ_Grid_2_SpriteGrids_5",
+                    "colorValue": "262626FF"
+                },
+                {
+                    "objID": "Gameplay_Triggers_7",
+                    "colorValue": "4040BFFF"
                 }
             ],
             "styles": [
@@ -96,15 +100,24 @@
                     "styleType": 1
                 },
                 {
-                    "objID": "Gameplay_HUD_2",
+                    "objID": "Gameplay_HUD_3",
                     "styleType": 1
                 },
                 {
-                    "objID": "Gameplay_OBJ_Grid_6",
+                    "objID": "Gameplay_OBJ_Grid_2_SpriteGrids_5",
+                    "styleType": 0
+                },
+                {
+                    "objID": "Gameplay_Triggers_7",
                     "styleType": 1
                 }
             ],
-            "showComponents": [],
+            "showComponents": [
+                {
+                    "objID": "Gameplay_HUD_3",
+                    "show": true
+                }
+            ],
             "sceneName": "Gameplay"
         }
     ]

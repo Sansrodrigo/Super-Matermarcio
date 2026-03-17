@@ -82,11 +82,11 @@
                     "colorValue": "BFBF40FF"
                 },
                 {
-                    "objID": "Gameplay_ArtGrid_4",
-                    "colorValue": "4CB5FFFF"
+                    "objID": "Gameplay_SpriteGrids_4",
+                    "colorValue": "40BF40FF"
                 },
                 {
-                    "objID": "Gameplay_OBJ_Grid_6",
+                    "objID": "Gameplay_OBJ_Grid_2_SpriteGrids_4",
                     "colorValue": "262626FF"
                 }
             ],
@@ -100,11 +100,20 @@
                     "styleType": 1
                 },
                 {
-                    "objID": "Gameplay_OBJ_Grid_6",
+                    "objID": "Gameplay_OBJ_Grid_2_SpriteGrids_4",
+                    "styleType": 0
+                },
+                {
+                    "objID": "Gameplay_Triggers_9",
                     "styleType": 1
                 }
             ],
-            "showComponents": [],
+            "showComponents": [
+                {
+                    "objID": "Gameplay_HUD_2",
+                    "show": true
+                }
+            ],
             "sceneName": "Gameplay"
         }
     ]
