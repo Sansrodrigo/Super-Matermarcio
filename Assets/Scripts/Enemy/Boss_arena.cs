@@ -7,12 +7,13 @@ public class Boss_arena : MonoBehaviour
 {
     public static Save_do_mundo save = new Save_do_mundo();
     [SerializeField] GameObject bullet;
+
     float tempo_disparo = 0f;
     public int Hp_boss = 3;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        GetComponent<PlayerStateManager>().transform.position = new Vector3(-3.84f, 0.56f, 0f);
+        //>>GetComponent<PlayerStateManager>().transform.position = new Vector3(-3.84f, 0.56f, 0f);
         Instantiate(bullet, transform.position, Quaternion.identity);
       
     }
