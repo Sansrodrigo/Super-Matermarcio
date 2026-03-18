@@ -1,0 +1,819 @@
+fileFormatVersion: 2
+guid: 912cb06f3e7e6354aae0c08661582227
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7474892780518797280
+    second: Portal_Teleport_0
+  - first:
+      213: -2995919574652874020
+    second: Portal_Teleport_1
+  - first:
+      213: 3661249400447965683
+    second: Portal_Teleport_2
+  - first:
+      213: -5616660474570520686
+    second: Portal_Teleport_3
+  - first:
+      213: -7589556211149254719
+    second: Portal_Teleport_4
+  - first:
+      213: 748100134547041431
+    second: Portal_Teleport_5
+  - first:
+      213: 6602966485691632478
+    second: Portal_Teleport_6
+  - first:
+      213: -1516891566257060930
+    second: Portal_Teleport_7
+  - first:
+      213: 5846469761953212319
+    second: Portal_Teleport_8
+  - first:
+      213: -916169341435715860
+    second: Portal_Teleport_9
+  - first:
+      213: -2094488382115260452
+    second: Portal_Teleport_10
+  - first:
+      213: -8189097545043421297
+    second: Portal_Teleport_11
+  - first:
+      213: -5844916832408408797
+    second: Portal_Teleport_12
+  - first:
+      213: 7807185152097585694
+    second: Portal_Teleport_13
+  - first:
+      213: 793754965111189511
+    second: Portal_Teleport_14
+  - first:
+      213: -5823643685627047328
+    second: Portal_Teleport_15
+  - first:
+      213: 4331148504938366540
+    second: Portal_Teleport_16
+  - first:
+      213: 951433384574085617
+    second: Portal_Teleport_17
+  - first:
+      213: -4764006751910402725
+    second: Portal_Teleport_18
+  - first:
+      213: 2851695688667553561
+    second: Portal_Teleport_19
+  - first:
+      213: 3214310692189888974
+    second: Portal_Teleport_20
+  - first:
+      213: 830676126634231792
+    second: Portal_Teleport_21
+  - first:
+      213: -1708114315340727002
+    second: Portal_Teleport_22
+  - first:
+      213: -8431538409375128212
+    second: Portal_Teleport_23
+  - first:
+      213: -2424221017018530027
+    second: Portal_Teleport_24
+  - first:
+      213: 795285220558867945
+    second: Portal_Teleport_25
+  - first:
+      213: -5285881139481390435
+    second: Portal_Teleport_26
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Portal_Teleport_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 16
+        width: 66
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0209b0bae98d34890800000000000000
+      internalID: -7474892780518797280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portal_Teleport_1
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 17
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd21d29150b5c66d0800000000000000
+      internalID: -2995919574652874020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portal_Teleport_2
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 12
+        width: 71
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f910db7eee5fc230800000000000000
+      internalID: 3661249400447965683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portal_Teleport_3
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 11
+        width: 71
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2974f358e0d9d02b0800000000000000
+      internalID: -5616660474570520686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portal_Teleport_4
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 28
+        width: 37
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cfc69f46da7ca690800000000000000
+      internalID: -7589556211149254719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portal_Teleport_5
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 21
+        width: 50
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79c2918db19c16a00800000000000000
+      internalID: 748100134547041431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portal_Teleport_6
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 11
+        width: 66
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5b8573e80372ab50800000000000000
+      internalID: 6602966485691632478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portal_Teleport_7
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 26
+        width: 64
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb34676482be2fae0800000000000000
+      internalID: -1516891566257060930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portal_Teleport_8
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 62
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f97a847c545d22150800000000000000
+      internalID: 5846469761953212319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portal_Teleport_9
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 42
+        width: 22
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ceede9986dc1943f0800000000000000
+      internalID: -916169341435715860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portal_Teleport_10
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 62
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd756ddd9e1eee2e0800000000000000
+      internalID: -2094488382115260452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portal_Teleport_11
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 38
+        width: 18
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f87d9a4ab2b7a5e80800000000000000
+      internalID: -8189097545043421297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portal_Teleport_12
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 44
+        width: 36
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32d689ecb1fa2eea0800000000000000
+      internalID: -5844916832408408797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portal_Teleport_13
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 38
+        width: 18
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1a0b761881b85c60800000000000000
+      internalID: 7807185152097585694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portal_Teleport_14
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 65
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 700b72e6febf30b00800000000000000
+      internalID: 793754965111189511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portal_Teleport_15
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 44
+        width: 26
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 062d0c34ce24e2fa0800000000000000
+      internalID: -5823643685627047328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portal_Teleport_16
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 65
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c46c05a2e945b1c30800000000000000
+      internalID: 4331148504938366540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portal_Teleport_17
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 45
+        width: 8
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f96cf25f9b243d00800000000000000
+      internalID: 951433384574085617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portal_Teleport_18
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 50
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5561d49919d2edb0800000000000000
+      internalID: -4764006751910402725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portal_Teleport_19
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 50
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91fda82be12439720800000000000000
+      internalID: 2851695688667553561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portal_Teleport_20
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 11
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec1e7bd5b868b9c20800000000000000
+      internalID: 3214310692189888974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portal_Teleport_21
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 11
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f74e6b3987278b00800000000000000
+      internalID: 830676126634231792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portal_Teleport_22
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 45
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62d3b56841f8b48e0800000000000000
+      internalID: -1708114315340727002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portal_Teleport_23
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 33
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6522272d782dfa80800000000000000
+      internalID: -8431538409375128212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portal_Teleport_24
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 33
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 517039f34df6b5ed0800000000000000
+      internalID: -2424221017018530027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portal_Teleport_25
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 20
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ed878ac1bb690b00800000000000000
+      internalID: 795285220558867945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portal_Teleport_26
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 20
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9256440c17c4a6b0800000000000000
+      internalID: -5285881139481390435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Portal_Teleport_0: -7474892780518797280
+      Portal_Teleport_1: -2995919574652874020
+      Portal_Teleport_10: -2094488382115260452
+      Portal_Teleport_11: -8189097545043421297
+      Portal_Teleport_12: -5844916832408408797
+      Portal_Teleport_13: 7807185152097585694
+      Portal_Teleport_14: 793754965111189511
+      Portal_Teleport_15: -5823643685627047328
+      Portal_Teleport_16: 4331148504938366540
+      Portal_Teleport_17: 951433384574085617
+      Portal_Teleport_18: -4764006751910402725
+      Portal_Teleport_19: 2851695688667553561
+      Portal_Teleport_2: 3661249400447965683
+      Portal_Teleport_20: 3214310692189888974
+      Portal_Teleport_21: 830676126634231792
+      Portal_Teleport_22: -1708114315340727002
+      Portal_Teleport_23: -8431538409375128212
+      Portal_Teleport_24: -2424221017018530027
+      Portal_Teleport_25: 795285220558867945
+      Portal_Teleport_26: -5285881139481390435
+      Portal_Teleport_3: -5616660474570520686
+      Portal_Teleport_4: -7589556211149254719
+      Portal_Teleport_5: 748100134547041431
+      Portal_Teleport_6: 6602966485691632478
+      Portal_Teleport_7: -1516891566257060930
+      Portal_Teleport_8: 5846469761953212319
+      Portal_Teleport_9: -916169341435715860
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
