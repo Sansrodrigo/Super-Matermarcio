@@ -1,7 +1,7 @@
 {
     "posicao_Mundo": {
-        "x": -0.5299999713897705,
-        "y": -7.820000171661377,
+        "x": -0.013003244996070862,
+        "y": 2.658451557159424,
         "z": 0.0
     },
     "HP": 3,
@@ -12,7 +12,7 @@
                 "y": 0.0,
                 "z": 0.0
             },
-            "inimigoActive": true
+            "inimigoActive": false
         },
         {
             "position": {
@@ -20,7 +20,7 @@
                 "y": 0.0,
                 "z": 0.0
             },
-            "inimigoActive": true
+            "inimigoActive": false
         },
         {
             "position": {
@@ -28,7 +28,7 @@
                 "y": 0.0,
                 "z": 0.0
             },
-            "inimigoActive": true
+            "inimigoActive": false
         },
         {
             "position": {
@@ -567,7 +567,7 @@
             "inimigoActive": true
         }
     ],
-    "inimigoArenaID": -1,
+    "inimigoArenaID": 2,
     "posicao_Arena": {
         "x": -0.6299999952316284,
         "y": -7.989999771118164,
