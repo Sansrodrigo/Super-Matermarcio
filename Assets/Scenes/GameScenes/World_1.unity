@@ -30556,16 +30556,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CountEnemies
   enemies:
+  - {fileID: 5806568850597548280, guid: 2d15942af2b69ec4ea733d557bdb2701, type: 3}
   - {fileID: 2294430508818829087, guid: 052d2dfacd5506d4a95e895116c7afcf, type: 3}
-  - {fileID: 2294430508818829087, guid: 052d2dfacd5506d4a95e895116c7afcf, type: 3}
-  - {fileID: 2294430508818829087, guid: 052d2dfacd5506d4a95e895116c7afcf, type: 3}
-  - {fileID: 2294430508818829087, guid: 052d2dfacd5506d4a95e895116c7afcf, type: 3}
-  - {fileID: 2294430508818829087, guid: 052d2dfacd5506d4a95e895116c7afcf, type: 3}
-  - {fileID: 2294430508818829087, guid: 052d2dfacd5506d4a95e895116c7afcf, type: 3}
-  - {fileID: 2294430508818829087, guid: 052d2dfacd5506d4a95e895116c7afcf, type: 3}
-  - {fileID: 2294430508818829087, guid: 052d2dfacd5506d4a95e895116c7afcf, type: 3}
-  - {fileID: 2294430508818829087, guid: 052d2dfacd5506d4a95e895116c7afcf, type: 3}
-  - {fileID: 2294430508818829087, guid: 052d2dfacd5506d4a95e895116c7afcf, type: 3}
+  - {fileID: 8329419075750789960, guid: 95e11c188f3448a4d969f1b09576a9f4, type: 3}
 --- !u!1 &861087085
 GameObject:
   m_ObjectHideFlags: 0
@@ -31502,7 +31495,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5135641942996633732, guid: 50b439b3858245949b3ad77148179ad7, type: 3}
   m_PrefabInstance: {fileID: 4428661764310540298}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 4428661764310540300}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d340f678875dcb843a7b453b39f0387f, type: 3}
@@ -31513,7 +31506,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5042685784767044670, guid: 50b439b3858245949b3ad77148179ad7, type: 3}
   m_PrefabInstance: {fileID: 4428661764310540298}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 4428661764310540300}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 25541568a7683994e8d4ef28632f87e7, type: 3}
@@ -32061,9 +32054,33 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 745664512}
+    - target: {fileID: 2442691287871686283, guid: 2d5d314601ec7804a9cdf26ad22123b1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2442691287871686283, guid: 2d5d314601ec7804a9cdf26ad22123b1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 745664512}
+    - target: {fileID: 2442691287871686283, guid: 2d5d314601ec7804a9cdf26ad22123b1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Save_Pause
+      objectReference: {fileID: 0}
+    - target: {fileID: 2442691287871686283, guid: 2d5d314601ec7804a9cdf26ad22123b1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 4428661764310540300}
+    - target: {fileID: 2442691287871686283, guid: 2d5d314601ec7804a9cdf26ad22123b1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3106180520290917734, guid: 2d5d314601ec7804a9cdf26ad22123b1, type: 3}
       propertyPath: m_Name
       value: PauseMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 3106180520290917734, guid: 2d5d314601ec7804a9cdf26ad22123b1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4589840986880644462, guid: 2d5d314601ec7804a9cdf26ad22123b1, type: 3}
       propertyPath: m_Pivot.x
@@ -32143,6 +32160,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4589840986880644462, guid: 2d5d314601ec7804a9cdf26ad22123b1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6331807941676679606, guid: 2d5d314601ec7804a9cdf26ad22123b1, type: 3}
+      propertyPath: m_PresetInfoIsWorld
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7665239361806472313, guid: 2d5d314601ec7804a9cdf26ad22123b1, type: 3}
@@ -32246,6 +32267,11 @@ PrefabInstance:
 --- !u!1 &4428661764310540299 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7536661800831595096, guid: 50b439b3858245949b3ad77148179ad7, type: 3}
+  m_PrefabInstance: {fileID: 4428661764310540298}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4428661764310540300 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3382711496719143546, guid: 50b439b3858245949b3ad77148179ad7, type: 3}
   m_PrefabInstance: {fileID: 4428661764310540298}
   m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
