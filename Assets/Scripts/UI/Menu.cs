@@ -7,7 +7,7 @@ public class Menu : MonoBehaviour
     public static Save_do_mundo save = new Save_do_mundo();
     [SerializeField] GameObject creditsBanner;
     [SerializeField] GameObject PausePanel;
-    
+    [SerializeField] GameObject Tutorial_panel;
 
     public void Update()
     {
@@ -32,7 +32,11 @@ public class Menu : MonoBehaviour
             creditsBanner.SetActive(true);
         }
     }
-    public void NovoJogo() // Começa o jogo
+    public void NovoJogo() //Ativa o Tutorial
+    {
+    Tutorial_panel.SetActive(true);
+    }
+    public void SkipTutorial()//sai do tutorial e vai pro Word_1
     {
         Save_do_mundo.save.DeleteSave();
         SceneManager.LoadScene("House0_F1");
