@@ -18,6 +18,7 @@ public class Movement_Enemy : MonoBehaviour
 
     void Start()
     {
+
         rb = GetComponent<Rigidbody2D>();
 
         Save_do_mundo.save.Load();

@@ -30537,7 +30537,7 @@ Transform:
   m_GameObject: {fileID: 766303873}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.73536, y: 0, z: -17.29245}
+  m_LocalPosition: {x: 20.66, y: 1.47, z: -17.29245}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -30557,9 +30557,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CountEnemies
   enemies:
   - {fileID: 2294430508818829087, guid: 052d2dfacd5506d4a95e895116c7afcf, type: 3}
-  - {fileID: 8329419075750789960, guid: 95e11c188f3448a4d969f1b09576a9f4, type: 3}
-  - {fileID: 5806568850597548280, guid: 2d15942af2b69ec4ea733d557bdb2701, type: 3}
-  countEnemies: []
+  - {fileID: 2294430508818829087, guid: 052d2dfacd5506d4a95e895116c7afcf, type: 3}
+  - {fileID: 2294430508818829087, guid: 052d2dfacd5506d4a95e895116c7afcf, type: 3}
+  - {fileID: 2294430508818829087, guid: 052d2dfacd5506d4a95e895116c7afcf, type: 3}
+  - {fileID: 2294430508818829087, guid: 052d2dfacd5506d4a95e895116c7afcf, type: 3}
+  - {fileID: 2294430508818829087, guid: 052d2dfacd5506d4a95e895116c7afcf, type: 3}
+  - {fileID: 2294430508818829087, guid: 052d2dfacd5506d4a95e895116c7afcf, type: 3}
+  - {fileID: 2294430508818829087, guid: 052d2dfacd5506d4a95e895116c7afcf, type: 3}
+  - {fileID: 2294430508818829087, guid: 052d2dfacd5506d4a95e895116c7afcf, type: 3}
+  - {fileID: 2294430508818829087, guid: 052d2dfacd5506d4a95e895116c7afcf, type: 3}
 --- !u!1 &861087085
 GameObject:
   m_ObjectHideFlags: 0
@@ -32158,11 +32164,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 60458767249190669, guid: 50b439b3858245949b3ad77148179ad7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.53
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 60458767249190669, guid: 50b439b3858245949b3ad77148179ad7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.82
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 60458767249190669, guid: 50b439b3858245949b3ad77148179ad7, type: 3}
       propertyPath: m_LocalPosition.z

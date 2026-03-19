@@ -53,7 +53,7 @@ public class WorldManager : MonoBehaviour
             Save_do_mundo.save.posicao_Mundo = transform.position;
         }
 
-        if (SceneManager.GetActiveScene().name == "Gameplay")
+        if (SceneManager.GetActiveScene().name == "World_1")
         {
             SaveActive = false;
         }
@@ -64,7 +64,7 @@ public class WorldManager : MonoBehaviour
         {
             GetComponent<PlayerStateManager>().transform.position = Save_do_mundo.save.posicao_Mundo;
             Save_do_mundo.save.Save();
-            SceneManager.LoadScene("Gameplay");
+            SceneManager.LoadScene("World_1");
         }
     }
 
