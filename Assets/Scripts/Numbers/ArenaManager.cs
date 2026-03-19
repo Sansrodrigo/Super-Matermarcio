@@ -30,7 +30,7 @@ public class ArenaManager : MonoBehaviour
         bossLife.text = "HP: " + Hp_Enemy + "/3";
         if (Hp_Enemy <= 0)
         {
-            SceneManager.LoadScene("Gameplay");
+            SceneManager.LoadScene("World_1");
         }
 
         tempo += Time.deltaTime;

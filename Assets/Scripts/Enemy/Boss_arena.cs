@@ -24,7 +24,7 @@ public class Boss_arena : MonoBehaviour
         if (Hp_boss <= 0)
         {
            
-            SceneManager.LoadScene("Gameplay");
+            SceneManager.LoadScene("World_1");
         }
         tempo_disparo += Time.deltaTime;
         if(tempo_disparo >= 1f)

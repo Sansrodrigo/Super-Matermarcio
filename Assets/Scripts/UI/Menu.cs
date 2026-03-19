@@ -7,12 +7,17 @@ public class Menu : MonoBehaviour
     public static Save_do_mundo save = new Save_do_mundo();
     [SerializeField] GameObject creditsBanner;
     [SerializeField] GameObject PausePanel;
+    
 
     public void Update()
     {
+        string SceneActive = SceneManager.GetActiveScene().name;
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Pause();
+            if (SceneActive != "Arena")
+            {
+                Pause();
+            }
         }
     }
 

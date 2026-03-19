@@ -90,7 +90,7 @@ public class PlayerStateManager : MonoBehaviour
         {
             Save_do_mundo.save.posicao_Mundo = new Vector3(-0.53f, -7.82f, 0f); // sai pra gameplay
             Save_do_mundo.save.Save();
-            SceneManager.LoadScene("Gameplay");
+            SceneManager.LoadScene("World_1");
         }
       
         if (collision.gameObject.CompareTag("npcMulti") ||  // Lógica de colisão relacionada ao estado do jogador / mundo transferida aqui.

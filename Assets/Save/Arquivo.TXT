@@ -1,11 +1,547 @@
 {
     "posicao_Mundo": {
-        "x": -1.4700000286102296,
-        "y": -2.490000009536743,
+        "x": -0.6299999952316284,
+        "y": -7.989999771118164,
         "z": 0.0
     },
     "HP": 3,
     "inimigo": [
+        {
+            "position": {
+                "x": -9.460350036621094,
+                "y": -0.3607828617095947,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": -4.937089920043945,
+                "y": -5.288121223449707,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": -11.380821228027344,
+                "y": -1.2900018692016602,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": -5.9850006103515629,
+                "y": -4.820009231567383,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": -14.717453002929688,
+                "y": -1.7765600681304932,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": -2.029939651489258,
+                "y": -2.9106695652008058,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": -6.514995574951172,
+                "y": -3.7900078296661379,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 1.4661121368408204,
+                "y": 1.8159351348876954,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 2.481111526489258,
+                "y": 2.6800003051757814,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": -15.985000610351563,
+                "y": -0.3221524953842163,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "inimigoActive": true
+        },
         {
             "position": {
                 "x": 0.0,
@@ -41,5 +577,6 @@
         "x": 0.0,
         "y": 0.0,
         "z": 0.0
-    }
+    },
+    "gameLevel": 0
 }
