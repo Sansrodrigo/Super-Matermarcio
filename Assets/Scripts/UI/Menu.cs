@@ -49,6 +49,7 @@ public class Menu : MonoBehaviour
     }
     public void Volta_Menu()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene("Menu");
     }
     public void Pause()
@@ -64,4 +65,17 @@ public class Menu : MonoBehaviour
             PausePanel.SetActive(true);
         }
     }
+    public void Save_Pause(GameObject player)
+    {
+        Save_do_mundo.save.posicao_Mundo = player.transform.position;
+        Save_do_mundo.save.Save();
+    }
+    public void Continue()
+    {
+     
+        Time.timeScale = 1;
+        SceneManager.LoadScene("World_1");
+    }
 }
+
+
