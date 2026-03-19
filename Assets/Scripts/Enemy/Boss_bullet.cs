@@ -39,6 +39,7 @@ public class Boss_bullet : MonoBehaviour
         {
             Destroy(gameObject);
             collision.gameObject.GetComponent<PlayerStateManager>().Vida--;
+            collision.gameObject.GetComponent<PlayerStateManager>().audioDano.Play();
         }
     }
     public void StateBullet()

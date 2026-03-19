@@ -9,6 +9,7 @@ public class PlayerStateManager : MonoBehaviour
     public int Vida = 3;
     public GameObject TelaGameOver;
     [SerializeField] GameObject interact;
+    public AudioSource audioDano;
     void Awake()
     {
         // Apenas inicializações relacionadas ao status do jogador.
@@ -133,7 +134,7 @@ public class PlayerStateManager : MonoBehaviour
         if (collision.gameObject.CompareTag("boss"))
         {
             Vida--;
-
+            audioDano.Play();
         }
     }
 }
