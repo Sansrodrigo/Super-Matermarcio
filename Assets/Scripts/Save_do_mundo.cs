@@ -10,10 +10,11 @@ public class Save_do_mundo
     private string caminho = Application.dataPath + "/Save/Arquivo.TXT";
     public Vector3 posicao_Mundo = new Vector3(-0.63f, -7.99f, 0f);
     public int HP = 3;
-    public Inimigo[] inimigo = new Inimigo[3];
+    public Inimigo[] inimigo = new Inimigo[70];
     public int inimigoArenaID = -1;
     public Vector3 posicao_Arena = new Vector3(-0.63f, -7.99f, 0f);
     public Vector3 posicao_Atual;
+    public int gameLevel = 0;
     public  Save_do_mundo()
     { 
         for (int i = 0; i < inimigo.Length; i++)
@@ -44,6 +45,7 @@ public class Save_do_mundo
             this.HP = dados.HP;
             this.inimigo = dados.inimigo;
             this.inimigoArenaID = dados.inimigoArenaID;
+            this.gameLevel = dados.gameLevel;
         }
         else
         {
@@ -68,6 +70,8 @@ public class Save_do_mundo
             File.Delete(caminho);
             Debug.Log("Save deletado com sucesso.");
         }
-        save = new Save_do_mundo(); 
+        save = new Save_do_mundo();
     }
+
+   
 }

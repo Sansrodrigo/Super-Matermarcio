@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class CountEnemies : MonoBehaviour
 {
-    [SerializeField] public List<GameObject> enemies = new List<GameObject>();
-    public List<GameObject> countEnemies = new List<GameObject>();
+    [SerializeField] private List<GameObject> enemies = new List<GameObject>();
+    private List<GameObject> countEnemies = new List<GameObject>();
 
     void Start()
     {
@@ -15,15 +15,17 @@ public class CountEnemies : MonoBehaviour
     // Limpa a lista atual antes de popular para evitar duplicatas.
     public void PopulateFromEnemies()
     {
-        countEnemies.Clear();
+       // countEnemies.Clear();
 
         for (int i = 0; i < enemies.Count; i++)
         {
-            var prefab = enemies[i];
-            if (prefab == null) continue;
+            //var prefab = enemies[i];
+            //if (prefab == null) continue;
 
-            var instance = Instantiate(prefab, transform.position, Quaternion.identity, transform);
-            instance.name = $"{prefab.name}_{i}";
+            var instance = Instantiate(enemies[i], transform.position, Quaternion.identity);
+            instance.name = $"{enemies[i].name}_{i}";
+            instance.transform.parent = this.gameObject.transform;
+            instance.GetComponent<Movement_Enemy>().id = i;
             countEnemies.Add(instance);
         }
     }

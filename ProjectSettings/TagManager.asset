@@ -18,6 +18,7 @@ TagManager:
   - mundo
   - boss
   - casa
+  - EstanteDeLivros
   layers:
   - Default
   - TransparentFX

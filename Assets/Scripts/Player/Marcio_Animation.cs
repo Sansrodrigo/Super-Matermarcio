@@ -1,9 +1,9 @@
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class Marcio_Animation : MonoBehaviour
 {
     [SerializeField] Animator animator;
-
+    [SerializeField] Animator animator_Vida;
     private void Update()
     {
         animator.SetBool("H_Walk", false);
@@ -36,11 +36,18 @@ public class Marcio_Animation : MonoBehaviour
             animator.SetBool("H_Walk", true);
             GetComponent<SpriteRenderer>().flipX = true;
         }
-      
 
-
-
-
+        if (SceneManager.GetActiveScene().name == "Arena")
+        {
+            Perda_de_Vida();
+        }
     }
+           
+    public void Perda_de_Vida()
+    {
+       
+        animator_Vida.SetInteger("Troca_deVida", GetComponent<PlayerStateManager>().Vida );
+    }    
+    
 }
 

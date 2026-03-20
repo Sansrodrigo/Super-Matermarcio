@@ -8,7 +8,8 @@ public class PlayerStateManager : MonoBehaviour
     [Tooltip("Vida atual do jogador")]
     public int Vida = 3;
     public GameObject TelaGameOver;
-  
+    [SerializeField] GameObject interact;
+    public AudioSource audioDano;
     void Awake()
     {
         // Apenas inicializações relacionadas ao status do jogador.
@@ -61,7 +62,12 @@ public class PlayerStateManager : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("casa"))
+        if (collision.gameObject.CompareTag("EstanteDeLivros"))
+        {
+            interact.SetActive(true);
+
+        }
+            if (collision.gameObject.CompareTag("casa"))
         {
             Save_do_mundo.save.posicao_Mundo = new Vector3(-1.47f, -2.49f, 0f);
             Save_do_mundo.save.Save();
@@ -85,7 +91,7 @@ public class PlayerStateManager : MonoBehaviour
         {
             Save_do_mundo.save.posicao_Mundo = new Vector3(-0.53f, -7.82f, 0f); // sai pra gameplay
             Save_do_mundo.save.Save();
-            SceneManager.LoadScene("Gameplay");
+            SceneManager.LoadScene("World_1");
         }
       
         if (collision.gameObject.CompareTag("npcMulti") ||  // Lógica de colisão relacionada ao estado do jogador / mundo transferida aqui.
@@ -108,12 +114,27 @@ public class PlayerStateManager : MonoBehaviour
             SceneManager.LoadScene("Arena");
         }
     }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("EstanteDeLivros"))
+        
+        {
+            interact.SetActive(false); }
+          
+    }
+    
+     
+    
+
+
+
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("boss"))
         {
             Vida--;
-
+            audioDano.Play();
         }
     }
 }

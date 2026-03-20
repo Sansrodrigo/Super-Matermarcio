@@ -4,6 +4,7 @@ public class NumberObject : MonoBehaviour
 {
     public int NumberValue;
     private bool playerNearby = false;
+    public AudioSource audioBotao;
     private void Start()
     {
         if(ArenaManager.instance == null)
@@ -13,6 +14,7 @@ public class NumberObject : MonoBehaviour
     }
     private void Update()
     {
+
         if (ArenaManager.instance == null)
         {
             Debug.Log("NumbersManage esta null no update");
@@ -21,15 +23,18 @@ public class NumberObject : MonoBehaviour
         {
             ArenaManager.instance.AddNumber(NumberValue);
             Debug.Log("chamou o add");
+            audioBotao.Play();
         }
         if (playerNearby && Input.GetKeyDown(KeyCode.Z) && gameObject.name == "Delete")
         {
             ArenaManager.instance.RemoveNumber();
+            audioBotao.Play();
         }
         if (playerNearby && Input.GetKeyDown(KeyCode.Z) && gameObject.name == "Confirm")
         {
             ArenaManager.instance.ConfirmAnswer();
             Number_Spawn.instance.RandomizePosition();
+            audioBotao.Play();
         }
     }
     private void OnTriggerEnter2D(Collider2D other)

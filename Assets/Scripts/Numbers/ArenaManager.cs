@@ -21,20 +21,16 @@ public class ArenaManager : MonoBehaviour
     [SerializeField] public GameObject Correto;
     [SerializeField] public GameObject Errado;
     [SerializeField] public Number_Spawn numberSpawn;
-    [SerializeField] Animator animator;
+    [SerializeField] Animator[] animator_Boss = new Animator[3];
     float tempo_disparo = 0f;
     float tempo = 0f;
 
     private void Update()
     {
         bossLife.text = "HP: " + Hp_Enemy + "/3";
-        if(Hp_Enemy == 2)
-        {
-            animator.SetBool("Vida_ativo", true);
-        }
         if (Hp_Enemy <= 0)
         {
-            SceneManager.LoadScene("Gameplay");
+            SceneManager.LoadScene("World_1");
         }
 
         tempo += Time.deltaTime;
@@ -45,7 +41,7 @@ public class ArenaManager : MonoBehaviour
             Correto.SetActive(false);
             Errado.SetActive(false);
         }
-        
+        Perda_de_Vida();
     }
     private void Awake()
     {
@@ -143,29 +139,13 @@ public class ArenaManager : MonoBehaviour
         playerAnswerText.text = "";
         
     }
-   public void Boss()
+    public void Perda_de_Vida()
     {
 
-        if (Hp_Enemy == 3)
-        {
-            bossLife.text = "Hp Boss: 3";
-        }
-        if (Hp_Enemy == 2)
-        {
-            bossLife.text = "Hp Boss: 2";
-        }
-        if (Hp_Enemy == 1)
-        {
-            bossLife.text = "Hp Boss: 1";
-        }
+        animator_Boss[0].SetInteger("Dano_Coracao", Hp_Enemy);
+        animator_Boss[1].SetInteger("Dano_Coracao", Hp_Enemy);
+        animator_Boss[2].SetInteger("Dano_Coracao", Hp_Enemy);
+    }
 
-        tempo_disparo += Time.deltaTime;
-        if (tempo_disparo >= 1f)
-        {
-            tempo_disparo = 0f;
-            // Instantiate(bullet, transform.position, Quaternion.identity);
-            // Instantiate(bullet, transform.position, Quaternion.identity);
-        }
 
-    }   
 }

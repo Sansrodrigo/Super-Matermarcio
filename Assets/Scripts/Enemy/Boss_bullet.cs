@@ -28,19 +28,27 @@ public class Boss_bullet : MonoBehaviour
             timer = 0f;
         }
         StateBullet();
+
         if (transform.position.y <= -6.28)
         {
             Destroy(gameObject);
         }
     }
-    public void OnTriggerEnter2D(Collider2D collision)
+
+
+    public void OnTriggerEnter2D(Collider2D collision) //Player toma dano ao encostar
     {
         if (collision.gameObject.CompareTag("Player"))
         {
             Destroy(gameObject);
+
             collision.gameObject.GetComponent<PlayerStateManager>().Vida--;
+            
+            collision.gameObject.GetComponent<PlayerStateManager>().audioDano.Play();
         }
     }
+
+
     public void StateBullet()
     {
         switch (State)
