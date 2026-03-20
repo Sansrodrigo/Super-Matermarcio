@@ -7,8 +7,8 @@ public class Menu : MonoBehaviour
     public static Save_do_mundo save = new Save_do_mundo();
     [SerializeField] GameObject creditsBanner;
     [SerializeField] GameObject PausePanel;
-    
-
+    [SerializeField] GameObject Tutorial_panel;
+    [SerializeField] GameObject Botao_Ativo;
     public void Update()
     {
         string SceneActive = SceneManager.GetActiveScene().name;
@@ -18,6 +18,14 @@ public class Menu : MonoBehaviour
             {
                 Pause();
             }
+        }
+        if(Save_do_mundo.save.TemSave() == true)
+        {
+            Botao_Ativo.SetActive(true);
+        }
+        else
+        {
+            Botao_Ativo.SetActive(false);
         }
     }
 
@@ -32,7 +40,11 @@ public class Menu : MonoBehaviour
             creditsBanner.SetActive(true);
         }
     }
-    public void NovoJogo() // Começa o jogo
+    public void NovoJogo() //Ativa o Tutorial
+    {
+    Tutorial_panel.SetActive(true);
+    }
+    public void SkipTutorial()//sai do tutorial e vai pro Word_1
     {
         Save_do_mundo.save.DeleteSave();
         SceneManager.LoadScene("House0_F1");

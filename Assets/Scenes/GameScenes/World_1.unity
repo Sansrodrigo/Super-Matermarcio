@@ -30511,6 +30511,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Menu
   creditsBanner: {fileID: 0}
   PausePanel: {fileID: 1464150838}
+  Tutorial_panel: {fileID: 0}
+  Botao_Ativo: {fileID: 0}
 --- !u!1 &766303873
 GameObject:
   m_ObjectHideFlags: 0
@@ -31427,6 +31429,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Menu
   creditsBanner: {fileID: 0}
   PausePanel: {fileID: 0}
+  Tutorial_panel: {fileID: 0}
+  Botao_Ativo: {fileID: 0}
 --- !u!114 &1683927919
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31782,7 +31786,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: -7891870445123359464, guid: e78b120d72485d14195299b9ea5ef586, type: 3}
+  m_Sprite: {fileID: 1611674197194048519, guid: 99d0d446c53e3344782605f596aec460, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

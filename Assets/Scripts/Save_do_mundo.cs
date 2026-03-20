@@ -46,10 +46,12 @@ public class Save_do_mundo
             this.inimigo = dados.inimigo;
             this.inimigoArenaID = dados.inimigoArenaID;
             this.gameLevel = dados.gameLevel;
+            
         }
         else
         {
             Debug.Log("Erro ao carregar");
+            
         }
     }
     [Serializable]
@@ -72,6 +74,9 @@ public class Save_do_mundo
         }
         save = new Save_do_mundo();
     }
-
+    public bool TemSave()
+    {
+        return File.Exists(caminho);
+    }
    
 }
