@@ -89,6 +89,7 @@
     <Compile Include="Assets\Scripts\Enemy\Boss_bullet.cs" />
     <Compile Include="Assets\Scripts\Numbers\Number_Spawn.cs" />
     <Compile Include="Assets\Sortify\Modules\SortifyAttributes\ReadOnlyAttribute.cs" />
+    <Compile Include="Assets\Animacao\Camera\Camera_Anims.cs" />
     <Compile Include="Assets\Sortify\Modules\SortifyAttributes\ButtonAttribute.cs" />
     <Compile Include="Assets\Scripts\Enemy\Movement_Enemy.cs" />
     <Compile Include="Assets\Sortify\Modules\SortifyAttributes\BetterHeaderAttribute.cs" />
