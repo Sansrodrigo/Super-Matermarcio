@@ -82,6 +82,7 @@ public class WorldManager : MonoBehaviour
                 inimigosMortos++;
             }
         }
+
         // if inimigosVivos == 0 
         if (inimigosMortos == 3 && vitoria == false)
         {

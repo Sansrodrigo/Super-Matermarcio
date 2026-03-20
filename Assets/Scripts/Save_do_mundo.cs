@@ -16,6 +16,7 @@ public class Save_do_mundo
     public Vector3 posicao_Atual;
     public int gameLevel = 0;
     public float musicVolume = 1f;
+
     public  Save_do_mundo()
     { 
         for (int i = 0; i < inimigo.Length; i++)

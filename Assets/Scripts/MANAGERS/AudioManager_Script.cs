@@ -22,7 +22,8 @@ public class AudioManager_Script : MonoBehaviour
 
     void Update()
     {
-        AudioSources[0].volume = ImusicVolume.value;
+        AudioSources[0].volume = Save_do_mundo.save.musicVolume = ImusicVolume.value;
+        ImusicVolume.value = Save_do_mundo.save.musicVolume;
     }
 
     public void AudioSwitch() //Troca a musica dependendo da cena
