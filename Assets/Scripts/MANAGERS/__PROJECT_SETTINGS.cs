@@ -1,17 +1,13 @@
 using UnityEngine;
 
-public class __PROJECT_SETTINGS : MonoBehaviour
+public static class __PROJECT_SETTINGS
 {
-    public int FPSLIMIT = 60;
+    private const int FPSLIMIT = 60;
 
-    void Awake()
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
+    public static void Initialize()
     {
-
-        Resolution currentResolution = Screen.currentResolution;
-
-
         QualitySettings.vSyncCount = 0;
         Application.targetFrameRate = FPSLIMIT;
     }
-
 }
