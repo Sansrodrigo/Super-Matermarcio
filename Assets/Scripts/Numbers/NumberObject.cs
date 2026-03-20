@@ -14,6 +14,7 @@ public class NumberObject : MonoBehaviour
     }
     private void Update()
     {
+
         if (ArenaManager.instance == null)
         {
             Debug.Log("NumbersManage esta null no update");

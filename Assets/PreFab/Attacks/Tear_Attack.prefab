@@ -11,11 +11,12 @@ GameObject:
   - component: {fileID: 4141759734108006968}
   - component: {fileID: 8952482613995901603}
   - component: {fileID: 4315216133172265115}
+  - component: {fileID: 1996592212341361858}
   - component: {fileID: 6500360921055459646}
   - component: {fileID: 1534143574816638233}
   - component: {fileID: 1043378016071505087}
   m_Layer: 0
-  m_Name: Bullet 1 1
+  m_Name: Tear_Attack
   m_TagString: bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -116,6 +117,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1996592212341361858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2608453381211273397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8427443bc3757894795886bf0e7ab5ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Tear_Behaviour
 --- !u!70 &6500360921055459646
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -150,8 +163,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.010056617, y: 0.0016760882}
-  m_Size: {x: 0.18619406, y: 0.29664782}
+  m_Offset: {x: -0.0057161716, y: -0.05137408}
+  m_Size: {x: 0.1331438, y: 0.19054747}
   m_Direction: 0
 --- !u!50 &1534143574816638233
 Rigidbody2D:
@@ -187,7 +200,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2608453381211273397}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8bd07ba115a36d643b67de956c6f3197, type: 3}
   m_Name: 

@@ -22,11 +22,12 @@ public class ArenaManager : MonoBehaviour
     [SerializeField] public GameObject Errado;
     [SerializeField] public Number_Spawn numberSpawn;
     [SerializeField] Animator[] animator_Boss = new Animator[3];
-   
+    float tempo_disparo = 0f;
     float tempo = 0f;
 
     private void Update()
     {
+        bossLife.text = "HP: " + Hp_Enemy + "/3";
         if (Hp_Enemy <= 0)
         {
             SceneManager.LoadScene("World_1");
@@ -72,7 +73,7 @@ public class ArenaManager : MonoBehaviour
             equationText.text = a + " + " + b + " = ";
         }
 
-        else if (tipoEquacao == 2) // SUBTRAÇAO
+        else if (tipoEquacao == 2) // SUBTRAÃ‡AO
         {
             a = Random.Range(1, 21);
             b = Random.Range(1, 21);
@@ -127,7 +128,7 @@ public class ArenaManager : MonoBehaviour
                 Debug.Log("errado");
             }
 
-            // Atualiza a posição de todos os botões (instâncias de Number_Spawn) — ex.: 10 botões
+            // Atualiza a posiÃ§Ã£o de todos os botÃµes (instÃ¢ncias de Number_Spawn) â€” ex.: 10 botÃµes
             Number_Spawn[] spawns = FindObjectsOfType<Number_Spawn>();
             foreach (var s in spawns)
             {
