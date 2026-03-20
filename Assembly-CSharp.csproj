@@ -96,6 +96,7 @@
     <Compile Include="Assets\Scripts\Enemy\Boss_arena.cs" />
     <Compile Include="Assets\Sortify\Modules\SortifyCore\SortifyNoteManager.cs" />
     <Compile Include="Assets\Scripts\UI\Interacao_Manager.cs" />
+    <Compile Include="Assets\Scripts\Audio\AudioManager_Script.cs" />
     <Compile Include="Assets\Scripts\UI\camera.cs" />
     <Compile Include="Assets\Sortify\Modules\SortifyCore\SortifyAddComponent.cs" />
     <Compile Include="Assets\Sortify\Sample\SortifyCustomAttributeSample.cs" />

@@ -18,7 +18,8 @@ public class NumberObject : MonoBehaviour
         {
             Debug.Log("NumbersManage esta null no update");
         }
-        if(playerNearby && Input.GetKeyDown(KeyCode.Z) && CompareTag("buttons"))
+
+        if (playerNearby && Input.GetKeyDown(KeyCode.Z) && CompareTag("buttons"))
         {
             ArenaManager.instance.AddNumber(NumberValue);
             Debug.Log("chamou o add");
