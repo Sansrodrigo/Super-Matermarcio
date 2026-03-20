@@ -9,23 +9,28 @@ public class Menu : MonoBehaviour
     [SerializeField] GameObject PausePanel;
     [SerializeField] GameObject Tutorial_panel;
     [SerializeField] GameObject Botao_Ativo;
-    public void Update()
+
+
+    public void Start()
     {
-        string SceneActive = SceneManager.GetActiveScene().name;
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (SceneManager.GetActiveScene().name == "Menu")
         {
-            if (SceneActive != "Arena")
+            if (Save_do_mundo.save.TemSave() == true)
             {
-                Pause();
+                Botao_Ativo.SetActive(true);
+            }
+            else
+            {
+                Botao_Ativo.SetActive(false);
             }
         }
-        if(Save_do_mundo.save.TemSave() == true)
+    }
+
+    public void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape) && SceneManager.GetActiveScene().name != "Arena")
         {
-            Botao_Ativo.SetActive(true);
-        }
-        else
-        {
-            Botao_Ativo.SetActive(false);
+           Pause();
         }
     }
 
@@ -42,9 +47,9 @@ public class Menu : MonoBehaviour
     }
     public void NovoJogo() //Ativa o Tutorial
     {
-    Tutorial_panel.SetActive(true);
+        Tutorial_panel.SetActive(true);
     }
-    public void SkipTutorial()//sai do tutorial e vai pro Word_1
+    public void SkipTutorial() //sai do tutorial e vai pro Word_1
     {
         Save_do_mundo.save.DeleteSave();
         SceneManager.LoadScene("House0_F1");
