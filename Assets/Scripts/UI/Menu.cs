@@ -8,7 +8,7 @@ public class Menu : MonoBehaviour
     [SerializeField] GameObject creditsBanner;
     [SerializeField] GameObject PausePanel;
     [SerializeField] GameObject Tutorial_panel;
-
+    [SerializeField] GameObject Botao_Ativo;
     public void Update()
     {
         string SceneActive = SceneManager.GetActiveScene().name;
@@ -18,6 +18,14 @@ public class Menu : MonoBehaviour
             {
                 Pause();
             }
+        }
+        if(Save_do_mundo.save.TemSave() == true)
+        {
+            Botao_Ativo.SetActive(true);
+        }
+        else
+        {
+            Botao_Ativo.SetActive(false);
         }
     }
 

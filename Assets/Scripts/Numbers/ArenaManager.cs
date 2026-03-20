@@ -22,12 +22,11 @@ public class ArenaManager : MonoBehaviour
     [SerializeField] public GameObject Errado;
     [SerializeField] public Number_Spawn numberSpawn;
     [SerializeField] Animator[] animator_Boss = new Animator[3];
-    float tempo_disparo = 0f;
+   
     float tempo = 0f;
 
     private void Update()
     {
-        bossLife.text = "HP: " + Hp_Enemy + "/3";
         if (Hp_Enemy <= 0)
         {
             SceneManager.LoadScene("World_1");
