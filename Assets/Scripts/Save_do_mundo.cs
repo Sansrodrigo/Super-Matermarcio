@@ -14,7 +14,6 @@ public class Save_do_mundo
     public int inimigoArenaID = -1;
     public Vector3 posicao_Arena = new Vector3(-0.63f, -7.99f, 0f);
     public Vector3 posicao_Atual;
-    public int gameLevel = 0;
     public float musicVolume = 1f;
 
     public  Save_do_mundo()
@@ -47,7 +46,7 @@ public class Save_do_mundo
             this.HP = dados.HP;
             this.inimigo = dados.inimigo;
             this.inimigoArenaID = dados.inimigoArenaID;
-            this.gameLevel = dados.gameLevel;
+           // this.gameLevel = dados.gameLevel;
             this.musicVolume = dados.musicVolume;
 
         }

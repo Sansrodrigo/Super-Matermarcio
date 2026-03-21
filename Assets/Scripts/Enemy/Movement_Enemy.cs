@@ -7,11 +7,9 @@ public class Movement_Enemy : MonoBehaviour
     public int id;
     float velocidade = 3f;
     int gerador;
-    float timer;
-    float timer2;
-    float timer3;
-    float timer4;
-    float timer5;
+    float timer, timer2, timer3, timer4, timer5;
+    public float minX, maxX, minY, maxY;
+
     Vector2 dic;
     Rigidbody2D rb;
     public static Save_do_mundo save = new Save_do_mundo();
@@ -23,6 +21,7 @@ public class Movement_Enemy : MonoBehaviour
 
         Save_do_mundo.save.Load();
 
+
         if (Save_do_mundo.save.inimigo[id].inimigoActive == false)
         {
             Destroy(gameObject);
@@ -30,6 +29,7 @@ public class Movement_Enemy : MonoBehaviour
         }
 
         transform.position = Save_do_mundo.save.inimigo[id].position;
+        save.Save();
 
         EscolherDirecao();
     }
@@ -127,3 +127,22 @@ public class Movement_Enemy : MonoBehaviour
         }
     }
 }
+
+/*
+ * mundo 1 
+ * minx = -2.86 maxx = 6.13
+ * miny = 1.08 maxy = -3.2
+ * 
+ * ______________________________________________
+ * mundo 2 ????????
+ * 
+ * 
+ * ______________________________________________
+ * mundo 3 ????
+ * 
+ * 
+ * _______________________________________________
+ * the final boss ????
+ * 
+ * 
+ */

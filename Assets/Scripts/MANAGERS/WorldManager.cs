@@ -12,7 +12,8 @@ public class WorldManager : MonoBehaviour
     public PlayerStateManager _playerState;
     public float timer = 0f;
     public GameObject PortalActive;
-   
+    public int gameLevel = 0;
+
     void Start()
     {
         // Carrega dados do mundo (save) e inicializa o jogador a partir deles.
@@ -66,6 +67,8 @@ public class WorldManager : MonoBehaviour
             Save_do_mundo.save.Save();
             SceneManager.LoadScene("World_1");
         }
+
+        GameLevel();
     }
 
     void VerificarVitoria()
@@ -97,6 +100,22 @@ public class WorldManager : MonoBehaviour
             }
            
 
+        }
+    }
+    public void GameLevel()
+    {
+        switch(gameLevel)
+        {
+            case 0:
+
+                SceneManager.LoadScene("World_1");
+                break;
+            case 1:
+                SceneManager.LoadScene("World_2");
+                break;
+            case 2:
+                SceneManager.LoadScene("Victory");
+                break;
         }
     }
 }
