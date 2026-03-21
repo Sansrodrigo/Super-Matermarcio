@@ -10,6 +10,7 @@ public class PlayerStateManager : MonoBehaviour
     public GameObject TelaGameOver;
     [SerializeField] GameObject interact;
     public AudioSource audioDano;
+    private bool Nao_desativaInimigo = false;
     void Awake()
     {
         // Apenas inicializações relacionadas ao status do jogador.
@@ -26,9 +27,10 @@ public class PlayerStateManager : MonoBehaviour
     public void Update()
     {
        
-        if (Vida <= 0)
+        if (Vida <= 0 && !Nao_desativaInimigo)
         {
-            SceneManager.LoadScene("GameOver");
+           Nao_desativaInimigo = true;  // nao desativa o inimigo caso player morra
+           SceneManager.LoadScene("GameOver");
         }
     }
     public void Start()
@@ -62,12 +64,7 @@ public class PlayerStateManager : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("EstanteDeLivros"))
-        {
-            interact.SetActive(true);
-
-        }
-            if (collision.gameObject.CompareTag("casa"))
+        if (collision.gameObject.CompareTag("casa"))
         {
             Save_do_mundo.save.posicao_Mundo = new Vector3(-1.47f, -2.49f, 0f);
             Save_do_mundo.save.Save();
@@ -98,14 +95,26 @@ public class PlayerStateManager : MonoBehaviour
             collision.gameObject.CompareTag("npcMais") ||
             collision.gameObject.CompareTag("npcMenos"))
         {
-         
-    Movement_Enemy enemy = collision.gameObject.GetComponent<Movement_Enemy>();
+
+            /*Movement_Enemy enemy = collision.gameObject.GetComponent<Movement_Enemy>();
+
+                    if (enemy != null)
+                    {
+                        Save_do_mundo.save.inimigoArenaID = enemy.id; // salva o id para trocar sprite
+                        Save_do_mundo.save.inimigo[enemy.id].inimigoActive = false; // marca inimigo como destruído
+                        Debug.Log("ID SALVO: " + enemy.id);
+                    }
+            */
+            var enemy = collision.gameObject.GetComponentInParent<Movement_Enemy>();
 
             if (enemy != null)
             {
-                Save_do_mundo.save.inimigoArenaID = enemy.id; // salva o id para trocar sprite
-                Save_do_mundo.save.inimigo[enemy.id].inimigoActive = false; // marca inimigo como destruído
+                Save_do_mundo.save.inimigoArenaID = enemy.id;
                 Debug.Log("ID SALVO: " + enemy.id);
+            }
+            else
+            {
+                Debug.LogWarning("Movement_Enemy NÃO encontrado!");
             }
             Save_do_mundo.save.posicao_Mundo = transform.position;
             

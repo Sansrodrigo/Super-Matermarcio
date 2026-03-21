@@ -89,9 +89,28 @@ public class Menu : MonoBehaviour
     }
     public void Continue()
     {
-     
         Time.timeScale = 1;
+        SceneManager.sceneLoaded += OnSceneLoaded;
         SceneManager.LoadScene("World_1");
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode) // faz parte do continue pra achar o player na nova cena
+    {
+       
+        PlayerStateManager player = FindObjectOfType<PlayerStateManager>();    // Procura o player na nova cena
+        if (player != null)
+        {
+            player.transform.position = Save_do_mundo.save.posicao_Mundo;
+        }
+
+       
+        SceneManager.sceneLoaded -= OnSceneLoaded;   // Remove o listener para não repetir
+    }
+    public void Morte_menu()
+    {
+        Save_do_mundo.save.DeleteSave();
+        Time.timeScale = 1;
+        SceneManager.LoadScene("Menu");
     }
 }
 

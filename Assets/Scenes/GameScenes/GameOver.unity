@@ -620,6 +620,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Menu
   creditsBanner: {fileID: 0}
+  PausePanel: {fileID: 0}
+  Tutorial_panel: {fileID: 0}
+  Botao_Ativo: {fileID: 0}
 --- !u!114 &1880097082
 MonoBehaviour:
   m_ObjectHideFlags: 0
