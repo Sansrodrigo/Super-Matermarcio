@@ -8,7 +8,7 @@ public class AudioManager_Script : MonoBehaviour
 {
 
     [SerializeField] Slider ImusicVolume; //Slider para controlar o volume da musica
-    private AudioSource[] AudioSources; //0 = music, 1 = sfx
+    public AudioSource[] AudioSources; //0 = music, 1 = sfx
 
 
     public AudioResource[] Musics; //Armazena as musicas que serao tocadas
@@ -22,8 +22,7 @@ public class AudioManager_Script : MonoBehaviour
 
     void Update()
     {
-        AudioSources[0].volume = Save_do_mundo.save.musicVolume = ImusicVolume.value;
-        ImusicVolume.value = Save_do_mundo.save.musicVolume;
+        
     }
 
     public void AudioSwitch() //Troca a musica dependendo da cena

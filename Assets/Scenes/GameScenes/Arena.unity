@@ -1916,7 +1916,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NumberObject
   NumberValue: 0
-  audioBotao: {fileID: 1355672140}
+  Audio: {fileID: 1355672140}
+  ButtonSFX: {fileID: 8300000, guid: a6db49ada0e31a648a636c6a82396620, type: 3}
 --- !u!4 &676131541 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2217394886740042004, guid: 372d78aa4cb476342aea3b3e0b8998a2, type: 3}
@@ -2351,7 +2352,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NumberObject
   NumberValue: 0
-  audioBotao: {fileID: 1355672140}
+  Audio: {fileID: 1355672140}
+  ButtonSFX: {fileID: 8300000, guid: a6db49ada0e31a648a636c6a82396620, type: 3}
 --- !u!61 &1227114112
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3003,6 +3005,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1734976241 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6511770349300961286, guid: 2b379ba8346b59849846b071b2e70847, type: 3}
+  m_PrefabInstance: {fileID: 66224224946836713}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1746247531
 GameObject:
   m_ObjectHideFlags: 0
@@ -9087,6 +9094,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 232832864833622336, guid: 2b379ba8346b59849846b071b2e70847, type: 3}
+      propertyPath: m_Volume
+      value: 0.319
+      objectReference: {fileID: 0}
     - target: {fileID: 1982834344400102097, guid: 2b379ba8346b59849846b071b2e70847, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.24
@@ -9131,9 +9142,25 @@ PrefabInstance:
       propertyPath: ImusicVolume
       value: 
       objectReference: {fileID: 1027638364}
+    - target: {fileID: 5565569229673069708, guid: 2b379ba8346b59849846b071b2e70847, type: 3}
+      propertyPath: SFX.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5565569229673069708, guid: 2b379ba8346b59849846b071b2e70847, type: 3}
+      propertyPath: 'SFX.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: a6db49ada0e31a648a636c6a82396620, type: 3}
     - target: {fileID: 6511770349300961286, guid: 2b379ba8346b59849846b071b2e70847, type: 3}
       propertyPath: m_Name
       value: Audio_Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 8126490215798754344, guid: 2b379ba8346b59849846b071b2e70847, type: 3}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8126490215798754344, guid: 2b379ba8346b59849846b071b2e70847, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9153,9 +9180,17 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3404656814175401202, guid: 19ad9fbbe0e9596438633d40a9cc7bff, type: 3}
-      propertyPath: audioBotao
+      propertyPath: Audio
       value: 
       objectReference: {fileID: 1355672140}
+    - target: {fileID: 3404656814175401202, guid: 19ad9fbbe0e9596438633d40a9cc7bff, type: 3}
+      propertyPath: ButtonSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: a6db49ada0e31a648a636c6a82396620, type: 3}
+    - target: {fileID: 3404656814175401202, guid: 19ad9fbbe0e9596438633d40a9cc7bff, type: 3}
+      propertyPath: audioBotao
+      value: 
+      objectReference: {fileID: 1734976241}
     - target: {fileID: 8946838739860503291, guid: 19ad9fbbe0e9596438633d40a9cc7bff, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.33
@@ -9214,9 +9249,17 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2239302508201441535, guid: ebf98e8f5f0d963489629c4a49eeaee4, type: 3}
-      propertyPath: audioBotao
+      propertyPath: Audio
       value: 
       objectReference: {fileID: 1355672140}
+    - target: {fileID: 2239302508201441535, guid: ebf98e8f5f0d963489629c4a49eeaee4, type: 3}
+      propertyPath: ButtonSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: a6db49ada0e31a648a636c6a82396620, type: 3}
+    - target: {fileID: 2239302508201441535, guid: ebf98e8f5f0d963489629c4a49eeaee4, type: 3}
+      propertyPath: audioBotao
+      value: 
+      objectReference: {fileID: 1734976241}
     - target: {fileID: 4093106025564859453, guid: ebf98e8f5f0d963489629c4a49eeaee4, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.66
@@ -9315,9 +9358,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5834891768159576472, guid: 7514968a097bb8044a0149414d864575, type: 3}
-      propertyPath: audioBotao
+      propertyPath: Audio
       value: 
       objectReference: {fileID: 1355672140}
+    - target: {fileID: 5834891768159576472, guid: 7514968a097bb8044a0149414d864575, type: 3}
+      propertyPath: ButtonSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: a6db49ada0e31a648a636c6a82396620, type: 3}
+    - target: {fileID: 5834891768159576472, guid: 7514968a097bb8044a0149414d864575, type: 3}
+      propertyPath: audioBotao
+      value: 
+      objectReference: {fileID: 1734976241}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9376,9 +9427,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6317081236523071571, guid: 8435ecf4d2cc45d429818c832579fc62, type: 3}
-      propertyPath: audioBotao
+      propertyPath: Audio
       value: 
       objectReference: {fileID: 1355672140}
+    - target: {fileID: 6317081236523071571, guid: 8435ecf4d2cc45d429818c832579fc62, type: 3}
+      propertyPath: ButtonSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: a6db49ada0e31a648a636c6a82396620, type: 3}
+    - target: {fileID: 6317081236523071571, guid: 8435ecf4d2cc45d429818c832579fc62, type: 3}
+      propertyPath: audioBotao
+      value: 
+      objectReference: {fileID: 1734976241}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9437,9 +9496,17 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3764094598142817593, guid: c7a8306d526e659428d79dfa13caa08c, type: 3}
-      propertyPath: audioBotao
+      propertyPath: Audio
       value: 
       objectReference: {fileID: 1355672140}
+    - target: {fileID: 3764094598142817593, guid: c7a8306d526e659428d79dfa13caa08c, type: 3}
+      propertyPath: ButtonSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: a6db49ada0e31a648a636c6a82396620, type: 3}
+    - target: {fileID: 3764094598142817593, guid: c7a8306d526e659428d79dfa13caa08c, type: 3}
+      propertyPath: audioBotao
+      value: 
+      objectReference: {fileID: 1734976241}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9498,9 +9565,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8894812367209184093, guid: 486085f7c86c88a488ab83c90c47ea67, type: 3}
-      propertyPath: audioBotao
+      propertyPath: Audio
       value: 
       objectReference: {fileID: 1355672140}
+    - target: {fileID: 8894812367209184093, guid: 486085f7c86c88a488ab83c90c47ea67, type: 3}
+      propertyPath: ButtonSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: a6db49ada0e31a648a636c6a82396620, type: 3}
+    - target: {fileID: 8894812367209184093, guid: 486085f7c86c88a488ab83c90c47ea67, type: 3}
+      propertyPath: audioBotao
+      value: 
+      objectReference: {fileID: 1734976241}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9555,9 +9630,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4650362064532213779, guid: 372d78aa4cb476342aea3b3e0b8998a2, type: 3}
-      propertyPath: audioBotao
+      propertyPath: Audio
       value: 
       objectReference: {fileID: 1355672140}
+    - target: {fileID: 4650362064532213779, guid: 372d78aa4cb476342aea3b3e0b8998a2, type: 3}
+      propertyPath: ButtonSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: a6db49ada0e31a648a636c6a82396620, type: 3}
+    - target: {fileID: 4650362064532213779, guid: 372d78aa4cb476342aea3b3e0b8998a2, type: 3}
+      propertyPath: audioBotao
+      value: 
+      objectReference: {fileID: 1734976241}
     - target: {fileID: 8898293895642992976, guid: 372d78aa4cb476342aea3b3e0b8998a2, type: 3}
       propertyPath: m_Name
       value: 7
@@ -9701,9 +9784,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3635229493981461059, guid: 982deaa78d5bff444b6f05945a3d1c1e, type: 3}
-      propertyPath: audioBotao
+      propertyPath: Audio
       value: 
       objectReference: {fileID: 1355672140}
+    - target: {fileID: 3635229493981461059, guid: 982deaa78d5bff444b6f05945a3d1c1e, type: 3}
+      propertyPath: ButtonSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: a6db49ada0e31a648a636c6a82396620, type: 3}
+    - target: {fileID: 3635229493981461059, guid: 982deaa78d5bff444b6f05945a3d1c1e, type: 3}
+      propertyPath: audioBotao
+      value: 
+      objectReference: {fileID: 1734976241}
     - target: {fileID: 7802361987619301957, guid: 982deaa78d5bff444b6f05945a3d1c1e, type: 3}
       propertyPath: m_Name
       value: 3
@@ -9726,9 +9817,17 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3160022941706575883, guid: a311e937356f5db4780ca66b347ee1b6, type: 3}
-      propertyPath: audioBotao
+      propertyPath: Audio
       value: 
       objectReference: {fileID: 1355672140}
+    - target: {fileID: 3160022941706575883, guid: a311e937356f5db4780ca66b347ee1b6, type: 3}
+      propertyPath: ButtonSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: a6db49ada0e31a648a636c6a82396620, type: 3}
+    - target: {fileID: 3160022941706575883, guid: a311e937356f5db4780ca66b347ee1b6, type: 3}
+      propertyPath: audioBotao
+      value: 
+      objectReference: {fileID: 1734976241}
     - target: {fileID: 4373401374801876296, guid: a311e937356f5db4780ca66b347ee1b6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.46
@@ -9827,9 +9926,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4610292156667465366, guid: 0212d17a89592d64ba46980a782a32a3, type: 3}
-      propertyPath: audioBotao
+      propertyPath: Audio
       value: 
       objectReference: {fileID: 1355672140}
+    - target: {fileID: 4610292156667465366, guid: 0212d17a89592d64ba46980a782a32a3, type: 3}
+      propertyPath: ButtonSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: a6db49ada0e31a648a636c6a82396620, type: 3}
+    - target: {fileID: 4610292156667465366, guid: 0212d17a89592d64ba46980a782a32a3, type: 3}
+      propertyPath: audioBotao
+      value: 
+      objectReference: {fileID: 1734976241}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

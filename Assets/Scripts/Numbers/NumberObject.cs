@@ -1,13 +1,16 @@
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class NumberObject : MonoBehaviour
 {
     public int NumberValue;
     private bool playerNearby = false;
-    public AudioSource audioBotao;
+    [SerializeField] private AudioSource Audio;
+    [SerializeField] private AudioResource ButtonSFX;
     private void Start()
     {
-        if(ArenaManager.instance == null)
+        
+        if (ArenaManager.instance == null)
         {
             Debug.Log("manager esta null no start");
         }
@@ -23,18 +26,23 @@ public class NumberObject : MonoBehaviour
         {
             ArenaManager.instance.AddNumber(NumberValue);
             Debug.Log("chamou o add");
-            audioBotao.Play();
+            Audio.resource = ButtonSFX;
+            Audio.Play();
         }
         if (playerNearby && Input.GetKeyDown(KeyCode.Z) && gameObject.name == "Delete")
         {
             ArenaManager.instance.RemoveNumber();
-            audioBotao.Play();
+            Audio.resource = ButtonSFX;
+            Audio.Play();
+            //audioBotao.Play();
         }
         if (playerNearby && Input.GetKeyDown(KeyCode.Z) && gameObject.name == "Confirm")
         {
             ArenaManager.instance.ConfirmAnswer();
             Number_Spawn.instance.RandomizePosition();
-            audioBotao.Play();
+            Audio.resource = ButtonSFX;
+            Audio.Play();
+            //audioBotao.Play();
         }
     }
     private void OnTriggerEnter2D(Collider2D other)
