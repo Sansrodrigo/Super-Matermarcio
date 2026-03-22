@@ -48,7 +48,7 @@ public class ArenaManager : MonoBehaviour
     }
     void Start()
     {
-        int id = Save_do_mundo.save.inimigoArenaID;
+        int id = SaveManager.save.inimigoArenaID;
         tipoEquacao = id;
         GenerateEquation();
     }

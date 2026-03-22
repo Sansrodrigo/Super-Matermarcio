@@ -13,8 +13,8 @@ public class sprite_Swap : MonoBehaviour
 
         SpriteRenderer sprite = GetComponent<SpriteRenderer>();
 
-        int id = Save_do_mundo.save.inimigoArenaID; //nao apagar aqui pega os id dos inimigos e salva
-        Debug.Log("ID inimigo Arena: " + Save_do_mundo.save.inimigoArenaID);
+        int id = SaveManager.save.inimigoArenaID; //nao apagar aqui pega os id dos inimigos e salva
+        Debug.Log("ID inimigo Arena: " + SaveManager.save.inimigoArenaID);
         if (id == 0)
             sprite.sprite = inimigoMulti;
         else if (id == 1)

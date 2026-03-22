@@ -9,7 +9,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <ProjectGuid>{82D30CE8-D452-A2FC-B6F7-9CE11E5F1633}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -74,7 +75,7 @@
     <Compile Include="Assets\Sortify\Modules\SortifyAttributes\MinMaxSliderAttribute.cs" />
     <Compile Include="Assets\Scripts\Numbers\Numbers_Interact.cs" />
     <Compile Include="Assets\Scripts\MANAGERS\PlayerStateManager.cs" />
-    <Compile Include="Assets\Scripts\Save_do_mundo.cs" />
+    <Compile Include="Assets\Scripts\SaveManager.cs" />
     <Compile Include="Assets\Sortify\Helper\SortifyHelper.cs" />
     <Compile Include="Assets\Scripts\UI\Menu.cs" />
     <Compile Include="Assets\Sortify\Modules\SortifyAttributes\TagAttribute.cs" />

@@ -4,9 +4,9 @@ using UnityEngine;
 using static UnityEngine.RuleTile.TilingRuleOutput;
 
 [Serializable]
-public class Save_do_mundo
+public class SaveManager
 {
-    public static Save_do_mundo save = new Save_do_mundo();
+    public static SaveManager save = new SaveManager();
     private string caminho = Application.dataPath + "/Save/Arquivo.TXT"; 
     public Vector3 posicao_Mundo = new Vector3(-0.63f, -7.99f, 0f);
     public int HP = 3;
@@ -16,7 +16,7 @@ public class Save_do_mundo
     public Vector3 posicao_Atual;
     public float musicVolume = 1f;
 
-    public Save_do_mundo()
+    public SaveManager()
     { 
         for (int i = 0; i < inimigo.Length; i++)
         {
@@ -27,7 +27,7 @@ public class Save_do_mundo
     {
         try
         {
-            string content = JsonUtility.ToJson(this, true); //Converte o objeto Save_do_mundo para uma string JSON formatada
+            string content = JsonUtility.ToJson(this, true); //Converte o objeto SaveManager para uma string JSON formatada
             File.WriteAllText(caminho, content); //Escreve a string JSON no arquivo especificado pelo caminho
         }
         catch
@@ -40,7 +40,7 @@ public class Save_do_mundo
         if (File.Exists(caminho)) //Verifica se o arquivo de salvamento existe
         {
             string content = File.ReadAllText(caminho); //Lê o conteúdo do arquivo de salvamento e armazena em uma string
-            Save_do_mundo dados = JsonUtility.FromJson<Save_do_mundo>(content); //Converte a string JSON de volta para um objeto Save_do_mundo
+            SaveManager dados = JsonUtility.FromJson<SaveManager>(content); //Converte a string JSON de volta para um objeto SaveManager
             this.posicao_Arena = dados.posicao_Arena; 
             this.posicao_Mundo = dados.posicao_Mundo; 
             this.HP = dados.HP;
@@ -59,6 +59,7 @@ public class Save_do_mundo
     {
         public Vector3 position;
         public bool inimigoActive = true;
+
         public Inimigo()
         {
             this.position = new Vector3();
@@ -74,7 +75,7 @@ public class Save_do_mundo
             File.Delete(caminho);
             Debug.Log("Save deletado com sucesso.");
         }
-        save = new Save_do_mundo();
+        save = new SaveManager();
     }
     public bool TemSave()
     {

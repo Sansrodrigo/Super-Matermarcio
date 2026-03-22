@@ -12,27 +12,27 @@ public class Movement_Enemy : MonoBehaviour
 
     Vector2 dic;
     Rigidbody2D rb;
-    public static Save_do_mundo save = new Save_do_mundo();
+    public static SaveManager save = new SaveManager();
 
     void Start()
     {
 
         rb = GetComponent<Rigidbody2D>();
+        SaveManager.save.Load();
 
-        Save_do_mundo.save.Load();
 
-
-        if (Save_do_mundo.save.inimigo[id].inimigoActive == false)
+        if (SaveManager.save.inimigo[id].inimigoActive == false)
         {
             Destroy(gameObject);
             return;
         }
 
-        transform.position = Save_do_mundo.save.inimigo[id].position;
+        transform.position = SaveManager.save.inimigo[id].position;
         save.Save();
 
         EscolherDirecao();
     }
+
     // Update is called once per frame
     void Update()
     {

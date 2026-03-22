@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
-    public static Save_do_mundo save = new Save_do_mundo();
+    public static SaveManager save = new SaveManager();
     [SerializeField] GameObject creditsBanner;
     [SerializeField] GameObject PausePanel;
     [SerializeField] GameObject Tutorial_panel;
@@ -15,7 +15,7 @@ public class Menu : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().name == "Menu")
         {
-            if (Save_do_mundo.save.TemSave() == true)
+            if (SaveManager.save.TemSave() == true)
             {
                 Botao_Ativo.SetActive(true);
             }
@@ -51,10 +51,10 @@ public class Menu : MonoBehaviour
     }
     public void SkipTutorial() //sai do tutorial e vai pro Word_1
     {
-        Save_do_mundo.save.DeleteSave();
+        SaveManager.save.DeleteSave();
         SceneManager.LoadScene("House0_F1");
-        Save_do_mundo.save.posicao_Mundo = new Vector3(1.516f, 2.05f, 0f);
-        Save_do_mundo.save.Save();
+        SaveManager.save.posicao_Mundo = new Vector3(1.516f, 2.05f, 0f);
+        SaveManager.save.Save();
     }
     public void teste()
     {
@@ -84,8 +84,8 @@ public class Menu : MonoBehaviour
     }
     public void Save_Pause(GameObject player)
     {
-        Save_do_mundo.save.posicao_Mundo = player.transform.position;
-        Save_do_mundo.save.Save();
+        SaveManager.save.posicao_Mundo = player.transform.position;
+        SaveManager.save.Save();
     }
     public void Continue()
     {
@@ -100,7 +100,7 @@ public class Menu : MonoBehaviour
         PlayerStateManager player = FindObjectOfType<PlayerStateManager>();    // Procura o player na nova cena
         if (player != null)
         {
-            player.transform.position = Save_do_mundo.save.posicao_Mundo;
+            player.transform.position = SaveManager.save.posicao_Mundo;
         }
 
        
@@ -108,7 +108,7 @@ public class Menu : MonoBehaviour
     }
     public void Morte_menu()
     {
-        Save_do_mundo.save.DeleteSave();
+        SaveManager.save.DeleteSave();
         Time.timeScale = 1;
         SceneManager.LoadScene("Menu");
     }

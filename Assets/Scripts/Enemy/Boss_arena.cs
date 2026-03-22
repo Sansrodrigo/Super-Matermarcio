@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Boss_arena : MonoBehaviour
 {
-    public static Save_do_mundo save = new Save_do_mundo();
+    public static SaveManager save = new SaveManager();
     [SerializeField] GameObject bullet;
 
     float tempo_disparo = 0f;

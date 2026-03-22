@@ -17,18 +17,18 @@ public class WorldManager : MonoBehaviour
     void Start()
     {
         // Carrega dados do mundo (save) e inicializa o jogador a partir deles.
-        Save_do_mundo.save.Load(); // gestão do mundo: carregar save
+        SaveManager.save.Load(); // gestão do mundo: carregar save
 
         _playerMovement = GetComponent<PlayerMovement>();
         _playerState = GetComponent<PlayerStateManager>();
 
         if (_playerMovement != null)
         {
-            _playerMovement.SetPosition(Save_do_mundo.save.posicao_Mundo);
+            _playerMovement.SetPosition(SaveManager.save.posicao_Mundo);
         }
         else
         {
-            transform.position = Save_do_mundo.save.posicao_Mundo;
+            transform.position = SaveManager.save.posicao_Mundo;
         }
 
         if (_playerState != null)
@@ -51,7 +51,7 @@ public class WorldManager : MonoBehaviour
             else
                 transform.position = arenaPos;
 
-            Save_do_mundo.save.posicao_Mundo = transform.position;
+            SaveManager.save.posicao_Mundo = transform.position;
         }
 
         if (SceneManager.GetActiveScene().name == "World_1")
@@ -63,8 +63,8 @@ public class WorldManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.F7))
         {
-            GetComponent<PlayerStateManager>().transform.position = Save_do_mundo.save.posicao_Mundo;
-            Save_do_mundo.save.Save();
+            GetComponent<PlayerStateManager>().transform.position = SaveManager.save.posicao_Mundo;
+            SaveManager.save.Save();
             SceneManager.LoadScene("World_1");
         }
 
@@ -78,9 +78,9 @@ public class WorldManager : MonoBehaviour
 
 
 
-        for (int i = 0; i < Save_do_mundo.save.inimigo.Length; i++)
+        for (int i = 0; i < SaveManager.save.inimigo.Length; i++)
         {
-            if (Save_do_mundo.save.inimigo[i].inimigoActive == false)
+            if (SaveManager.save.inimigo[i].inimigoActive == false)
             {
                 inimigosMortos++;
             }

@@ -20,7 +20,7 @@ public class PlayerStateManager : MonoBehaviour
         }
         else
         {
-            transform.position = Save_do_mundo.save.posicao_Mundo;//atualiza a posicao do player a cada cena nao apagar !!!!!!!!!
+            transform.position = SaveManager.save.posicao_Mundo;//atualiza a posicao do player a cada cena nao apagar !!!!!!!!!
 
         }
     }
@@ -41,7 +41,7 @@ public class PlayerStateManager : MonoBehaviour
 
     public void InitializeFromSave()
     {
-        Vida = Save_do_mundo.save.HP;
+        Vida = SaveManager.save.HP;
     }
 
     public void SetVida(int novoValor)
@@ -60,34 +60,34 @@ public class PlayerStateManager : MonoBehaviour
     /// </summary>
     public void SyncToSaveMemory()
     {
-        Save_do_mundo.save.HP = Vida;
+        SaveManager.save.HP = Vida;
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("casa"))
         {
-            Save_do_mundo.save.posicao_Mundo = new Vector3(-1.47f, -2.49f, 0f);
-            Save_do_mundo.save.Save();
+            SaveManager.save.posicao_Mundo = new Vector3(-1.47f, -2.49f, 0f);
+            SaveManager.save.Save();
             SceneManager.LoadScene("House0_F0"); // voltando do mundo pra casa
         }
         if (collision.gameObject.CompareTag("terreo"))
         {
            
-            Save_do_mundo.save.posicao_Mundo = new Vector3(-4.4f, 2.52f, 0f);
-            Save_do_mundo.save.Save();
+            SaveManager.save.posicao_Mundo = new Vector3(-4.4f, 2.52f, 0f);
+            SaveManager.save.Save();
             SceneManager.LoadScene("House0_F0");// deceu pro terreo
         }
         if (collision.gameObject.CompareTag("primeiroAndar"))
         {
            
-            Save_do_mundo.save.posicao_Mundo = new Vector3(-4.17f, -0.48f, 0f);
-            Save_do_mundo.save.Save();
+            SaveManager.save.posicao_Mundo = new Vector3(-4.17f, -0.48f, 0f);
+            SaveManager.save.Save();
             SceneManager.LoadScene("House0_F1"); //subindo pro primeiro andar
         }
         if (collision.gameObject.CompareTag("mundo"))
         {
-            Save_do_mundo.save.posicao_Mundo = new Vector3(-0.53f, -7.82f, 0f); // sai pra gameplay
-            Save_do_mundo.save.Save();
+            SaveManager.save.posicao_Mundo = new Vector3(-0.53f, -7.82f, 0f); // sai pra gameplay
+            SaveManager.save.Save();
             SceneManager.LoadScene("World_1");
         }
       
@@ -100,8 +100,8 @@ public class PlayerStateManager : MonoBehaviour
 
                     if (enemy != null)
                     {
-                        Save_do_mundo.save.inimigoArenaID = enemy.id; // salva o id para trocar sprite
-                        Save_do_mundo.save.inimigo[enemy.id].inimigoActive = false; // marca inimigo como destruído
+                        SaveManager.save.inimigoArenaID = enemy.id; // salva o id para trocar sprite
+                        SaveManager.save.inimigo[enemy.id].inimigoActive = false; // marca inimigo como destruído
                         Debug.Log("ID SALVO: " + enemy.id);
                     }
             */
@@ -109,17 +109,17 @@ public class PlayerStateManager : MonoBehaviour
 
             if (enemy != null)
             {
-                Save_do_mundo.save.inimigoArenaID = enemy.id;
+                SaveManager.save.inimigoArenaID = enemy.id;
                 Debug.Log("ID SALVO: " + enemy.id);
             }
             else
             {
                 Debug.LogWarning("Movement_Enemy NÃO encontrado!");
             }
-            Save_do_mundo.save.posicao_Mundo = transform.position;
+            SaveManager.save.posicao_Mundo = transform.position;
             
             SyncToSaveMemory();// sincroniza status do jogador (HP) em memória antes de persistir
-            Save_do_mundo.save.Save(); // persiste o save em disco (gestão do mundo)
+            SaveManager.save.Save(); // persiste o save em disco (gestão do mundo)
             SceneManager.LoadScene("Arena");
         }
     }
