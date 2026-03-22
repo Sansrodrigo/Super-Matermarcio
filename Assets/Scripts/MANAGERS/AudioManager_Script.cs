@@ -45,16 +45,10 @@ public class AudioManager_Script : MonoBehaviour
                 AudioSources[0].resource = Musics[1];
                 AudioSources[0].Play();
                 break;
+            case "Menu":
+                AudioSources[0].resource = Musics[2];
+                AudioSources[0].Play();
+                break;
         }
-    }
-    
-    void loadWorld1()
-    {
-        SceneManager.LoadScene("World_1");
-    }
-    [ContextMenu("Carregar Menu")]
-    void loadMenu()
-    {
-        SceneManager.LoadScene("Menu");
     }
 }
