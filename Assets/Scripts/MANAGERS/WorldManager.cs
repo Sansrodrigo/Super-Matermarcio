@@ -68,7 +68,7 @@ public class WorldManager : MonoBehaviour
             SceneManager.LoadScene("World_1");
         }
 
-        GameLevel();
+        //GameLevel();
     }
 
     void VerificarVitoria()
