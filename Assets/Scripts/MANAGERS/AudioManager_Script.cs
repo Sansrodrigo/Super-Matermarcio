@@ -4,11 +4,16 @@ using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+
 public class AudioManager_Script : MonoBehaviour
 {
+
+
     [Header("UI CONTROLLERS")]
-    [SerializeField] Slider ImusicVolume; //Slider para controlar o volume da musica
+    [SerializeField] private Slider ImusicVolume; //Slider para controlar o volume da musica
     [SerializeField] Slider ISFXVolume; //Slider para controlar o volume dos SFX
+
+    [Space(20)]
 
     public AudioSource[] AudioSources; //0 = music, 1 = sfx
     
@@ -27,6 +32,7 @@ public class AudioManager_Script : MonoBehaviour
         AudioSources[1].volume = ISFXVolume.value; //Controla o volume dos SFX com o slider
     }
 
+    [ContextMenu("Resetar Vida")]
     public void AudioSwitch() //Troca a musica dependendo da cena
     {
         switch (SceneManager.GetActiveScene().name)
@@ -40,5 +46,15 @@ public class AudioManager_Script : MonoBehaviour
                 AudioSources[0].Play();
                 break;
         }
+    }
+    
+    void loadWorld1()
+    {
+        SceneManager.LoadScene("World_1");
+    }
+    [ContextMenu("Carregar Menu")]
+    void loadMenu()
+    {
+        SceneManager.LoadScene("Menu");
     }
 }

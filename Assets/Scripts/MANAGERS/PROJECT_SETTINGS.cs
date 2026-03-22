@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PROJECT_SETTINGS : MonoBehaviour
 {
-    private const int FPSLIMIT = 60;
+    [SerializeField] private const int FPSLIMIT = 60;
 
     public static void Initialize()
     {
