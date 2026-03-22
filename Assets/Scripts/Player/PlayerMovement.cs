@@ -13,9 +13,9 @@ public class PlayerMovement : MonoBehaviour
     {
         _rb = GetComponent<Rigidbody2D>();
     }
-
     void Update()
     {
+
         Vector2 movementVector = Vector2.zero;
 
         if (Input.GetKey(KeyCode.LeftArrow)) movementVector.x = -1;
@@ -25,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
         else if (Input.GetKey(KeyCode.DownArrow)) movementVector.y = -1;
         _rb.linearVelocity = movementVector * Speed;
 
+        
         if (Input.GetKeyUp(KeyCode.F7)) SceneManager.LoadScene("World_1");
     }
 

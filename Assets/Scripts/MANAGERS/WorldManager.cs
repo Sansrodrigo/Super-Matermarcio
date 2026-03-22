@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -93,14 +94,14 @@ public class WorldManager : MonoBehaviour
 
             if (timer >= 2f )
              {
-                PortalActive.SetActive(true);
+                //StartCoroutine(PortalOpeningSequence());
                 vitoria = true;
-
+                PortalActive.SetActive(true);
                 Portal.SetActive(true);
             }
-           
 
         }
+
     }
     public void GameLevel()
     {
@@ -117,5 +118,16 @@ public class WorldManager : MonoBehaviour
                 SceneManager.LoadScene("Victory");
                 break;
         }
+    }
+
+    IEnumerator PortalOpeningSequence()
+    {
+        yield return new WaitForSeconds(2f);
+        Camera.main.GetComponent<CameraBehaviour>().customCameraPosition = new Vector3(36f, 8f, -10f); // Exemplo de posição personalizada
+        Camera.main.GetComponent<CameraBehaviour>().camTarget = null;
+        Camera.main.GetComponent<CameraBehaviour>().useCustomPosition = true;
+        yield return new WaitForSeconds(3f);
+        //PortalActive.SetActive(true);
+        //Portal.SetActive(true);
     }
 }
