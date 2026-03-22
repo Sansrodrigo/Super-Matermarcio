@@ -101,7 +101,7 @@ public class PlayerStateManager : MonoBehaviour
                     if (enemy != null)
                     {
                         SaveManager.save.inimigoArenaID = enemy.id; // salva o id para trocar sprite
-                        SaveManager.save.inimigo[enemy.id].inimigoActive = false; // marca inimigo como destruído
+                        SaveManager.save.inimigo[enemy.id].isActive = false; // marca inimigo como destruído
                         Debug.Log("ID SALVO: " + enemy.id);
                     }
             */

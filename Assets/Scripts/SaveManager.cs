@@ -58,12 +58,11 @@ public class SaveManager
     public class Inimigo
     {
         public Vector3 position;
-        public bool inimigoActive = true;
+        public bool isActive = true;
 
         public Inimigo()
         {
             this.position = new Vector3();
-              
         }
     }
 

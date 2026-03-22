@@ -80,7 +80,7 @@ public class WorldManager : MonoBehaviour
 
         for (int i = 0; i < SaveManager.save.inimigo.Length; i++)
         {
-            if (SaveManager.save.inimigo[i].inimigoActive == false)
+            if (SaveManager.save.inimigo[i].isActive == false)
             {
                 inimigosMortos++;
             }
