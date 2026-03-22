@@ -1,10 +1,9 @@
 using UnityEngine;
 
-public static class __PROJECT_SETTINGS
+public class PROJECT_SETTINGS : MonoBehaviour
 {
     private const int FPSLIMIT = 60;
 
-    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
     public static void Initialize()
     {
         QualitySettings.vSyncCount = 0;

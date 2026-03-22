@@ -6,11 +6,12 @@ using UnityEngine.UI;
 
 public class AudioManager_Script : MonoBehaviour
 {
-
+    [Header("UI CONTROLLERS")]
     [SerializeField] Slider ImusicVolume; //Slider para controlar o volume da musica
+    [SerializeField] Slider ISFXVolume; //Slider para controlar o volume dos SFX
+
     public AudioSource[] AudioSources; //0 = music, 1 = sfx
-
-
+    
     public AudioResource[] Musics; //Armazena as musicas que serao tocadas
     public AudioResource[] SFX; //Armazena os SFX que serao tocados
 
@@ -22,7 +23,8 @@ public class AudioManager_Script : MonoBehaviour
 
     void Update()
     {
-        
+        AudioSources[0].volume = ImusicVolume.value; //Controla o volume da musica com o slider 
+        AudioSources[1].volume = ISFXVolume.value; //Controla o volume dos SFX com o slider
     }
 
     public void AudioSwitch() //Troca a musica dependendo da cena
