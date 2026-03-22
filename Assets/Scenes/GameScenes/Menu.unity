@@ -1906,7 +1906,19 @@ MonoBehaviour:
   m_Value: 0.16677038
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1378006501}
+        m_TargetAssemblyTypeName: AudioManager_Script, Assembly-CSharp
+        m_MethodName: MusicVolumeControl
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1233623922
 GameObject:
   m_ObjectHideFlags: 0
@@ -2424,6 +2436,14 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5565569229673069708, guid: 2b379ba8346b59849846b071b2e70847, type: 3}
+      propertyPath: SFX_Volume_Slider
+      value: 
+      objectReference: {fileID: 1595498683}
+    - target: {fileID: 5565569229673069708, guid: 2b379ba8346b59849846b071b2e70847, type: 3}
+      propertyPath: Music_Volume_Slider
+      value: 
+      objectReference: {fileID: 1225211594}
+    - target: {fileID: 5565569229673069708, guid: 2b379ba8346b59849846b071b2e70847, type: 3}
       propertyPath: 'Musics.Array.data[2]'
       value: 
       objectReference: {fileID: 8300000, guid: 25eb6dacb61e6fb45a4386f975617dd5, type: 3}
@@ -2436,6 +2456,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b379ba8346b59849846b071b2e70847, type: 3}
+--- !u!114 &1378006501 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5565569229673069708, guid: 2b379ba8346b59849846b071b2e70847, type: 3}
+  m_PrefabInstance: {fileID: 1378006500}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32148b5ca3e1d9e429809cc223a0f97c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!1 &1384480138
 GameObject:
   m_ObjectHideFlags: 0
@@ -3005,7 +3036,19 @@ MonoBehaviour:
   m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1378006501}
+        m_TargetAssemblyTypeName: AudioManager_Script, Assembly-CSharp
+        m_MethodName: SFXVolumeControl
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1615284396
 GameObject:
   m_ObjectHideFlags: 0

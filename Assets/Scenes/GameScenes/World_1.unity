@@ -30955,6 +30955,14 @@ PrefabInstance:
       propertyPath: ImusicVolume
       value: 
       objectReference: {fileID: 1905068615}
+    - target: {fileID: 5565569229673069708, guid: 2b379ba8346b59849846b071b2e70847, type: 3}
+      propertyPath: SFX_Volume_Slider
+      value: 
+      objectReference: {fileID: 700547929}
+    - target: {fileID: 5565569229673069708, guid: 2b379ba8346b59849846b071b2e70847, type: 3}
+      propertyPath: Music_Volume_Slider
+      value: 
+      objectReference: {fileID: 1905068615}
     - target: {fileID: 6511770349300961286, guid: 2b379ba8346b59849846b071b2e70847, type: 3}
       propertyPath: m_Name
       value: Audio_Manager
@@ -30968,6 +30976,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b379ba8346b59849846b071b2e70847, type: 3}
+--- !u!114 &1308449382 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5565569229673069708, guid: 2b379ba8346b59849846b071b2e70847, type: 3}
+  m_PrefabInstance: {fileID: 1308449381}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32148b5ca3e1d9e429809cc223a0f97c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!1 &1396229131
 GameObject:
   m_ObjectHideFlags: 0
@@ -32204,6 +32223,34 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 843338120586123595, guid: 2d5d314601ec7804a9cdf26ad22123b1, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 843338120586123595, guid: 2d5d314601ec7804a9cdf26ad22123b1, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 843338120586123595, guid: 2d5d314601ec7804a9cdf26ad22123b1, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1308449382}
+    - target: {fileID: 843338120586123595, guid: 2d5d314601ec7804a9cdf26ad22123b1, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 843338120586123595, guid: 2d5d314601ec7804a9cdf26ad22123b1, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MusicVolumeControl
+      objectReference: {fileID: 0}
+    - target: {fileID: 843338120586123595, guid: 2d5d314601ec7804a9cdf26ad22123b1, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: AudioManager_Script, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 843338120586123595, guid: 2d5d314601ec7804a9cdf26ad22123b1, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1827308812314374157, guid: 2d5d314601ec7804a9cdf26ad22123b1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -32360,6 +32407,34 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 745664512}
+    - target: {fileID: 9054070354040272766, guid: 2d5d314601ec7804a9cdf26ad22123b1, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9054070354040272766, guid: 2d5d314601ec7804a9cdf26ad22123b1, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9054070354040272766, guid: 2d5d314601ec7804a9cdf26ad22123b1, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1308449382}
+    - target: {fileID: 9054070354040272766, guid: 2d5d314601ec7804a9cdf26ad22123b1, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9054070354040272766, guid: 2d5d314601ec7804a9cdf26ad22123b1, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SFXVolumeControl
+      objectReference: {fileID: 0}
+    - target: {fileID: 9054070354040272766, guid: 2d5d314601ec7804a9cdf26ad22123b1, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: AudioManager_Script, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 9054070354040272766, guid: 2d5d314601ec7804a9cdf26ad22123b1, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
