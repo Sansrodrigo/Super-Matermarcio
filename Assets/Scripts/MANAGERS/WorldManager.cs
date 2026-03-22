@@ -96,8 +96,9 @@ public class WorldManager : MonoBehaviour
              {
                 //StartCoroutine(PortalOpeningSequence());
                 vitoria = true;
-                PortalActive.SetActive(true);
                 Portal.SetActive(true);
+                PortalActive.SetActive(true);
+                
             }
 
         }
