@@ -36,7 +36,8 @@ public class Movement_Enemy : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Player"))
         {
-            SaveManager.save.inimigo[id].isActive = false;
+            
+            
             SaveManager.save.inimigo[id].position = transform.position;
             SaveManager.save.Save();
         }

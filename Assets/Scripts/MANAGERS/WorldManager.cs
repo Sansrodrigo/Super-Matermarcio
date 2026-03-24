@@ -18,7 +18,7 @@ public class WorldManager : MonoBehaviour
     void Start()
     {
         // Carrega dados do mundo (save) e inicializa o jogador a partir deles.
-        SaveManager.save.Load(); // gestão do mundo: carregar save
+        SaveManager.save.Load(); // gestÃ£o do mundo: carregar save
 
         _playerMovement = GetComponent<PlayerMovement>();
         _playerState = GetComponent<PlayerStateManager>();
@@ -40,7 +40,7 @@ public class WorldManager : MonoBehaviour
 
     void Update()
     {
-        // Controle de posições iniciais específicas de cena (mundo)
+        // Controle de posiÃ§Ãµes iniciais especÃ­ficas de cena (mundo)
         if (SceneManager.GetActiveScene().name == "Arena" && SaveActive == false)
         {
             SaveActive = true;
@@ -104,27 +104,11 @@ public class WorldManager : MonoBehaviour
         }
 
     }
-    public void GameLevel()
-    {
-        switch(gameLevel)
-        {
-            case 0:
-
-                SceneManager.LoadScene("World_1");
-                break;
-            case 1:
-                SceneManager.LoadScene("World_2");
-                break;
-            case 2:
-                SceneManager.LoadScene("Victory");
-                break;
-        }
-    }
-
+  
     IEnumerator PortalOpeningSequence()
     {
         yield return new WaitForSeconds(2f);
-        Camera.main.GetComponent<CameraBehaviour>().customCameraPosition = new Vector3(36f, 8f, -10f); // Exemplo de posição personalizada
+        Camera.main.GetComponent<CameraBehaviour>().customCameraPosition = new Vector3(36f, 8f, -10f); // Exemplo de posiÃ§Ã£o personalizada
         Camera.main.GetComponent<CameraBehaviour>().camTarget = null;
         Camera.main.GetComponent<CameraBehaviour>().useCustomPosition = true;
         yield return new WaitForSeconds(3f);
