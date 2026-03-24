@@ -17,7 +17,7 @@ public class ArenaManager : MonoBehaviour
     [Header("PlayerInput Parameters")]
     public int correctAnswer;
     private string playerAnswer = "";
-
+    public int id;
     [SerializeField] public GameObject Correto;
     [SerializeField] public GameObject Errado;
     [SerializeField] public Number_Spawn numberSpawn;
@@ -29,6 +29,8 @@ public class ArenaManager : MonoBehaviour
     {
         if (Hp_Enemy <= 0)
         {
+
+            SaveManager.save.inimigo[id].isActive = false;
             SceneManager.LoadScene("World_1");
         }
 
