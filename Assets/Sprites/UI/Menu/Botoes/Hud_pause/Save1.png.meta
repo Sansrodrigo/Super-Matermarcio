@@ -1,37 +1,19 @@
 fileFormatVersion: 2
-guid: 99d0d446c53e3344782605f596aec460
+guid: df071f65294c8d6439e04ee585753a52
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1611674197194048519
-    second: Hud_pause_Save1_0
+      213: 4288827822152985332
+    second: Save1_0
   - first:
-      213: -2073128861098963324
-    second: Hud_pause_Save1_1
+      213: -1477770930780535698
+    second: Save1_1
   - first:
-      213: 3367283951968717826
-    second: Hud_pause_Save1_2
+      213: 5792920078539291536
+    second: Save1_2
   - first:
-      213: 1689648132666309002
-    second: Hud_pause_Save1_3
-  - first:
-      213: 7022466429900868839
-    second: Hud_pause_Save1_4
-  - first:
-      213: 5922912207286753873
-    second: Hud_pause_Save1_5
-  - first:
-      213: -2603951831583213609
-    second: Hud_pause_Save1_6
-  - first:
-      213: 8446908038567674067
-    second: Hud_pause_Save1_7
-  - first:
-      213: -12354660369451668
-    second: Hud_pause_Save1_8
-  - first:
-      213: 8675401457552024575
-    second: Hud_pause_Save1_9
+      213: 7697094098656299866
+    second: Save1_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -102,7 +84,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -127,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Hud_pause_Save1_0
+      name: Save1_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 64
-        height: 32
+        x: 17
+        y: 11
+        width: 30
+        height: 9
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,30 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7040a61b421dd5610800000000000000
-      internalID: 1611674197194048519
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Hud_pause_Save1_1
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 64
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 48e0694e844ca33e0800000000000000
-      internalID: -2073128861098963324
+      spriteID: 4faad3a5e2af48b30800000000000000
+      internalID: 4288827822152985332
       vertices: []
       indices: 
       edges: []
@@ -174,7 +134,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 8451b3a1d86bac747aeddc77ccaac819
+    spriteID: 3adc2afe1d52f7c4dad1bc5d5147f373
     internalID: 0
     vertices: []
     indices: 
@@ -186,8 +146,7 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Hud_pause_Save1_0: 1611674197194048519
-      Hud_pause_Save1_1: -2073128861098963324
+      Save1_0: 4288827822152985332
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
