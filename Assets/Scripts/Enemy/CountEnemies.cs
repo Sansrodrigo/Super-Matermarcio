@@ -3,10 +3,10 @@ using UnityEngine;
 
 public class CountEnemies : MonoBehaviour
 {
-    private float minX = -13.86f;
-    private float maxX = 3.13f;
-    private float minY = -1.8f;
-    float maxY = 2.78f;
+   // private float minX = -13.86f;
+   // private float maxX = 3.13f;
+   // private float minY = -1.8f;
+    //float maxY = 2.78f;
 
     [SerializeField] private List<GameObject> enemies = new List<GameObject>();
     private List<GameObject> countEnemies = new List<GameObject>();

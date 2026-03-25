@@ -9,7 +9,7 @@ public class Movement_Enemy : MonoBehaviour
     float speed = 3f;
     public float minX, maxX, minY, maxY;
     Rigidbody2D rb;
-
+    float next_x, next_y;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -21,7 +21,10 @@ public class Movement_Enemy : MonoBehaviour
             return;
         }
 
-        transform.position = SaveManager.save.inimigo[id].position;
+        next_x = Random.Range(17.39232f, 26.77f);
+        next_y = Random.Range(2.466508f, -1.55f);
+        transform.position = new Vector3(next_x, next_y, 0f);
+        SaveManager.save.inimigo[id].position = transform.position;
         SaveManager.save.Save();
 
         StartCoroutine(dirChanger());
