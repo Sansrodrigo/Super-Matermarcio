@@ -17,7 +17,7 @@ public class ArenaManager : MonoBehaviour
     [Header("PlayerInput Parameters")]
     public int correctAnswer;
     private string playerAnswer = "";
-    public int id;
+    public int id ;
     [SerializeField] public GameObject Correto;
     [SerializeField] public GameObject Errado;
     [SerializeField] public Number_Spawn numberSpawn;
@@ -27,10 +27,12 @@ public class ArenaManager : MonoBehaviour
 
     private void Update()
     {
-        if (Hp_Enemy <= 0)
+        if (Hp_Enemy <= 0 || Input.GetKeyDown(KeyCode.F7))
         {
-
+            id = SaveManager.save.inimigoArenaID;
             SaveManager.save.inimigo[id].isActive = false;
+            Debug.Log(SaveManager.save.inimigo[id] + " " + SaveManager.save.inimigo[id].isActive);
+            SaveManager.save.Save();
             SceneManager.LoadScene("World_1");
         }
 

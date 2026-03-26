@@ -80,6 +80,7 @@
     <Compile Include="Assets\Sortify\Modules\SortifyAttributes\TagAttribute.cs" />
     <Compile Include="Assets\Sortify\Dashboard\SortifyChangeLog.cs" />
     <Compile Include="Assets\Sortify\Modules\SortifyCore\SortifyInitializer.cs" />
+    <Compile Include="Assets\Scripts\MANAGERS\SpwanEnemiesManager.cs" />
     <Compile Include="Assets\Scripts\Numbers\EqualObject.cs" />
     <Compile Include="Assets\Sortify\Modules\SortifyHighlight\SortifyHighlight.cs" />
     <Compile Include="Assets\Sortify\Modules\SortifyCore\SortifySettingsPopup.cs" />

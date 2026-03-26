@@ -15,7 +15,6 @@ public class SaveManager
     public Vector3 posicao_Arena = new Vector3(-0.63f, -7.99f, 0f);
     public Vector3 posicao_Atual;
     public float musicVolume = 1f;
-
     public SaveManager()
     { 
         for (int i = 0; i < inimigo.Length; i++)
@@ -63,6 +62,7 @@ public class SaveManager
         public Inimigo()
         {
             this.position = new Vector3();
+            
         }
     }
 

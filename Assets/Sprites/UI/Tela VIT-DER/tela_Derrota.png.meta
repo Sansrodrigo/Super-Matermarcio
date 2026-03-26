@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0ac255eeda0e64c47aefd192d14754d4
+guid: d672124944c0dd24689699d825aec38d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1427320067400864919
-    second: vitoria_0
+      213: -7564787638849097013
+    second: tela_Derrota_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: vitoria_0
+      name: tela_Derrota_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 794173ef90cdec310800000000000000
-      internalID: 1427320067400864919
+      spriteID: bc23221f8b9740790800000000000000
+      internalID: -7564787638849097013
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      vitoria_0: 1427320067400864919
+      tela_Derrota_0: -7564787638849097013
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
