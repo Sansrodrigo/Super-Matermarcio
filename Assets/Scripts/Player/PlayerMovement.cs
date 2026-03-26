@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
         _rb.linearVelocity = movementVector * Speed;
 
         
-        if (Input.GetKeyUp(KeyCode.F7)) SceneManager.LoadScene("World_1");
+        if (Input.GetKeyUp(KeyCode.F7) && Input.GetKey(KeyCode.LeftShift)) SceneManager.LoadScene("World_1");
     }
 
     public void SetPosition(Vector3 position)
