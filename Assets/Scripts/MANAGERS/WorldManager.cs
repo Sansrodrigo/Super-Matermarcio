@@ -61,14 +61,6 @@ public class WorldManager : MonoBehaviour
         }
 
         VerificarVitoria();
-
-        if (Input.GetKeyDown(KeyCode.F7))
-        {
-            GetComponent<PlayerStateManager>().transform.position = SaveManager.save.posicao_Mundo;
-            SaveManager.save.Save();
-            SceneManager.LoadScene("World_1");
-        }
-
         //GameLevel();
     }
 

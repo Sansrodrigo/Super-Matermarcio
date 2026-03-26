@@ -80,6 +80,7 @@
     <Compile Include="Assets\Sortify\Modules\SortifyAttributes\TagAttribute.cs" />
     <Compile Include="Assets\Sortify\Dashboard\SortifyChangeLog.cs" />
     <Compile Include="Assets\Sortify\Modules\SortifyCore\SortifyInitializer.cs" />
+    <Compile Include="Assets\Scripts\MANAGERS\SpwanEnemiesManager.cs" />
     <Compile Include="Assets\Scripts\Numbers\EqualObject.cs" />
     <Compile Include="Assets\Sortify\Modules\SortifyHighlight\SortifyHighlight.cs" />
     <Compile Include="Assets\Sortify\Modules\SortifyCore\SortifySettingsPopup.cs" />
@@ -130,7 +131,6 @@
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
-    <None Include="Assets\Save\Arquivo.TXT" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\Fonts\OFL.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
@@ -139,7 +139,6 @@
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
-    <None Include="Assets\Save\Arquivo.TXT" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

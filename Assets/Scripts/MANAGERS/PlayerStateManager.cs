@@ -10,7 +10,7 @@ public class PlayerStateManager : MonoBehaviour
     public GameObject TelaGameOver;
     [SerializeField] GameObject interact;
     public AudioSource audioDano;
-    private bool Nao_desativaInimigo = false;
+    
     void Awake()
     {
         // Apenas inicializações relacionadas ao status do jogador.
@@ -27,9 +27,9 @@ public class PlayerStateManager : MonoBehaviour
     public void Update()
     {
        
-        if (Vida <= 0 && !Nao_desativaInimigo)
+        if (Vida <= 0)
         {
-           Nao_desativaInimigo = true;  // nao desativa o inimigo caso player morra
+          
            SceneManager.LoadScene("GameOver");
         }
     }
