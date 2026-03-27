@@ -30829,6 +30829,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1905068615}
     - target: {fileID: 5565569229673069708, guid: 2b379ba8346b59849846b071b2e70847, type: 3}
+      propertyPath: Musics.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5565569229673069708, guid: 2b379ba8346b59849846b071b2e70847, type: 3}
       propertyPath: SFX_Volume_Slider
       value: 
       objectReference: {fileID: 700547929}
@@ -30836,6 +30840,14 @@ PrefabInstance:
       propertyPath: Music_Volume_Slider
       value: 
       objectReference: {fileID: 1905068615}
+    - target: {fileID: 5565569229673069708, guid: 2b379ba8346b59849846b071b2e70847, type: 3}
+      propertyPath: 'Musics.Array.data[2]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 0d528bec26598a94a82153209372b3fc, type: 3}
+    - target: {fileID: 5565569229673069708, guid: 2b379ba8346b59849846b071b2e70847, type: 3}
+      propertyPath: 'Musics.Array.data[3]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 6b73f672dfa71da43a7e41302d29d5cd, type: 3}
     - target: {fileID: 6511770349300961286, guid: 2b379ba8346b59849846b071b2e70847, type: 3}
       propertyPath: m_Name
       value: Audio_Manager

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Portal : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class Portal : MonoBehaviour
     {
         if (playerNearby && Input.GetKeyDown(KeyCode.Z) && gameObject.name == "Portal")
         {
-            TelaVitoria.SetActive(true);
+            SceneManager.LoadScene("Vitoria");
 
             GetComponent<WorldManager>().gameLevel++; //gameLevel é a variável que controla o nível do jogo, incrementa ela para passar para o próximo nível
         }
