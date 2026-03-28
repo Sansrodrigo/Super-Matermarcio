@@ -47,7 +47,7 @@ public class Menu : MonoBehaviour
     }
     public void NovoJogo() //Ativa o Tutorial
     {
-        Tutorial_panel.SetActive(true);
+        SceneManager.LoadScene("Tutorial");
     }
     public void SkipTutorial() //sai do tutorial e vai pro Word_1
     {
@@ -56,10 +56,7 @@ public class Menu : MonoBehaviour
         SaveManager.save.posicao_Mundo = new Vector3(1.516f, 2.05f, 0f);
         SaveManager.save.Save();
     }
-    public void teste()
-    {
-        save.Load();
-    }
+   
     public void Sair() // Sai do jogo
     {
         Application.Quit();
