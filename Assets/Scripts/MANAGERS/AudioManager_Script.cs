@@ -56,6 +56,10 @@ public class AudioManager_Script : MonoBehaviour
                 AudioSources[0].resource = Musics[3];
                 AudioSources[0].Play();
                 break;
+            case "Tutorial":
+                AudioSources[0].resource = Musics[4];
+                AudioSources[0].Play();
+                break;
         }
     }
 
