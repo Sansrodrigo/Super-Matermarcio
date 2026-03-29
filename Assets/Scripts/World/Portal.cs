@@ -12,8 +12,6 @@ public class Portal : MonoBehaviour
         if (playerNearby && Input.GetKeyDown(KeyCode.Z) && gameObject.name == "Portal")
         {
             SceneManager.LoadScene("Vitoria");
-
-            GetComponent<WorldManager>().gameLevel++; //gameLevel é a variável que controla o nível do jogo, incrementa ela para passar para o próximo nível
         }
     }
     private void OnTriggerEnter2D(Collider2D other)

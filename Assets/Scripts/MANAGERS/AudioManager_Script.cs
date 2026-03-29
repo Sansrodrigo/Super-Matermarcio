@@ -60,6 +60,18 @@ public class AudioManager_Script : MonoBehaviour
                 AudioSources[0].resource = Musics[4];
                 AudioSources[0].Play();
                 break;
+            case "GameOver":
+                AudioSources[0].resource = Musics[5];
+                AudioSources[0].Play();
+                break;
+            case "House0_F0":
+                AudioSources[0].resource = Musics[6];
+                AudioSources[0].Play();
+                break;
+            case "House0_F1":
+                AudioSources[0].resource = Musics[7];
+                AudioSources[0].Play();
+                break;
         }
     }
 
