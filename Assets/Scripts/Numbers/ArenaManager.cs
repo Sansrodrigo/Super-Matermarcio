@@ -27,7 +27,7 @@ public class ArenaManager : MonoBehaviour
 
     private void Update()
     {
-        if (Hp_Enemy <= 0 || Input.GetKeyDown(KeyCode.F7))
+        if (Hp_Enemy <= 0/* || Input.GetKeyDown(KeyCode.F7)*/)
         {
             id = SaveManager.save.inimigoArenaID;
             SaveManager.save.inimigo[id].isActive = false;

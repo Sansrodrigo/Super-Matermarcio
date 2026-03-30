@@ -530,7 +530,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &6716412926257173031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1509,7 +1509,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1611674197194048519, guid: 99d0d446c53e3344782605f596aec460, type: 3}
+  m_Sprite: {fileID: 2764519536257640327, guid: b14aa8b0e01de2149a6f418ddd36f995, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
