@@ -15,8 +15,6 @@ public class EG : MonoBehaviour
             if(count == 5)
             {
                 GameObject.Destroy(gameObject);
-                transform.position = camTarget.transform.position + new Vector3(0f, 0f, -10f);
-
             }
         }
     } 
