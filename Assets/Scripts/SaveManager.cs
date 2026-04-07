@@ -7,7 +7,8 @@ using static UnityEngine.RuleTile.TilingRuleOutput;
 public class SaveManager
 {
     public static SaveManager save = new SaveManager();
-    private string caminho = Application.dataPath + "/Save/Arquivo.TXT"; 
+    // private string caminho = Application.dataPath + "/Save/Arquivo.TXT"; ainda nao apagar teste 
+    private string caminho;
     public Vector3 posicao_Mundo = new Vector3(-0.63f, -7.99f, 0f);
     public int HP = 3;
     public Inimigo[] inimigo = new Inimigo[70];
@@ -16,7 +17,7 @@ public class SaveManager
     public Vector3 posicao_Atual;
     public float musicVolume = 1f;
     public SaveManager()
-    { 
+    {
         for (int i = 0; i < inimigo.Length; i++)
         {
             inimigo[i] = new Inimigo();
@@ -24,6 +25,12 @@ public class SaveManager
     }
     public void Save() //Salva os dados do jogo em um arquivo de texto usando JSON
     {
+        string pasta = Application.persistentDataPath + "/Save";
+        if (!Directory.Exists(pasta))
+        {
+            Directory.CreateDirectory(pasta);
+        }
+        caminho = pasta + "/Arquivo.txt";
         try
         {
             string content = JsonUtility.ToJson(this, true); //Converte o objeto SaveManager para uma string JSON formatada

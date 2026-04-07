@@ -47,6 +47,7 @@ public class Menu : MonoBehaviour
     }
     public void NovoJogo() //Ativa o Tutorial
     {
+        
         SceneManager.LoadScene("Tutorial");
     }
     public void SkipTutorial() //sai do tutorial e vai pro Word_1
